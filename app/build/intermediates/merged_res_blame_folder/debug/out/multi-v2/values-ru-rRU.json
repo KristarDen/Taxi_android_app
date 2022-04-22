@@ -1,23 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\GITs\\Taxi_android_app\\Taxi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-rRU\\values-ru-rRU.xml",
+            "outputFile": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-rRU\\values-ru-rRU.xml",
             "map": [
                 {
-                    "source": "C:\\GITs\\Taxi_android_app\\Taxi\\app\\src\\main\\res\\values-ru-rRU\\strings.xml",
+                    "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\values-ru-rRU\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,13,12,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,4,4,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,629,585,-1,-1,-1,-1,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,38,42,-1,-1,-1,-1,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,663,623,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "-1,11,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,536,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,47,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,579,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,98,150,196,235,278,318,380,437,486,547,606",
-                        "endColumns": "42,51,45,38,42,39,61,56,48,60,58,48",
-                        "endOffsets": "93,145,191,230,273,313,375,432,481,542,601,650"
+                        "startOffsets": "55,98,146,192,231,274,314,376,433,482,543,602",
+                        "endColumns": "42,47,45,38,42,39,61,56,48,60,58,52",
+                        "endOffsets": "93,141,187,226,269,309,371,428,477,538,597,650"
                     }
                 }
             ]

@@ -15,7 +15,7 @@ public class LoginOrRegister extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_or_register);
-
+        getSupportActionBar().hide();
         findViewById( R.id.chooseRegister ).setOnClickListener( this::Register_click ) ;
     }
     void Register_click (View v){

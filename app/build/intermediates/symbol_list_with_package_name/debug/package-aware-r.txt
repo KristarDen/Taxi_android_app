@@ -1211,6 +1211,7 @@ color androidx_core_secondary_text_default_material_light
 color background
 color background_floating_material_dark
 color background_floating_material_light
+color background_gradient_color
 color background_material_dark
 color background_material_light
 color black

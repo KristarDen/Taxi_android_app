@@ -8,8 +8,8 @@
     <string name="registration_label">Регистрация</string>
     <string name="register_label">Зарегистрироватся</string>
     <string name="phone_hint">+380 111 1111 234</string>
-    <string name="second_name_Hint">имя</string>
-    <string name="first_name_Hint">фамилия</string>
+    <string name="second_name_Hint">фамилия</string>
+    <string name="first_name_Hint">имя</string>
     <string name="log_or_reg">Или</string>
     <string name="logIn">Вход</string>
 </resources>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\GITs\\Taxi_android_app\\Taxi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
+            "outputFile": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
             "map": [
                 {
                     "source": "C:\\Users\\denis\\.gradle\\caches\\transforms-3\\e28af2a57da205d1991628495b66e5fc\\transformed\\material-1.5.0\\res\\values-nb\\values-nb.xml",
