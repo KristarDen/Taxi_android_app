@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_number">Телефон</string>
+    <string name="first_name">Ім\'я</string>
+    <string name="last_name">Прізвище</string>
+    <string name="pass">Пароль</string>
+    <string name="pass_confirm">Підтвердженя паролю</string>
+    <string name="registration_label">Реєстрація</string>
+    <string name="register_label">Зареєструватись</string>
+    <string name="phone_hint">+380 111 1111 234</string>
+    <string name="second_name_Hint">ім\'я</string>
+    <string name="first_name_Hint">прізвище</string>
+    <string name="log_or_reg">Або</string>
+    <string name="logIn">Вхід</string>
+</resources>

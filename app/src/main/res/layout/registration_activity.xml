@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fontFamily="@font/robotoregularobotoregular"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Registration -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_marginBottom="70dp"
+            >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/registrationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/registration_label"
+                    android:textColor="@color/white"
+                    android:textSize="50dp" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <!-- Phone -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+
+            <!--Label -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/phoneLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/labelTextColor"
+                    android:textSize="14dp" />
+
+            </TableRow>
+
+            <!-- Form -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_background"
+                    android:ems="12"
+                    android:hint="@string/phone_hint"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/labelHintColor"
+                    android:textSize="24sp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- First&Last name -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/firstNameLabel"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="@string/first_name"
+                    android:textColor="@color/labelTextColor"/>
+
+                <TextView
+                    android:id="@+id/lastNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="@string/last_name"
+                    android:textColor="@color/labelTextColor"
+                     />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_background"
+                    android:ems="6"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/first_name_Hint"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/labelHintColor"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_background"
+                    android:ems="6"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/second_name_Hint"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/labelHintColor"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Email -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/emailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/email"
+                    android:textColor="@color/labelTextColor"
+                     />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_background"
+                    android:ems="14"
+                    android:hint="@string/email_Hint"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="50dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/labelHintColor"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Pass & Confirm -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/passLabel"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="@string/pass"
+                    android:textColor="@color/labelTextColor"
+                     />
+
+                <TextView
+                    android:id="@+id/passConfirmLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="@string/pass_confirm"
+                    android:textColor="@color/labelTextColor"
+                     />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_background"
+                    android:ems="6"
+                    android:gravity="center_horizontal"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_background"
+                    android:ems="6"
+                    android:gravity="center_horizontal"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- register button -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/registerButton"
+                    app:backgroundTint="@null"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_confirm"
+                    android:padding="10dp"
+                    android:text="@string/register_label"
+                    android:textAlignment="center"
+                    android:textSize="16sp">
+
+                </Button>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

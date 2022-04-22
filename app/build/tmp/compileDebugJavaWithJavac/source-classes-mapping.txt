@@ -1,0 +1,20 @@
+step/android/taxi/BuildConfig.java
+ step.android.taxi.BuildConfig
+step/android/taxi/User.java
+ step.android.taxi.User
+step/android/taxi/StartScreen.java
+ step.android.taxi.StartScreen
+step/android/taxi/databinding/ActivityStartScreenBinding.java
+ step.android.taxi.databinding.ActivityStartScreenBinding
+step/android/taxi/databinding/ActivityLoginOrRegisterBinding.java
+ step.android.taxi.databinding.ActivityLoginOrRegisterBinding
+step/android/taxi/databinding/RegistrationActivityBinding.java
+ step.android.taxi.databinding.RegistrationActivityBinding
+step/android/taxi/RegisterActivity.java
+ step.android.taxi.RegisterActivity
+ step.android.taxi.RegisterActivity$1
+ step.android.taxi.RegisterActivity$2
+ step.android.taxi.RegisterActivity$3
+ step.android.taxi.RegisterActivity$4
+step/android/taxi/LoginOrRegister.java
+ step.android.taxi.LoginOrRegister

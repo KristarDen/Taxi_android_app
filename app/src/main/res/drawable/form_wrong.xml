@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/wrong_Form_color">
+    </solid>
+    <corners
+        android:radius="30dp"
+        ></corners>
+    <stroke android:color="#D50000"
+        android:width="3dp"/>
+</shape>

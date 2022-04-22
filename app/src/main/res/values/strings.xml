@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">Uber</string>
+    <string name="phone_number">Phone</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="pass">Password</string>
+    <string name="pass_confirm">Confirm password</string>
+
+    <string name="registration_label">Registration</string>
+    <string name="register_label">Register</string>
+
+    <string name="phone_hint">mobile phone</string>
+
+    <string name="second_name_Hint">Doe</string>
+    <string name="first_name_Hint">Joe</string>
+
+    <string name="email_Hint" translatable="false">exampleyour@mail.com</string>
+
+    <string name="log_or_reg">Or</string>
+    <string name="logIn">Login</string>
+</resources>
