@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_name">Имя</string>
+    <string name="first_name_Hint">имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="logIn">Вход</string>
+    <string name="log_or_reg">Или</string>
+    <string name="pass">Пароль</string>
+    <string name="pass_confirm">Подтверждение пароля</string>
+    <string name="phone_hint">+380 111 1111 234</string>
+    <string name="phone_number">Телефон</string>
+    <string name="register_label">Зарегистрироватся</string>
+    <string name="registration_label">Регистрация</string>
+    <string name="second_name_Hint">фамилия</string>
+</resources>
