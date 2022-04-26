@@ -12,4 +12,5 @@
     <string name="first_name_Hint">имя</string>
     <string name="log_or_reg">Или</string>
     <string name="logIn">Вход</string>
+    <string name="login_Btn">Войти</string>
 </resources>

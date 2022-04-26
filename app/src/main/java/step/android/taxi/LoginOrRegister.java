@@ -17,11 +17,18 @@ public class LoginOrRegister extends AppCompatActivity {
         setContentView(R.layout.activity_login_or_register);
         getSupportActionBar().hide();
         findViewById( R.id.chooseRegister ).setOnClickListener( this::Register_click ) ;
+        findViewById( R.id.chooseLogin ).setOnClickListener( this::Login_click ) ;
     }
     void Register_click (View v){
             startActivity(
                     new Intent(
                             this,
                             RegisterActivity.class ) ) ;
+    }
+    void Login_click (View v){
+        startActivity(
+                new Intent(
+                        this,
+                        LoginActivity.class ) ) ;
     }
 }

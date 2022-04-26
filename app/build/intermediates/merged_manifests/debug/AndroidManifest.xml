@@ -22,6 +22,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Taxi" >
         <activity
+            android:name="step.android.taxi.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name="step.android.taxi.LoginOrRegister"
             android:exported="false" />
         <activity

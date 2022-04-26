@@ -36,12 +36,12 @@
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login_or_register.xml.flat",
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_login_or_register.xml"
+    },
+    {
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -78,6 +78,10 @@
     {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\font_robotoregular.ttf.flat",
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\font\\robotoregular.ttf"
+    },
+    {
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",

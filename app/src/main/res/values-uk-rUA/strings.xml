@@ -12,4 +12,5 @@
     <string name="log_or_reg">Або</string>
     <string name="logIn">Вхід</string>
     <string name="second_name_Hint">прізвище</string>
+    <string name="login_Btn">Увійти</string>
 </resources>

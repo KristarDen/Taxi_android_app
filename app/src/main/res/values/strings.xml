@@ -19,4 +19,6 @@
 
     <string name="log_or_reg">Or</string>
     <string name="logIn">Login</string>
+
+    <string name="login_Btn">Login</string>
 </resources>

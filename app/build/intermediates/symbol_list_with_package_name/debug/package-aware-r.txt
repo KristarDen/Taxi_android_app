@@ -2773,6 +2773,8 @@ id linear
 id listMode
 id list_item
 id load_icon
+id loginButton
+id loginLabel
 id login_or_regist_label
 id masked
 id match_constraint
@@ -3106,6 +3108,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login
 layout activity_login_or_register
 layout activity_start_screen
 layout custom_dialog
@@ -3252,6 +3255,7 @@ string item_view_role_description
 string last_name
 string logIn
 string log_or_reg
+string login_Btn
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

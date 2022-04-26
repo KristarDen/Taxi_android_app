@@ -14,6 +14,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.codepath.asynchttpclient.AsyncHttpClient;
+import com.codepath.asynchttpclient.RequestParams;
+
 public class RegisterActivity extends AppCompatActivity {
 
     boolean isEmailCheck = false;
@@ -21,6 +24,10 @@ public class RegisterActivity extends AppCompatActivity {
     boolean isFirstNameCheck = false;
     boolean isLastNameCheck = false;
     boolean isPasswordCheck = false;
+
+    String url = "http://localhost:5000/api/auth/register";
+    AsyncHttpClient client = new AsyncHttpClient();
+    RequestParams params = new RequestParams();
 
 
     private EditText email_form;
@@ -199,7 +206,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     void Register_click (View v){
         Toast toast = Toast.makeText(this, "Register click",Toast.LENGTH_LONG);
-        toast.show();
+
+
     }
 
     void Register_check(){
@@ -215,5 +223,8 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
+    private void SendRegForm(){
+
+    }
 
 }

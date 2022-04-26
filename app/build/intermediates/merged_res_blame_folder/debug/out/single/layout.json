@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_start_screen.xml",
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_start_screen.xml"
     },
