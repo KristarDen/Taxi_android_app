@@ -14,6 +14,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
+
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 
 public class Network {
@@ -25,11 +27,12 @@ public class Network {
 
         try {
             URL url=new URL(path);
-            byte[] postDataBytes = AES256.encrypt(jsonData.toString()).getBytes("UTF-8");
+            String data = AES256.encrypt(jsonData.toString());
+            byte[] postDataBytes = data.getBytes(StandardCharsets.UTF_8);
 
             conn = (HttpURLConnection)url.openConnection();
             conn.setRequestMethod("POST");
-            conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            conn.setRequestProperty("Content-Type", "application/json");
             conn.setRequestProperty("Content-Length", String.valueOf(postDataBytes.length));
             conn.setDoOutput(true);
             conn.getOutputStream().write(postDataBytes);

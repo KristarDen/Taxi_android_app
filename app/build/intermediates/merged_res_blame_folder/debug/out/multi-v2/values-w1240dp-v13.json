@@ -6,18 +6,18 @@
                 {
                     "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "1",
-                        "startOffsets": "13",
-                        "endColumns": "55",
-                        "endOffsets": "67"
+                        "startLines": "1,2",
+                        "startColumns": "1,4",
+                        "startOffsets": "13,72",
+                        "endColumns": "55,42",
+                        "endOffsets": "67,110"
                     },
                     "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "58",
-                        "endOffsets": "109"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,42",
+                        "endOffsets": "109,152"
                     }
                 }
             ]
