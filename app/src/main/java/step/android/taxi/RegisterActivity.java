@@ -2,6 +2,7 @@ package step.android.taxi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,11 +14,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import com.google.gson.Gson;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
 
 public class RegisterActivity extends AppCompatActivity {
+    Gson gson = new Gson();
+
+    private final String register_url = "http://94.158.152.83:5000/register";
 
     boolean isEmailCheck = false;
     boolean isPhoneCheck = false;
@@ -206,6 +211,22 @@ public class RegisterActivity extends AppCompatActivity {
 
     void Register_click (View v){
         Toast toast = Toast.makeText(this, "Register click",Toast.LENGTH_LONG);
+        RegisterFormData newUser = new RegisterFormData();
+
+        newUser.phone = phone_form.getText().toString();
+        newUser.email = email_form.getText().toString();
+        newUser.name = first_name.getText().toString();
+        newUser.surname = last_name.getText().toString();
+        newUser.password = pass_form.getText().toString();
+
+        try { 
+            Toast.makeText(this,
+                    Network.Post( register_url ,gson.toJson( newUser ))
+                    ,Toast.LENGTH_LONG);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }
