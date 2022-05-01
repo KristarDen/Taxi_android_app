@@ -1,12 +1,12 @@
-#Sun May 01 11:44:21 EEST 2022
+#Sun May 01 21:19:55 EEST 2022
 path.3=6/classes.dex
 path.2=12/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.3=C\:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.2=C\:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.1=C\:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.3=C\:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.2=C\:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.1=C\:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_start_screen.xml",
-        "source": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\src\\main\\res\\layout\\activity_start_screen.xml"
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\registration_activity.xml",
-        "source": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\src\\main\\res\\layout\\registration_activity.xml"
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_start_screen.xml",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_start_screen.xml"
     },
     {
-        "merged": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
-        "source": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\registration_activity.xml",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\registration_activity.xml"
     },
     {
-        "merged": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_or_register.xml",
-        "source": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\src\\main\\res\\layout\\activity_login_or_register.xml"
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_or_register.xml",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_login_or_register.xml"
     }
 ]

@@ -211,6 +211,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     void Register_click (View v){
         Toast toast = Toast.makeText(this, "Register click",Toast.LENGTH_LONG);
+        toast.show();
         RegisterFormData newUser = new RegisterFormData();
 
         newUser.phone = phone_form.getText().toString();
@@ -219,8 +220,9 @@ public class RegisterActivity extends AppCompatActivity {
         newUser.surname = last_name.getText().toString();
         newUser.password = pass_form.getText().toString();
 
+
         try {
-           new Thread (Network.Post( register_url ,gson.toJson( newUser ))).run();
+            new Thread (Network.Post( register_url ,gson.toJson( newUser ))).run();
 
         } catch (IOException e) {
             e.printStackTrace();

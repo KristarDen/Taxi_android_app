@@ -4,7 +4,9 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
+import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URI;
@@ -22,40 +24,58 @@ public class Network {
 
     public static String Post(String path, String jsonData) throws IOException {
 
-        Reader input = null;
-        HttpURLConnection conn = null;
+        String mess = AES256.textToBase64(jsonData);
+        byte[] out =  mess.getBytes();
+        URL url;
+        HttpURLConnection httpURLConnection = null;
+        OutputStream os = null;
+        InputStreamReader isR = null;
+        BufferedReader bfR = null;
+        StringBuilder sb = new StringBuilder();
+
 
         try {
-            URL url=new URL(path);
-            String data = AES256.encrypt(jsonData.toString());
-            byte[] postDataBytes = data.getBytes(StandardCharsets.UTF_8);
+            url = new URL(path);
+            httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.setRequestMethod("POST");
+            httpURLConnection.setDoOutput(true);
+            httpURLConnection.setDoInput(true);
 
-            conn = (HttpURLConnection)url.openConnection();
-            conn.setRequestMethod("POST");
-            conn.setRequestProperty("Content-Type", "application/json");
-            conn.setRequestProperty("Content-Length", String.valueOf(postDataBytes.length));
-            conn.setDoOutput(true);
-            conn.getOutputStream().write(postDataBytes);
+            httpURLConnection.addRequestProperty("Content-Type", "application/json");
 
-            input = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8"));
+            httpURLConnection.setConnectTimeout(200);
+            httpURLConnection.setReadTimeout(200);
+            httpURLConnection.connect();
+            try {
+                os = httpURLConnection.getOutputStream();
+                os.write(out);
 
-            StringBuilder sb = new StringBuilder();
+            } catch (Exception e) {
 
-            for (int c; (c = input.read()) >= 0;){
-                sb.append((char)c);
+            }
+            if (HttpURLConnection.HTTP_OK == httpURLConnection.getResponseCode()) {
+                isR = new InputStreamReader((httpURLConnection.getInputStream()));
+                bfR = new BufferedReader(isR);
+                String line;
+                while ((line = bfR.readLine()) != null) {
+                    sb.append(line);
+                }
             }
 
-            String response = sb.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            if (isR != null) {
+                isR.close();
+            }
 
-            return(response);
+        } finally {
+            isR.close();
+            bfR.close();
+            os.close();
         }
-        finally {
-            if (input != null) {
-                input.close();
-            }
-            if (conn != null) {
-                conn.disconnect();
-            }
-        }
+
+
+        return sb.toString();
+
     }
 }
