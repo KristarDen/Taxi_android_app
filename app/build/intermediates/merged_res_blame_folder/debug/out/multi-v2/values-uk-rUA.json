@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk-rUA\\values-uk-rUA.xml",
+            "outputFile": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk-rUA\\values-uk-rUA.xml",
             "map": [
                 {
-                    "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\values-uk-rUA\\strings.xml",
+                    "source": "C:\\Projects\\Step\\AndroidStudio\\Taxi\\app\\src\\main\\res\\values-uk-rUA\\strings.xml",
                     "from": {
                         "startLines": "3,10,4,12,11,14,5,6,9,2,8,7,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",

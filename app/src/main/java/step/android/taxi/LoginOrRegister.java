@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-
+import android.widget.Toast;
 
 
 public class LoginOrRegister extends AppCompatActivity {
@@ -20,6 +20,10 @@ public class LoginOrRegister extends AppCompatActivity {
         getSupportActionBar().hide();
         findViewById( R.id.chooseRegister ).setOnClickListener( this::Register_click ) ;
         findViewById( R.id.chooseLogin ).setOnClickListener( this::Login_click ) ;
+
+        String enc = AES256.textToBase64("Hello, World!") ;
+        String dec = AES256.base64ToText( enc ) ;
+        Toast.makeText(this, enc + "\n" + dec, Toast.LENGTH_SHORT).show();
     }
     void Register_click (View v){
             startActivity(

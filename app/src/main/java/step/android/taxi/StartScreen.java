@@ -8,6 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import step.android.taxi.User;
 
@@ -42,5 +43,7 @@ public class StartScreen extends AppCompatActivity {
                                LoginOrRegister.class ) ) ;
             }, 2000);
         }
+
+
     }
 }
