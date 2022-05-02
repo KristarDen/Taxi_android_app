@@ -22,7 +22,7 @@ import com.codepath.asynchttpclient.RequestParams;
 public class RegisterActivity extends AppCompatActivity {
     Gson gson = new Gson();
 
-    private final String register_url = "http://94.158.152.83:5000/register";
+    private final String register_url = "http://94.158.152.83:5000/api/auth/register/";
 
     boolean isEmailCheck = false;
     boolean isPhoneCheck = false;
@@ -221,12 +221,13 @@ public class RegisterActivity extends AppCompatActivity {
         newUser.password = pass_form.getText().toString();
 
 
-        try {
-            new Thread (Network.Post( register_url ,gson.toJson( newUser ))).run();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        new Thread (()->{
+            try {
+                Network.Post( register_url ,gson.toJson( newUser ));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
 
 
     }

@@ -6,6 +6,7 @@ import android.util.Log;
 import androidx.annotation.RequiresApi;
 
 import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
@@ -13,19 +14,20 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
+import java.security.GeneralSecurityException;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.KeySpec;
 import java.util.Base64;
 
 public class AES256 {
-    private static final String SECRET_KEY = "EtoNashDipl";
-    private static final String SALT = "KakayatoSol";
+    private static final String SECRET_KEY = "25CzkNUT246tk864Pbc3YNm32uPuNxkL";
+    private static final String SALT = "EcVg26683KH3F7dNuDps677jg3bUVUuj";
 
     private static final SecretKeySpec API_KEY = new SecretKeySpec(
-            "Exactly 32 symbols for password!".getBytes( StandardCharsets.UTF_8 ),
+            SECRET_KEY.getBytes( StandardCharsets.UTF_8 ),
             "AES" ) ;
     private static final IvParameterSpec API_IV = new IvParameterSpec(
-            new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+            "1234567890ABCDEF".getBytes()
     );
 
     @SuppressLint("NewApi")
@@ -100,5 +102,22 @@ public class AES256 {
             Log.e( "AES256-base64ToText", ex.getMessage() ) ;
         }
         return null ;
+    }
+
+    public static String Decrypt(String value)
+            throws GeneralSecurityException {
+        try {
+            IvParameterSpec Iv = new IvParameterSpec(SALT.getBytes("UTF-8"));
+            SecretKeySpec skeySpec = new SecretKeySpec(SECRET_KEY.getBytes("UTF-8"), "AES");
+
+            Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+            cipher.init(Cipher.ENCRYPT_MODE, skeySpec, Iv);
+
+            byte[] encrypted = cipher.doFinal(value.getBytes());
+            //return Base64.encodeToString(encrypted, Base64.DEFAULT);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 }
