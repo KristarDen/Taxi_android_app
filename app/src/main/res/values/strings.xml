@@ -35,4 +35,6 @@
     <string name="menu_gallery" translatable="false">Gallery</string>
     <string name="menu_slideshow" translatable="false">Slideshow</string>
     <string name="title_activity_main_screen" translatable="false">MainScreen</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="user_location_title">your location</string>
 </resources>

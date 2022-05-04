@@ -10,90 +10,180 @@
 9        android:targetSdkVersion="31" />
 9-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:5:22-64
-12
-13    <application
-13-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:7:5-34:19
-14        android:allowBackup="true"
-14-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:8:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:extractNativeLibs="false"
-18        android:hardwareAccelerated="true"
-18-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:15:9-43
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:9:9-43
-20        android:label="@string/app_name"
-20-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:10:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:11:9-54
-22        android:supportsRtl="true"
-22-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:12:9-35
-23        android:testOnly="true"
-24        android:theme="@style/Theme.Taxi"
-24-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:13:9-42
-25        android:usesCleartextTraffic="true" >
-25-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:14:9-44
-26        <activity
-26-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:16:9-18:40
-27            android:name="step.android.taxi.LoginActivity"
-27-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:17:13-42
-28            android:exported="false" />
-28-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:18:13-37
-29        <activity
-29-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:19:9-21:40
-30            android:name="step.android.taxi.LoginOrRegister"
-30-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:20:13-44
-31            android:exported="false" />
-31-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:21:13-37
-32        <activity
-32-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:22:9-30:20
-33            android:name="step.android.taxi.StartScreen"
-33-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:23:13-40
-34            android:exported="true" >
-34-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:24:13-36
-35            <intent-filter>
-35-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:25:13-29:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:26:17-69
-36-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:26:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:28:17-77
-38-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:28:27-74
-39            </intent-filter>
-40        </activity>
-41        <activity
-41-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:31:9-33:38
-42            android:name="step.android.taxi.RegisterActivity"
-42-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:32:13-45
-43            android:exported="true" />
-43-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:33:13-36
-44
-45        <provider
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-46            android:name="androidx.startup.InitializationProvider"
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-47            android:authorities="step.android.taxi.androidx-startup"
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-48            android:exported="false" >
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-49            <meta-data
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-51                android:value="androidx.startup" />
-51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-52            <meta-data
-52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-54                android:value="androidx.startup" />
-54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-55        </provider>
-56    </application>
-57
-58</manifest>
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the "MyLocation" functionality.
+15    -->
+16
+17
+18    <!--
+19         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+20         Google Maps Android API v2, but you must specify either coarse or fine
+21         location permissions for the "MyLocation" functionality.
+22    -->
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:17:5-67
+23-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:17:22-64
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:19:5-79
+24-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:19:22-76
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:20:5-81
+25-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:20:22-78
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+26-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:21:5-78
+26-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:21:22-76
+27    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+27-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:22:5-80
+27-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:22:22-78
+28    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+28-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:23:5-98
+28-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:23:22-95
+29
+30    <uses-feature
+30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+31        android:glEsVersion="0x00020000"
+31-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+32        android:required="true" />
+32-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+33
+34    <queries>
+34-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+35
+36        <!-- Needs to be explicitly declared on Android R+ -->
+37        <package android:name="com.google.android.apps.maps" />
+37-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+37-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+38    </queries>
+39
+40    <application
+40-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:25:5-69:19
+41        android:allowBackup="true"
+41-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:26:9-35
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+43        android:debuggable="true"
+44        android:extractNativeLibs="false"
+45        android:hardwareAccelerated="true"
+45-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:27:9-43
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:28:9-43
+47        android:label="@string/app_name"
+47-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:29:9-41
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:30:9-54
+49        android:supportsRtl="true"
+49-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:31:9-35
+50        android:testOnly="true"
+51        android:theme="@style/Theme.Taxi"
+51-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:32:9-42
+52        android:usesCleartextTraffic="true" >
+52-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:33:9-44
+53
+54        <!--
+55             The API key for Google Maps-based APIs is defined as a string resource.
+56             (See the file "res/values/google_maps_api.xml").
+57             Note that the API key is linked to the encryption key used to sign the APK.
+58             You need a different API key for each encryption key, including the release key that is used to
+59             sign the APK for publishing.
+60             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+61        -->
+62        <meta-data
+62-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:43:9-45:55
+63            android:name="com.google.android.geo.API_KEY"
+63-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:44:13-58
+64            android:value="@string/google_maps_key" />
+64-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:45:13-52
+65
+66        <activity
+66-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:47:9-50:59
+67            android:name="step.android.taxi.MapsActivity"
+67-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:48:13-41
+68            android:exported="false"
+68-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:49:13-37
+69            android:label="@string/title_activity_maps" />
+69-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:50:13-56
+70        <activity
+70-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:51:9-53:40
+71            android:name="step.android.taxi.LoginActivity"
+71-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:52:13-42
+72            android:exported="false" />
+72-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:53:13-37
+73        <activity
+73-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:54:9-56:40
+74            android:name="step.android.taxi.LoginOrRegister"
+74-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:55:13-44
+75            android:exported="false" />
+75-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:56:13-37
+76        <activity
+76-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:57:9-65:20
+77            android:name="step.android.taxi.StartScreen"
+77-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:58:13-40
+78            android:exported="true" >
+78-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:59:13-36
+79            <intent-filter>
+79-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:60:13-64:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:61:17-69
+80-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:61:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:63:17-77
+82-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:63:27-74
+83            </intent-filter>
+84        </activity>
+85        <activity
+85-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:66:9-68:39
+86            android:name="step.android.taxi.RegisterActivity"
+86-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:67:13-45
+87            android:exported="true" />
+87-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:68:13-36
+88        <!-- Needs to be explicitly declared on P+ -->
+89        <uses-library
+89-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+90            android:name="org.apache.http.legacy"
+90-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+91            android:required="false" />
+91-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+92
+93        <activity
+93-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+94            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+94-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+95            android:exported="false"
+95-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+96-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+97
+98        <meta-data
+98-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+99            android:name="com.google.android.gms.version"
+99-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+100            android:value="@integer/google_play_services_version" />
+100-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+101
+102        <provider
+102-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+103            android:name="androidx.startup.InitializationProvider"
+103-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+104            android:authorities="step.android.taxi.androidx-startup"
+104-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+105            android:exported="false" >
+105-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+106            <meta-data
+106-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+107                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+107-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+108                android:value="androidx.startup" />
+108-->[androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+109            <meta-data
+109-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+110                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+110-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+111                android:value="androidx.startup" />
+111-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+112        </provider>
+113    </application>
+114
+115</manifest>

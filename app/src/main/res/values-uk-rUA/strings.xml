@@ -13,4 +13,5 @@
     <string name="logIn">Вхід</string>
     <string name="second_name_Hint">прізвище</string>
     <string name="login_Btn">Увійти</string>
+    <string name="user_location_title">ваше місцезнаходження</string>
 </resources>

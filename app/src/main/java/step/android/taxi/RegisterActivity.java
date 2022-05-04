@@ -221,13 +221,24 @@ public class RegisterActivity extends AppCompatActivity {
         newUser.password = pass_form.getText().toString();
 
 
-        new Thread (()->{
+        Thread Send = new Thread (()->{
             try {
                 Network.Post( register_url ,gson.toJson( newUser ));
-            } catch (IOException e) {
-                e.printStackTrace();
+                this.startActivity(
+                        new Intent(
+                                this,
+                                MapsActivity.class ) ) ;
+            } catch (Exception e) {
+                //Toast.makeText(this, e.getMessage(),Toast.LENGTH_LONG).show();
+                 this.startActivity(
+                        new Intent(
+                                this,
+                                MapsActivity.class ) ) ;
             }
-        }).start();
+        });
+        Send.start();
+
+
 
 
     }
