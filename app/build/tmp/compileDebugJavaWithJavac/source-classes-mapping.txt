@@ -37,4 +37,6 @@ step/android/taxi/RegisterActivity.java
 step/android/taxi/MapsActivity.java
  step.android.taxi.MapsActivity
  step.android.taxi.MapsActivity$1
+ step.android.taxi.MapsActivity$2
+ step.android.taxi.MapsActivity$3
  step.android.taxi.MapsActivity$UserLocation

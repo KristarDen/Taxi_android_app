@@ -3487,6 +3487,7 @@ int string nav_header_subtitle 0x7f11009f
 int string nav_header_title 0x7f1100a0
 int string navigation_drawer_close 0x7f1100a1
 int string navigation_drawer_open 0x7f1100a2
+int string ok 0x7f1100b6
 int string pass 0x7f1100a3
 int string pass_confirm 0x7f1100a4
 int string password_toggle_content_description 0x7f1100a5
@@ -3502,9 +3503,11 @@ int string registration_label 0x7f1100ae
 int string search_menu_title 0x7f1100af
 int string second_name_Hint 0x7f1100b0
 int string status_bar_notification_info_overflow 0x7f1100b1
+int string text_location_permission 0x7f1100b7
 int string title_activity_main 0x7f1100b2
 int string title_activity_main_screen 0x7f1100b3
 int string title_activity_maps 0x7f1100b4
+int string title_location_permission 0x7f1100b8
 int string user_location_title 0x7f1100b5
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001

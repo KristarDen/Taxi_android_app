@@ -37,4 +37,7 @@
     <string name="title_activity_main_screen" translatable="false">MainScreen</string>
     <string name="title_activity_maps" translatable="false">MapsActivity</string>
     <string name="user_location_title">your location</string>
+    <string name="title_location_permission">Location Access</string>
+    <string name="text_location_permission">The application requires access to the location</string>
+    <string name="ok">Ok</string>
 </resources>
