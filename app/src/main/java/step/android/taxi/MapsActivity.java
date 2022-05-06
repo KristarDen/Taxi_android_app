@@ -29,7 +29,8 @@ import java.util.Map;
 
 import step.android.taxi.databinding.ActivityMapsBinding;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity
+        implements OnMapReadyCallback, LocationListener {
     LocationManager locationManager;
 
     private GoogleMap mMap;
@@ -38,7 +39,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LatLng UserPosition;
     private Context mContext;
 
-    LocationListener locationListener = new UserLocation();
+    //LocationListener locationListener = new UserLocation();
 
 
     @Override
@@ -48,7 +49,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        locationListener = new UserLocation();
+        //locationListener = new UserLocation();
         UserMarker = new MarkerOptions();
 
 
@@ -60,10 +61,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 != PackageManager.PERMISSION_GRANTED) {
 
         }
-        locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, locationListener);
-        isLocationEnabled();
 
+        locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 100, 10, this);
+
+        isLocationEnabled();
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -81,37 +83,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    private class UserLocation implements LocationListener {
+    @Override
+    public void onLocationChanged(@NonNull Location location) {
+        UserPosition = new LatLng (location.getLatitude(),location.getLongitude());
+        UserMarker.position(UserPosition);
 
-        @Override
-        public void onLocationChanged(@NonNull Location location) {
-            UserPosition = new LatLng (location.getLatitude(),location.getLongitude());
-            UserMarker.position(UserPosition);
-
-            mMap.addMarker(UserMarker);
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
-        }
-
-        @Override
-        public void onLocationChanged(@NonNull List<Location> locations) {
-
-        }
-
-        @Override
-        public void onFlushComplete(int requestCode) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(@NonNull String provider) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(@NonNull String provider) {
-
-        }
+        mMap.addMarker(UserMarker);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
     }
+
+    @Override
+    public void onLocationChanged(@NonNull List<Location> locations) {
+
+    }
+
+    @Override
+    public void onFlushComplete(int requestCode) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(@NonNull String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(@NonNull String provider) {
+
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
+
 
 
     protected void onResume(){

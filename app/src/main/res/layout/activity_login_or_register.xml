@@ -51,5 +51,18 @@
             app:backgroundTint="@null">
 
         </Button>
+
+        <Button
+            android:id="@+id/goMap"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_confirm"
+            android:padding="10dp"
+            android:text="G map"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2829,6 +2829,7 @@ int id fragment_container_view_tag 0x7f0900ca
 int id frost 0x7f0900cc
 int id ghost_view 0x7f0900cd
 int id ghost_view_holder 0x7f0900ce
+int id goMap 0x7f090203
 int id gone 0x7f0900cf
 int id graph 0x7f0900d0
 int id graph_wrap 0x7f0900d1

@@ -20,6 +20,7 @@ public class LoginOrRegister extends AppCompatActivity {
         getSupportActionBar().hide();
         findViewById( R.id.chooseRegister ).setOnClickListener( this::Register_click ) ;
         findViewById( R.id.chooseLogin ).setOnClickListener( this::Login_click ) ;
+        findViewById( R.id.goMap ).setOnClickListener( this::Map_click ) ;
 
         //String enc = AES256.textToBase64("Hello, World!") ;
         //String dec = AES256.base64ToText( enc ) ;
@@ -36,5 +37,11 @@ public class LoginOrRegister extends AppCompatActivity {
                 new Intent(
                         this,
                         LoginActivity.class ) ) ;
+    }
+    void Map_click (View v){
+        startActivity(
+                new Intent(
+                        this,
+                        MapsActivity.class ) ) ;
     }
 }
