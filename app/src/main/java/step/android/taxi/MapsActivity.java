@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
+import android.widget.Toast;
 
 import android.Manifest;
 import android.content.Context;
@@ -16,12 +17,14 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
@@ -30,12 +33,14 @@ import java.util.Map;
 import step.android.taxi.databinding.ActivityMapsBinding;
 
 public class MapsActivity extends FragmentActivity
-        implements OnMapReadyCallback, LocationListener {
+        implements OnMapReadyCallback {
     LocationManager locationManager;
+    Location location ;
 
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
-    private MarkerOptions UserMarker;
+    //private MarkerOptions UserMarker;
+    private Marker UserMarker;
     private LatLng UserPosition;
     private Context mContext;
 
@@ -49,21 +54,54 @@ public class MapsActivity extends FragmentActivity
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+
         //locationListener = new UserLocation();
-        UserMarker = new MarkerOptions();
 
-
-
-
+        //Настройка отслеживания местоположения пользователя
+        locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
+                != PackageManager.PERMISSION_GRANTED)
+        {
 
         }
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10, 10, new LocationListener() {
+            @Override
+            public void onLocationChanged(@NonNull Location location) {
 
-        locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 100, 10, this);
+                UserPosition = new LatLng (location.getLatitude(),location.getLongitude());
+
+                if(UserMarker != null){
+                    UserMarker.setPosition(UserPosition);
+                }else {
+                    UserMarker = mMap.addMarker( new MarkerOptions()
+                        .position(UserPosition));
+                }
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
+                mMap.setMinZoomPreference(14);
+
+                Toast toast = Toast.makeText(mContext,"" + location.getLatitude() + " : " + location.getLongitude()   ,Toast.LENGTH_LONG );
+                toast.show();
+            }
+            @Override
+            public void onProviderEnabled(@NonNull String provider) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(@NonNull String provider) {
+
+            }
+
+            @Override
+            public void onStatusChanged(String provider, int status, Bundle extras) {
+
+            }
+        });
+
+
 
         isLocationEnabled();
 
@@ -76,41 +114,10 @@ public class MapsActivity extends FragmentActivity
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
-        // Add a marker in Sydney and move the camera
-        //LatLng sydney = new LatLng(-34, 151);
-
-
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
     }
 
-    @Override
-    public void onLocationChanged(@NonNull Location location) {
-        UserPosition = new LatLng (location.getLatitude(),location.getLongitude());
-        UserMarker.position(UserPosition);
 
-        mMap.addMarker(UserMarker);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
-    }
-
-    @Override
-    public void onLocationChanged(@NonNull List<Location> locations) {
-
-    }
-
-    @Override
-    public void onFlushComplete(int requestCode) {
-
-    }
-
-    @Override
-    public void onProviderEnabled(@NonNull String provider) {
-
-    }
-
-    @Override
-    public void onProviderDisabled(@NonNull String provider) {
-
-    }
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {

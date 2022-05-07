@@ -6,6 +6,24 @@ step/android/taxi/User.java
  step.android.taxi.User
 step/android/taxi/databinding/ActivityStartScreenBinding.java
  step.android.taxi.databinding.ActivityStartScreenBinding
+step/android/taxi/AES256.java
+ step.android.taxi.AES256
+step/android/taxi/databinding/ActivityLoginBinding.java
+ step.android.taxi.databinding.ActivityLoginBinding
+step/android/taxi/databinding/ActivityLoginOrRegisterBinding.java
+ step.android.taxi.databinding.ActivityLoginOrRegisterBinding
+step/android/taxi/RegisterFormData.java
+ step.android.taxi.RegisterFormData
+step/android/taxi/databinding/ActivityMapsBinding.java
+ step.android.taxi.databinding.ActivityMapsBinding
+step/android/taxi/LoginActivity.java
+ step.android.taxi.LoginActivity
+ step.android.taxi.LoginActivity$1
+ step.android.taxi.LoginActivity$2
+step/android/taxi/StartScreen.java
+ step.android.taxi.StartScreen
+step/android/taxi/databinding/RegistrationActivityBinding.java
+ step.android.taxi.databinding.RegistrationActivityBinding
 step/android/taxi/RegisterActivity.java
  step.android.taxi.RegisterActivity
  step.android.taxi.RegisterActivity$1
@@ -16,26 +34,9 @@ step/android/taxi/RegisterActivity.java
  step.android.taxi.RegisterActivity$6
 step/android/taxi/LoginOrRegister.java
  step.android.taxi.LoginOrRegister
-step/android/taxi/databinding/ActivityLoginOrRegisterBinding.java
- step.android.taxi.databinding.ActivityLoginOrRegisterBinding
-step/android/taxi/RegisterFormData.java
- step.android.taxi.RegisterFormData
-step/android/taxi/databinding/ActivityMapsBinding.java
- step.android.taxi.databinding.ActivityMapsBinding
 step/android/taxi/MapsActivity.java
  step.android.taxi.MapsActivity
  step.android.taxi.MapsActivity$1
  step.android.taxi.MapsActivity$2
  step.android.taxi.MapsActivity$3
-step/android/taxi/StartScreen.java
- step.android.taxi.StartScreen
-step/android/taxi/databinding/RegistrationActivityBinding.java
- step.android.taxi.databinding.RegistrationActivityBinding
-step/android/taxi/LoginActivity.java
- step.android.taxi.LoginActivity
- step.android.taxi.LoginActivity$1
- step.android.taxi.LoginActivity$2
-step/android/taxi/databinding/ActivityLoginBinding.java
- step.android.taxi.databinding.ActivityLoginBinding
-step/android/taxi/AES256.java
- step.android.taxi.AES256
+ step.android.taxi.MapsActivity$4
