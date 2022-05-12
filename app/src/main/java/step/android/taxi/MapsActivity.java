@@ -3,7 +3,6 @@ package step.android.taxi;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.widget.Toast;
@@ -18,7 +17,6 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,9 +26,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.List;
 import java.util.Locale;
-import java.util.Map;
+import java.util.concurrent.atomic.AtomicReference;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -42,29 +39,34 @@ public class MapsActivity extends FragmentActivity
     LocationManager locationManager;
 
     private GoogleMap mMap;
-    GoogleMap.OnMapClickListener onMapClickListener = new GoogleMap.OnMapClickListener()
-    {
+    final GoogleMap.OnMapClickListener onMapClickListener = new GoogleMap.OnMapClickListener() {
         @Override
-        public void onMapClick(LatLng arg0)
-        {
-           new Thread(new Runnable() {
-                       @Override
-                       public void run() {
+        public void onMapClick(LatLng arg0) {
+            AtomicReference<String> title = new AtomicReference<>("");
+            try {
+              Thread getPlaceInfo = new Thread(()->{
+                  title.set(GMapApi.FindPlaceByLatLan(arg0, Locale.getDefault().getLanguage()));
 
-                           String title = GMapApi.FindPlaceByLatLan(arg0, Locale.getDefault().getLanguage());
-                           mMap.addMarker(new MarkerOptions().position(arg0)
-                                   .title(title));
-                           Toast toast = Toast.makeText(getApplicationContext(),
-                                   "" + title, Toast.LENGTH_SHORT);
-                           toast.show();
-                       }
-                           }).start();
+              });
+              getPlaceInfo.start();
+              getPlaceInfo.join();
+                mMap.addMarker(
+                        new MarkerOptions().position(arg0)
+                        .title(title.get())
+                );
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "" + title, Toast.LENGTH_SHORT);
+                toast.show();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
         }
     };
     private ActivityMapsBinding binding;
     //private MarkerOptions UserMarker;
     private Marker UserMarker;
+    private Marker DestinationMarker;
     private LatLng UserPosition;
     private Context mContext;
 
@@ -168,28 +170,6 @@ public class MapsActivity extends FragmentActivity
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
-
-    private void drawRoute(){
-
-    }
-
-    private void findPlace(LatLng coord){
-
-        OkHttpClient client = new OkHttpClient().newBuilder()
-                .build();
-        Request request = new Request.Builder()
-                .url("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%2B16502530000&inputtype=phonenumber&key=" + "")
-                .method("GET", null)
-                .build();
-        try {
-            Response response = client.newCall(request).execute();
-
-        } catch (Exception ex){
-
-        }
-
-    }
-
 
 
     protected void onResume(){
