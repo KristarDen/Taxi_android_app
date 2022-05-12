@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
+
 import android.widget.Toast;
 
 import android.Manifest;
@@ -28,16 +29,39 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import step.android.taxi.databinding.ActivityMapsBinding;
 
 public class MapsActivity extends FragmentActivity
         implements OnMapReadyCallback {
     LocationManager locationManager;
-    Location location ;
 
     private GoogleMap mMap;
+    GoogleMap.OnMapClickListener onMapClickListener = new GoogleMap.OnMapClickListener()
+    {
+        @Override
+        public void onMapClick(LatLng arg0)
+        {
+           new Thread(new Runnable() {
+                       @Override
+                       public void run() {
+
+                           String title = GMapApi.FindPlaceByLatLan(arg0, Locale.getDefault().getLanguage());
+                           mMap.addMarker(new MarkerOptions().position(arg0)
+                                   .title(title));
+                           Toast toast = Toast.makeText(getApplicationContext(),
+                                   "" + title, Toast.LENGTH_SHORT);
+                           toast.show();
+                       }
+                           }).start();
+
+        }
+    };
     private ActivityMapsBinding binding;
     //private MarkerOptions UserMarker;
     private Marker UserMarker;
@@ -55,7 +79,6 @@ public class MapsActivity extends FragmentActivity
         setContentView(binding.getRoot());
 
 
-
         //locationListener = new UserLocation();
 
         //Настройка отслеживания местоположения пользователя
@@ -63,28 +86,29 @@ public class MapsActivity extends FragmentActivity
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED)
-        {
+                != PackageManager.PERMISSION_GRANTED) {
 
         }
+        isLocationEnabled();
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10, 10, new LocationListener() {
             @Override
             public void onLocationChanged(@NonNull Location location) {
 
-                UserPosition = new LatLng (location.getLatitude(),location.getLongitude());
+                UserPosition = new LatLng(location.getLatitude(), location.getLongitude());
 
-                if(UserMarker != null){
+                if (UserMarker != null) {
                     UserMarker.setPosition(UserPosition);
-                }else {
-                    UserMarker = mMap.addMarker( new MarkerOptions()
-                        .position(UserPosition));
+                } else {
+                    UserMarker = mMap.addMarker(new MarkerOptions()
+                            .position(UserPosition));
                 }
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
-                mMap.setMinZoomPreference(14);
+                mMap.setMinZoomPreference(12);
 
-                Toast toast = Toast.makeText(mContext,"" + location.getLatitude() + " : " + location.getLongitude()   ,Toast.LENGTH_LONG );
+                Toast toast = Toast.makeText(mContext, "" + location.getLatitude() + " : " + location.getLongitude(), Toast.LENGTH_LONG);
                 toast.show();
             }
+
             @Override
             public void onProviderEnabled(@NonNull String provider) {
 
@@ -103,24 +127,66 @@ public class MapsActivity extends FragmentActivity
 
 
 
-        isLocationEnabled();
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.getUiSettings().setMyLocationButtonEnabled(true);
+
+
+        if (ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            return;
+        }
+        //mMap.setMyLocationEnabled(true);
+        UserMarker = mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(
+                        locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER).getLatitude(),
+                        locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER).getLongitude() )
+                )
+        );
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
+        mMap.setMinZoomPreference(12);
+
+
+        mMap.setOnMapClickListener(onMapClickListener);
+
     }
-
-
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
+
+    private void drawRoute(){
+
+    }
+
+    private void findPlace(LatLng coord){
+
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        Request request = new Request.Builder()
+                .url("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%2B16502530000&inputtype=phonenumber&key=" + "")
+                .method("GET", null)
+                .build();
+        try {
+            Response response = client.newCall(request).execute();
+
+        } catch (Exception ex){
+
+        }
 
     }
 

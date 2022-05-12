@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import android.util.Log;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +21,8 @@ import com.google.gson.Gson;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
+
+import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
     Gson gson = new Gson();
@@ -223,7 +228,13 @@ public class RegisterActivity extends AppCompatActivity {
 
         Thread Send = new Thread (()->{
             try {
-                Network.Post( register_url ,gson.toJson( newUser ));
+                String res;// response from post request
+                res = Network.POST( register_url ,gson.toJson( newUser ));
+
+                JSONObject json = new JSONObject(res);
+                res = json.get("token").toString();
+
+                Log.i("response : ",res);
                 this.startActivity(
                         new Intent(
                                 this,
@@ -256,8 +267,5 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
-    private void SendRegForm(){
-
-    }
 
 }

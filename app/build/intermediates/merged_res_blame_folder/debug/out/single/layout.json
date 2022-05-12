@@ -12,10 +12,6 @@
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_start_screen.xml"
     },
     {
-        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_or_register.xml",
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\layout\\activity_login_or_register.xml"
     },

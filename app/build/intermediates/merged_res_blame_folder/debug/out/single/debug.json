@@ -8,12 +8,12 @@
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_backgroud_gradient.xml.flat",
-        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\drawable\\backgroud_gradient.xml"
-    },
-    {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\menu_activity_main_drawer.xml.flat",
         "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_backgroud_gradient.xml.flat",
+        "source": "C:\\GITs\\Taxi_android_app\\app\\src\\main\\res\\drawable\\backgroud_gradient.xml"
     },
     {
         "merged": "C:\\GITs\\Taxi_android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_side_nav_bar.xml.flat",
