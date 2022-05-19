@@ -13,8 +13,11 @@ import org.json.JSONObject;
 //import org.json.simple.JSONObject;
 //import org.json.simple.parser.JSONParser;
 //import org.json.simple.parser.ParseException;
+import com.google.maps.android.PolyUtil;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -23,6 +26,7 @@ import okhttp3.Response;
 public class GMapApi {
     private static String API_KEY = "AIzaSyBI-kBlkecJTeDRiXkW23wVRn6qFE6JO3Y";
     private static String FIND_PLACE_URL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=%s,%s&key=%s&language=%s";
+    private static String DIRECTION_GET_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%s,%s&destination=%s,%s&key=%s";
 
     private static Gson json = new Gson();
 
@@ -55,5 +59,142 @@ public class GMapApi {
             }
         //return "";
 
+    }
+
+    public static ArrayList<LatLng> GetDirection(LatLng from, LatLng to){
+
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        Request request = new Request.Builder()
+                .url(
+                        String.format( DIRECTION_GET_URL,
+                                from.latitude,
+                                from.longitude,
+                                to.latitude,
+                                to.longitude,
+                                API_KEY )
+                )
+                .method("GET", null)
+                .build();
+        ArrayList<LatLng> coords = null;
+        try {
+
+            Response response = client.newCall(request).execute();
+            coords = new ArrayList<LatLng>();
+
+
+            JSONObject json_resp = new JSONObject(response.body().string());
+            JSONArray routes = json_resp.getJSONArray("routes");
+            JSONObject routes_0 = routes.getJSONObject(0);
+            JSONArray legs = routes_0.getJSONArray("legs");
+            JSONObject legs_0 = legs.getJSONObject(0);
+            JSONArray steps = legs_0.getJSONArray("steps");
+            /*
+            JSONArray steps = new JSONObject(response.body().string())
+                    .getJSONArray("routes")
+                    .getJSONObject(0)
+                    .getJSONArray("legs")
+                    .getJSONObject(0)
+                    .getJSONArray("steps");
+
+             */
+
+            for(int i = 0; i < steps.length(); i++){
+                coords.add(
+                        new LatLng(
+                                steps.getJSONObject(i)
+                                    .getJSONObject("start_location")
+                                    .getDouble("lat"),
+                                steps.getJSONObject(i)
+                                        .getJSONObject("start_location")
+                                        .getDouble("lng")
+                ));
+
+            }
+            return coords;
+
+            /*
+
+             JSONObject json_resp = new JSONObject(response.body().string());
+            JSONArray routes = json_resp.getJSONArray("routes");
+            JSONObject routes_0 = routes.getJSONObject(0);
+            JSONArray legs = routes_0.getJSONArray("legs");
+            JSONObject legs_0 = legs.getJSONObject(0);
+            JSONArray steps = legs_0.getJSONArray("steps");
+             */
+
+
+        } catch (IOException | JSONException ex){
+
+            ex.getMessage();
+        }
+        return coords;
+    }
+
+    public static ArrayList<LatLng>GetDirectionPolPoints(LatLng from, LatLng to) {
+
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        Request request = new Request.Builder()
+                .url(
+                        String.format( DIRECTION_GET_URL,
+                                from.latitude,
+                                from.longitude,
+                                to.latitude,
+                                to.longitude,
+                                API_KEY )
+                )
+                .method("GET", null)
+                .build();
+        ArrayList<LatLng> coords = null;
+        try {
+
+            Response response = client.newCall(request).execute();
+            coords = new ArrayList<LatLng>();
+
+
+            JSONObject json_resp = new JSONObject(response.body().string());
+            JSONArray routes = json_resp.getJSONArray("routes");
+            JSONObject routes_0 = routes.getJSONObject(0);
+            JSONArray legs = routes_0.getJSONArray("legs");
+            JSONObject legs_0 = legs.getJSONObject(0);
+            JSONArray steps = legs_0.getJSONArray("steps");
+            /*
+            JSONArray steps = new JSONObject(response.body().string())
+                    .getJSONArray("routes")
+                    .getJSONObject(0)
+                    .getJSONArray("legs")
+                    .getJSONObject(0)
+                    .getJSONArray("steps");
+
+             */
+
+            for(int i = 0; i < steps.length(); i++){
+                coords.addAll( PolyUtil.decode(
+                        steps.getJSONObject(i)
+                                        .getJSONObject("polyline")
+                                        .getString("points")
+                        ));
+
+            }
+
+            return coords;
+
+            /*
+
+             JSONObject json_resp = new JSONObject(response.body().string());
+            JSONArray routes = json_resp.getJSONArray("routes");
+            JSONObject routes_0 = routes.getJSONObject(0);
+            JSONArray legs = routes_0.getJSONArray("legs");
+            JSONObject legs_0 = legs.getJSONObject(0);
+            JSONArray steps = legs_0.getJSONArray("steps");
+             */
+
+
+        } catch (IOException | JSONException ex){
+
+            ex.getMessage();
+        }
+        return coords;
     }
 }

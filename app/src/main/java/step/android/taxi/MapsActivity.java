@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import android.graphics.Color;
 import android.widget.Toast;
 
 import android.Manifest;
@@ -25,7 +26,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -39,21 +44,34 @@ public class MapsActivity extends FragmentActivity
     LocationManager locationManager;
 
     private GoogleMap mMap;
+
+    // Map onClick
     final GoogleMap.OnMapClickListener onMapClickListener = new GoogleMap.OnMapClickListener() {
         @Override
         public void onMapClick(LatLng arg0) {
+
             AtomicReference<String> title = new AtomicReference<>("");
+            LatLng userPos = UserMarker.getPosition();
+
             try {
               Thread getPlaceInfo = new Thread(()->{
+                  //get info about clicked coordination
                   title.set(GMapApi.FindPlaceByLatLan(arg0, Locale.getDefault().getLanguage()));
 
+                  //get direction to clicked coord
+                  DirectionDotsList.set( GMapApi.GetDirectionPolPoints(userPos, arg0));
               });
+
               getPlaceInfo.start();
               getPlaceInfo.join();
-                mMap.addMarker(
-                        new MarkerOptions().position(arg0)
-                        .title(title.get())
-                );
+
+                if (DestinationMarker != null) {
+                    DestinationMarker.setPosition(arg0);
+                } else {
+                    DestinationMarker = mMap.addMarker(new MarkerOptions()
+                            .position(arg0));
+                }
+                drawDirection(DirectionDotsList.get());
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "" + title, Toast.LENGTH_SHORT);
                 toast.show();
@@ -69,6 +87,9 @@ public class MapsActivity extends FragmentActivity
     private Marker DestinationMarker;
     private LatLng UserPosition;
     private Context mContext;
+    private Polyline Direction;
+
+    private AtomicReference<ArrayList<LatLng>> DirectionDotsList =new AtomicReference<ArrayList<LatLng>>();
 
     //LocationListener locationListener = new UserLocation();
 
@@ -169,6 +190,20 @@ public class MapsActivity extends FragmentActivity
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
+    }
+
+    private void drawDirection( ArrayList<LatLng> Dots){
+        if(Direction != null){
+            Direction.setPoints(Dots);
+        }else {
+            Direction = mMap.addPolyline(new PolylineOptions()
+                    .clickable(true)
+                    .addAll(Dots)
+                    .geodesic(true)
+                    .color(Color.MAGENTA)
+                    .width(15f)
+            );
+        }
     }
 
 
