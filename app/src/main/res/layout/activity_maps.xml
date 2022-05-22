@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity"
-    />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    map:layout_constraintEnd_toStartOf="parent">
+
+
+    <Button
+        android:id="@+id/menu_btn"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_menu_btn"
+        app:backgroundTint="@null"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity">
+
+    </fragment>
+    <fragment
+        android:id="@+id/order_panel"
+        android:name="step.android.taxi.OrderPanelFragment"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OrderPanelFragment"
+        tools:layout="@layout/fragment_order_panel">
+    </fragment>
+
+</FrameLayout>
+

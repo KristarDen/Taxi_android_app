@@ -39,14 +39,15 @@ import okhttp3.Request;
 import okhttp3.Response;
 import step.android.taxi.databinding.ActivityMapsBinding;
 
-public class MapsActivity extends FragmentActivity
-        implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+
     LocationManager locationManager;
 
     private GoogleMap mMap;
 
-    // Map onClick
-    final GoogleMap.OnMapClickListener onMapClickListener = new GoogleMap.OnMapClickListener() {
+    // Map on click listener
+    final GoogleMap.OnMapClickListener onMapClickListener =
+            new GoogleMap.OnMapClickListener() {
         @Override
         public void onMapClick(LatLng arg0) {
 
@@ -81,30 +82,31 @@ public class MapsActivity extends FragmentActivity
 
         }
     };
+
     private ActivityMapsBinding binding;
-    //private MarkerOptions UserMarker;
+
+    //Marker on user current location
     private Marker UserMarker;
+
+    //Marker on destination of user route
     private Marker DestinationMarker;
+
     private LatLng UserPosition;
     private Context mContext;
     private Polyline Direction;
 
-    private AtomicReference<ArrayList<LatLng>> DirectionDotsList =new AtomicReference<ArrayList<LatLng>>();
-
-    //LocationListener locationListener = new UserLocation();
-
+    // Direction dots coordination list for drawing route on the map
+    private AtomicReference<ArrayList<LatLng>> DirectionDotsList = new AtomicReference<ArrayList<LatLng>>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         mContext = this;
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
-        //locationListener = new UserLocation();
-
-        //Настройка отслеживания местоположения пользователя
         locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
@@ -113,7 +115,13 @@ public class MapsActivity extends FragmentActivity
 
         }
         isLocationEnabled();
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10, 10, new LocationListener() {
+
+        //User GPS location listener
+        locationManager.requestLocationUpdates(
+                LocationManager.GPS_PROVIDER,
+                10,
+                10,
+                new LocationListener() {
             @Override
             public void onLocationChanged(@NonNull Location location) {
 
@@ -156,8 +164,6 @@ public class MapsActivity extends FragmentActivity
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-
-
     }
 
     @Override
@@ -187,12 +193,15 @@ public class MapsActivity extends FragmentActivity
 
     }
 
-    @Override
-    public void onPointerCaptureChanged(boolean hasCapture) {
 
-    }
-
+    //Draw direction on map
     private void drawDirection( ArrayList<LatLng> Dots){
+        /*
+            Direction making once, LatLan inside Direction object redefined
+            on every new call of drawDirection and draw new route on map,
+            and clear previous route because route must be only one (for this
+            taxi project)
+         */
         if(Direction != null){
             Direction.setPoints(Dots);
         }else {
@@ -233,6 +242,7 @@ public class MapsActivity extends FragmentActivity
             alert.show();
         }
         else{
+            /*
             AlertDialog.Builder alertDialog=new AlertDialog.Builder(mContext);
             alertDialog.setTitle("Confirm Location");
             alertDialog.setMessage("Your Location is enabled, please enjoy");
@@ -243,6 +253,7 @@ public class MapsActivity extends FragmentActivity
             });
             AlertDialog alert=alertDialog.create();
             alert.show();
+             */
         }
     }
 

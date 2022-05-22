@@ -1,20 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\denis\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:2:1-23:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\e84b042f48f9f14485261c47d99dc9c6\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\denis\.gradle\caches\transforms-3\a33d520c58fa7860ced27355a344e679\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.codepath.libraries:asynchttpclient:2.1.1] C:\Users\denis\.gradle\caches\transforms-3\ecb8353a5959b7123544bc0bbc533c1d\transformed\jetified-asynchttpclient-2.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\denis\.gradle\caches\transforms-3\f8d734a7d44310d84014d6ed621ec293\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\c0d9c1ab0e87542ba382db148d96a3af\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\b22f09835f27489a2aae9ff397dd29be\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\3cb859c1ac0dd29d128e917789be4254\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\denis\.gradle\caches\transforms-3\8a26f2c6a95b8a640b84f0569e12ae20\transformed\jetified-play-services-location-17.1.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\562c8df65d387812ca397f5cc134e1ce\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\denis\.gradle\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\denis\.gradle\caches\transforms-3\ced132bf9fc06842b5819ef6e28ee688\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\31ffc55740be85fccf2a0d0116361165\transformed\navigation-runtime-2.3.5\AndroidManifest.xml:17:1-24:12
@@ -22,6 +26,7 @@ MERGED from [androidx.activity:activity:1.2.4] C:\Users\denis\.gradle\caches\tra
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\denis\.gradle\caches\transforms-3\99af0266dd6e8c54eb33c1aa44a873f5\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\40129cdd0cc6fb43e1431d3a7f860d71\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\1ad7e64fbfa1ec575baaf2daa876363e\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\d5ce58f194e6eb15743ad13effdd09da\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\d2646664f8d9727246d320f24126df9c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -30,10 +35,14 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\denis\.gradl
 MERGED from [androidx.transition:transition:1.3.0] C:\Users\denis\.gradle\caches\transforms-3\a1a1e69281ae7c6c18ca54bfb619027b\transformed\transition-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\70c058259436dcd4c71d85461afd1b6a\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\973d1c6591a02ca84f2ddc5ef5b8076a\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\56d3436542761c87b3a7c38d1c2e3d4f\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\8e916a11daa6e848c25f3a40e996bf6b\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\9c97282722fb613bc8c5f0fb5711e84a\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\6d6e532017af0c907cd34d38d04e17fc\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\d35f0010fbff61dfb15ae12685344215\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\bf20e00f43efe8b3b21a9171a67a5343\transformed\navigation-common-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\5b2b00e982f1215a847329e9d903a511\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\76ce4b0e4d2e7286e97250b1cf6504f3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\58c33f79541fa64793747c2f03ce017d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\denis\.gradle\caches\transforms-3\c1a2bad483f0938ab658856dbf3c7f56\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -41,6 +50,8 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\denis\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] C:\Users\denis\.gradle\caches\transforms-3\64ae697d2c96f7c3bba420dc53e78db1\transformed\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\denis\.gradle\caches\transforms-3\1d20e376c94887dfa0b3a5aa12cd6783\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\1bc1de6a32330280351f65a0393bdf57\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\297743ef38a765569e85995e5d62a64b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
@@ -51,76 +62,100 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] C:\Users\deni
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\denis\.gradle\caches\transforms-3\6e3c93787fdaaf7e4199472c64252016\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\0d7ad5a9bb64a79e832ad9e2795069b5\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\denis\.gradle\caches\transforms-3\72de0627c0c71c2c0ac6e20b5aa28ba3\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\0390fb990f9c7a8850faccb0b6a05f9f\transformed\jetified-stetho-okhttp3-1.5.1\AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\denis\.gradle\caches\transforms-3\adb7154e29202dc9e96cfed76518d314\transformed\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\5dc1b0d68d5be8d395af6b357c3240c1\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\eb3bd80f829817dc46cef00554f9b4ab\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\0390fb990f9c7a8850faccb0b6a05f9f\transformed\jetified-stetho-okhttp3-1.5.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\denis\.gradle\caches\transforms-3\d98d5501cc9f6870cd26207c735e25c7\transformed\jetified-android-maps-utils-0.4.4\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\abd986d958258d7e8503cbe4ed7e75cb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\denis\.gradle\caches\transforms-3\0d9519ea4ebde27f07725f9bcdc1865a\transformed\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\denis\.gradle\caches\transforms-3\d2e0ed09db1111ae836e1de6bd78979f\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
+INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-71:12
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:17:5-67
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:17:22-64
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:14:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:19:5-79
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:15:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:19:22-76
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:15:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:20:5-81
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:20:22-78
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:16:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:21:5-78
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:17:5-79
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:21:22-76
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:22:5-80
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:18:5-81
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:22:22-78
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:18:22-78
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:23:5-98
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:19:5-98
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:23:22-95
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:19:22-95
 application
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:25:5-69:19
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:21:5-64:19
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\denis\.gradle\caches\transforms-3\a33d520c58fa7860ced27355a344e679\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\denis\.gradle\caches\transforms-3\a33d520c58fa7860ced27355a344e679\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\denis\.gradle\caches\transforms-3\8a26f2c6a95b8a640b84f0569e12ae20\transformed\jetified-play-services-location-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\denis\.gradle\caches\transforms-3\8a26f2c6a95b8a640b84f0569e12ae20\transformed\jetified-play-services-location-17.1.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\562c8df65d387812ca397f5cc134e1ce\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\562c8df65d387812ca397f5cc134e1ce\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\denis\.gradle\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\denis\.gradle\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:25:5-39:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
@@ -131,78 +166,82 @@ MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\ca
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\0390fb990f9c7a8850faccb0b6a05f9f\transformed\jetified-stetho-okhttp3-1.5.1\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:11:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\denis\.gradle\caches\transforms-3\d98d5501cc9f6870cd26207c735e25c7\transformed\jetified-android-maps-utils-0.4.4\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\denis\.gradle\caches\transforms-3\d98d5501cc9f6870cd26207c735e25c7\transformed\jetified-android-maps-utils-0.4.4\AndroidManifest.xml:7:5-11:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:31:9-35
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:27:9-35
 	android:label
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:29:9-41
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:25:9-41
 	android:hardwareAccelerated
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:27:9-43
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:23:9-43
 	android:roundIcon
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:30:9-54
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:26:9-54
 	android:icon
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:28:9-43
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:24:9-43
 	android:allowBackup
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:26:9-35
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:22:9-35
 	android:theme
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:32:9-42
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:28:9-42
 	android:usesCleartextTraffic
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:33:9-44
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:29:9-44
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:43:9-45:55
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:38:9-40:55
 	android:value
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:45:13-52
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:40:13-52
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:44:13-58
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:39:13-58
 activity#step.android.taxi.MapsActivity
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:47:9-50:59
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:42:9-45:59
 	android:label
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:50:13-56
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:45:13-56
 	android:exported
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:48:13-41
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:43:13-41
 activity#step.android.taxi.LoginActivity
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:51:9-53:40
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:46:9-48:40
 	android:exported
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:53:13-37
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:48:13-37
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:52:13-42
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:47:13-42
 activity#step.android.taxi.LoginOrRegister
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:54:9-56:40
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:49:9-51:40
 	android:exported
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:56:13-37
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:55:13-44
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:50:13-44
 activity#step.android.taxi.StartScreen
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:57:9-65:20
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:52:9-60:20
 	android:exported
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:59:13-36
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:54:13-36
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:58:13-40
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:53:13-40
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:60:13-64:29
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:55:13-59:29
 action#android.intent.action.MAIN
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:61:17-69
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:56:17-69
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:61:25-66
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:56:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:63:17-77
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:58:17-77
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:63:27-74
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:58:27-74
 activity#step.android.taxi.RegisterActivity
-ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:66:9-68:39
+ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:61:9-63:39
 	android:exported
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:68:13-36
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:63:13-36
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:67:13-45
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:62:13-45
 uses-sdk
 INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\denis\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\denis\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:7:5-44
+MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:7:5-44
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\e84b042f48f9f14485261c47d99dc9c6\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\e84b042f48f9f14485261c47d99dc9c6\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
@@ -213,16 +252,22 @@ MERGED from [com.codepath.libraries:asynchttpclient:2.1.1] C:\Users\denis\.gradl
 MERGED from [com.codepath.libraries:asynchttpclient:2.1.1] C:\Users\denis\.gradle\caches\transforms-3\ecb8353a5959b7123544bc0bbc533c1d\transformed\jetified-asynchttpclient-2.1.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\denis\.gradle\caches\transforms-3\f8d734a7d44310d84014d6ed621ec293\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\denis\.gradle\caches\transforms-3\f8d734a7d44310d84014d6ed621ec293\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\c0d9c1ab0e87542ba382db148d96a3af\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\c0d9c1ab0e87542ba382db148d96a3af\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\b22f09835f27489a2aae9ff397dd29be\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\b22f09835f27489a2aae9ff397dd29be\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\3cb859c1ac0dd29d128e917789be4254\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\3cb859c1ac0dd29d128e917789be4254\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\denis\.gradle\caches\transforms-3\8a26f2c6a95b8a640b84f0569e12ae20\transformed\jetified-play-services-location-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\denis\.gradle\caches\transforms-3\8a26f2c6a95b8a640b84f0569e12ae20\transformed\jetified-play-services-location-17.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\562c8df65d387812ca397f5cc134e1ce\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\562c8df65d387812ca397f5cc134e1ce\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\denis\.gradle\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\denis\.gradle\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\denis\.gradle\caches\transforms-3\ced132bf9fc06842b5819ef6e28ee688\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -237,6 +282,8 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\denis\.gradle\c
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\40129cdd0cc6fb43e1431d3a7f860d71\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\1ad7e64fbfa1ec575baaf2daa876363e\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\1ad7e64fbfa1ec575baaf2daa876363e\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\d5ce58f194e6eb15743ad13effdd09da\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -253,14 +300,22 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\denis\.gradle\caches\t
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\70c058259436dcd4c71d85461afd1b6a\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\973d1c6591a02ca84f2ddc5ef5b8076a\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\973d1c6591a02ca84f2ddc5ef5b8076a\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\56d3436542761c87b3a7c38d1c2e3d4f\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\56d3436542761c87b3a7c38d1c2e3d4f\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\8e916a11daa6e848c25f3a40e996bf6b\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\8e916a11daa6e848c25f3a40e996bf6b\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\9c97282722fb613bc8c5f0fb5711e84a\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\9c97282722fb613bc8c5f0fb5711e84a\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\6d6e532017af0c907cd34d38d04e17fc\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\6d6e532017af0c907cd34d38d04e17fc\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\d35f0010fbff61dfb15ae12685344215\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\d35f0010fbff61dfb15ae12685344215\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\bf20e00f43efe8b3b21a9171a67a5343\transformed\navigation-common-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\bf20e00f43efe8b3b21a9171a67a5343\transformed\navigation-common-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\5b2b00e982f1215a847329e9d903a511\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\5b2b00e982f1215a847329e9d903a511\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\76ce4b0e4d2e7286e97250b1cf6504f3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\76ce4b0e4d2e7286e97250b1cf6504f3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.7.0] C:\Users\denis\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\58c33f79541fa64793747c2f03ce017d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -275,6 +330,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\denis\.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\denis\.gradle\caches\transforms-3\1d20e376c94887dfa0b3a5aa12cd6783\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\1bc1de6a32330280351f65a0393bdf57\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\1bc1de6a32330280351f65a0393bdf57\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
@@ -295,20 +354,28 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\denis\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\0d7ad5a9bb64a79e832ad9e2795069b5\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\denis\.gradle\caches\transforms-3\72de0627c0c71c2c0ac6e20b5aa28ba3\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\denis\.gradle\caches\transforms-3\72de0627c0c71c2c0ac6e20b5aa28ba3\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\0390fb990f9c7a8850faccb0b6a05f9f\transformed\jetified-stetho-okhttp3-1.5.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\0390fb990f9c7a8850faccb0b6a05f9f\transformed\jetified-stetho-okhttp3-1.5.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\denis\.gradle\caches\transforms-3\adb7154e29202dc9e96cfed76518d314\transformed\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\denis\.gradle\caches\transforms-3\adb7154e29202dc9e96cfed76518d314\transformed\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\5dc1b0d68d5be8d395af6b357c3240c1\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\5dc1b0d68d5be8d395af6b357c3240c1\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\eb3bd80f829817dc46cef00554f9b4ab\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\eb3bd80f829817dc46cef00554f9b4ab\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\0390fb990f9c7a8850faccb0b6a05f9f\transformed\jetified-stetho-okhttp3-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\0390fb990f9c7a8850faccb0b6a05f9f\transformed\jetified-stetho-okhttp3-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\denis\.gradle\caches\transforms-3\1f630af781da6d887428e40ab5e4c5a3\transformed\jetified-stetho-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\denis\.gradle\caches\transforms-3\d98d5501cc9f6870cd26207c735e25c7\transformed\jetified-android-maps-utils-0.4.4\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\denis\.gradle\caches\transforms-3\d98d5501cc9f6870cd26207c735e25c7\transformed\jetified-android-maps-utils-0.4.4\AndroidManifest.xml:5:5-43
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\abd986d958258d7e8503cbe4ed7e75cb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\abd986d958258d7e8503cbe4ed7e75cb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\denis\.gradle\caches\transforms-3\0d9519ea4ebde27f07725f9bcdc1865a\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\denis\.gradle\caches\transforms-3\0d9519ea4ebde27f07725f9bcdc1865a\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\denis\.gradle\caches\transforms-3\d2e0ed09db1111ae836e1de6bd78979f\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\denis\.gradle\caches\transforms-3\d2e0ed09db1111ae836e1de6bd78979f\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
 INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -319,6 +386,22 @@ INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
 		INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:10:22-73
+activity#com.google.android.libraries.places.widget.AutocompleteActivity
+ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:14:9-20:20
+	android:label
+		ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:17:13-62
+	android:windowSoftInputMode
+		ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:19:13-55
+	android:exported
+		ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:18:13-61
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:15:13-91
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
@@ -347,6 +430,8 @@ ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gr
 		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\denis\.gradle\caches\transforms-3\7d19f89ad245d9f627f67ffc17dd7e15\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\denis\.gradle\caches\transforms-3\d98d5501cc9f6870cd26207c735e25c7\transformed\jetified-android-maps-utils-0.4.4\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\denis\.gradle\caches\transforms-3\d98d5501cc9f6870cd26207c735e25c7\transformed\jetified-android-maps-utils-0.4.4\AndroidManifest.xml:8:9-10:69
 	android:value
 		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\denis\.gradle\caches\transforms-3\4065ffa9f933b654ef0b655a200e3015\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 	android:name
@@ -371,6 +456,34 @@ ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transfor
 		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\denis\.gradle\caches\transforms-3\13d36f8298bfd5c8597f23e62df9338a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\denis\.gradle\caches\transforms-3\1d860f90d598db7061fff38048b4a8c3\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\denis\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 	android:value

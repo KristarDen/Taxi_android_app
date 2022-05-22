@@ -20,4 +20,6 @@
     <color name="confirmButton_color3">#5934D4</color>
     
     <color name="wrong_Form_color">#B71C1C</color>
+
+    <color name="order_panel_background_color">#21225A</color>
 </resources>

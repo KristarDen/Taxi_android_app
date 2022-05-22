@@ -40,4 +40,8 @@
     <string name="title_location_permission">Location Access</string>
     <string name="text_location_permission">The application requires access to the location</string>
     <string name="ok">Ok</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address_to_hint">Where you go ?</string>
+    <string name="address_from_hint">Where are you going from ?</string>
 </resources>

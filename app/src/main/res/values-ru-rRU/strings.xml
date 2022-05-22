@@ -14,4 +14,6 @@
     <string name="logIn">Вход</string>
     <string name="login_Btn">Войти</string>
     <string name="user_location_title">ваше местоположение</string>
+    <string name="address_to_hint">Куда едем ?</string>
+    <string name="address_from_hint">Откуда едем ?</string>
 </resources>
