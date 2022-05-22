@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
+import java.security.Permission;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -102,19 +103,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
         mContext = this;
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
         locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
+        isLocationEnabled();
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_COARSE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
 
         }
-        isLocationEnabled();
+
 
         //User GPS location listener
         locationManager.requestLocationUpdates(
@@ -256,6 +259,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
              */
         }
     }
+
 
 
 }

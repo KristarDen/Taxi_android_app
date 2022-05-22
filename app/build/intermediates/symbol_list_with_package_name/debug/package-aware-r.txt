@@ -3284,6 +3284,7 @@ id loginButton
 id loginLabel
 id login_or_regist_label
 id map
+id map_screen
 id masked
 id match_constraint
 id match_parent

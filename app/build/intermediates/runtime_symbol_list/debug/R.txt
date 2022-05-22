@@ -3283,6 +3283,7 @@ int id loginButton 0x7f090105
 int id loginLabel 0x7f090106
 int id login_or_regist_label 0x7f090107
 int id map 0x7f090108
+int id map_screen 0x7f090222
 int id masked 0x7f090109
 int id match_constraint 0x7f09010a
 int id match_parent 0x7f09010b
