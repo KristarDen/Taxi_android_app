@@ -14,22 +14,34 @@
         <entry key="..\:/GITs/Taxi_android_app/Taxi/app/src/main/res/layout/activity_start_screen.xml" value="0.33" />
         <entry key="..\:/GITs/Taxi_android_app/Taxi/app/src/main/res/layout/registration_activity.xml" value="0.3625" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/backgroud_gradient.xml" value="0.3203125" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/button_confirm.xml" value="0.3764102564102564" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/form_background.xml" value="0.33055555555555555" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/form_wrong.xml" value="0.3203125" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/ic_addres_icon_pos.xml" value="0.33055555555555555" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/ic_curr_geo_pos.xml" value="0.29270833333333335" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3764102564102564" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/ic_menu_btn.xml" value="0.246875" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3764102564102564" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/ic_zorgologo.xml" value="0.5" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/position_icon.xml" value="0.33055555555555555" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/search_panel.xml" value="0.33055555555555555" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/side_nav_bar.xml" value="0.3764102564102564" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/drawable/zorgologo.xml" value="0.3764102564102564" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/activity_login_or_register.xml" value="0.2759259259259259" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/activity_main.xml" value="0.29322916666666665" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/activity_main_screen.xml" value="0.25" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/activity_maps.xml" value="0.25" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/activity_start_screen.xml" value="0.26851851851851855" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/bottom_sheet.xml" value="0.25" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/fragment_order_panel.xml" value="0.33" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/login.xml" value="0.5357142857142857" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/menu_n_settigs.xml" value="0.2777777777777778" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/navigation_view_header.xml" value="0.2777777777777778" />
         <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/layout/registration_activity.xml" value="0.25" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/menu/activity_main_drawer.xml" value="0.3605128205128205" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/menu/main.xml" value="0.2777777777777778" />
+        <entry key="..\:/GITs/Taxi_android_app/app/src/main/res/menu/menu_navigation_view.xml" value="0.2777777777777778" />
         <entry key="..\:/Projects/Step/AndroidStudio/Taxi/app/src/main/res/layout/activity_login.xml" value="0.23278985507246377" />
         <entry key="..\:/Projects/Step/AndroidStudio/Taxi/app/src/main/res/layout/activity_login_or_register.xml" value="0.23822463768115942" />
         <entry key="..\:/Projects/Step/AndroidStudio/Taxi/app/src/main/res/layout/activity_start_screen.xml" value="0.23822463768115942" />

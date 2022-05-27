@@ -24,6 +24,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -181,6 +182,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             return;
         }
+        mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this,R.raw.gmap_style));
         //mMap.setMyLocationEnabled(true);
         UserMarker = mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(

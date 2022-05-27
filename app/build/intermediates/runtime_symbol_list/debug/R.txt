@@ -35,6 +35,7 @@ int anim nav_default_enter_anim 0x7f010021
 int anim nav_default_exit_anim 0x7f010022
 int anim nav_default_pop_enter_anim 0x7f010023
 int anim nav_default_pop_exit_anim 0x7f010024
+int animator close_to_menu 0x7f020024
 int animator design_appbar_state_list_animator 0x7f020000
 int animator design_fab_hide_motion_spec 0x7f020001
 int animator design_fab_show_motion_spec 0x7f020002
@@ -54,6 +55,7 @@ int animator m3_card_elevated_state_list_anim 0x7f02000f
 int animator m3_card_state_list_anim 0x7f020010
 int animator m3_chip_state_list_anim 0x7f020011
 int animator m3_elevated_chip_state_list_anim 0x7f020012
+int animator menu_to_close 0x7f020025
 int animator mtrl_btn_state_list_anim 0x7f020013
 int animator mtrl_btn_unelevated_state_list_anim 0x7f020014
 int animator mtrl_card_state_list_anim 0x7f020015
@@ -425,6 +427,7 @@ int attr dividerVertical 0x7f03015e
 int attr dragDirection 0x7f03015f
 int attr dragScale 0x7f030160
 int attr dragThreshold 0x7f030161
+int attr drawMenuBelowFab 0x7f03047c
 int attr drawPath 0x7f030162
 int attr drawableBottomCompat 0x7f030163
 int attr drawableEndCompat 0x7f030164
@@ -2944,6 +2947,8 @@ int drawable googleg_disabled_color_18 0x7f070080
 int drawable googleg_standard_color_18 0x7f070081
 int drawable ic_addres_icon_pos 0x7f070082
 int drawable ic_clock_black_24dp 0x7f070083
+int drawable ic_close_animated 0x7f0700cd
+int drawable ic_close_vector 0x7f0700ce
 int drawable ic_curr_geo_pos 0x7f070084
 int drawable ic_is_swipeble_icon 0x7f0700cb
 int drawable ic_keyboard_black_24dp 0x7f070085
@@ -2953,10 +2958,12 @@ int drawable ic_load 0x7f070088
 int drawable ic_m3_chip_check 0x7f070089
 int drawable ic_m3_chip_checked_circle 0x7f07008a
 int drawable ic_m3_chip_close 0x7f07008b
+int drawable ic_menu_animated 0x7f0700cf
 int drawable ic_menu_btn 0x7f0700cc
 int drawable ic_menu_camera 0x7f07008c
 int drawable ic_menu_gallery 0x7f07008d
 int drawable ic_menu_slideshow 0x7f07008e
+int drawable ic_menu_vector 0x7f0700d0
 int drawable ic_mtrl_checked_circle 0x7f07008f
 int drawable ic_mtrl_chip_checked_black 0x7f070090
 int drawable ic_mtrl_chip_checked_circle 0x7f070091
@@ -3224,6 +3231,7 @@ int id fitToContents 0x7f0900cb
 int id fixed 0x7f0900cc
 int id flip 0x7f0900cd
 int id floating 0x7f0900ce
+int id floating_navigation_view 0x7f090224
 int id forever 0x7f0900cf
 int id fragment_container_view_tag 0x7f0900d0
 int id frost 0x7f0900d1
@@ -3283,7 +3291,6 @@ int id loginButton 0x7f090105
 int id loginLabel 0x7f090106
 int id login_or_regist_label 0x7f090107
 int id map 0x7f090108
-int id map_screen 0x7f090222
 int id masked 0x7f090109
 int id match_constraint 0x7f09010a
 int id match_parent 0x7f09010b
@@ -3307,7 +3314,6 @@ int id material_timepicker_ok_button 0x7f09011c
 int id material_timepicker_view 0x7f09011d
 int id material_value_index 0x7f09011e
 int id media_actions 0x7f09011f
-int id menu_btn 0x7f090221
 int id message 0x7f090120
 int id middle 0x7f090121
 int id mini 0x7f090122
@@ -3369,7 +3375,6 @@ int id notification_main_column_container 0x7f090159
 int id off 0x7f09015a
 int id on 0x7f09015b
 int id onInterceptTouchReturnSwipe 0x7f09015c
-int id order_panel 0x7f09015d
 int id outline 0x7f09015e
 int id outward 0x7f09015f
 int id overshoot 0x7f090160
@@ -3506,6 +3511,7 @@ int id test_checkbox_android_button_tint 0x7f0901e2
 int id test_checkbox_app_button_tint 0x7f0901e3
 int id test_radiobutton_android_button_tint 0x7f0901e4
 int id test_radiobutton_app_button_tint 0x7f0901e5
+int id testbtn 0x7f090225
 int id text 0x7f0901e6
 int id text2 0x7f0901e7
 int id textEnd 0x7f0901e8
@@ -3674,7 +3680,6 @@ int layout design_navigation_menu 0x7f0c002f
 int layout design_navigation_menu_item 0x7f0c0030
 int layout design_text_input_end_icon 0x7f0c0031
 int layout design_text_input_start_icon 0x7f0c0032
-int layout fragment_order_panel 0x7f0c0033
 int layout m3_alert_dialog 0x7f0c0034
 int layout m3_alert_dialog_actions 0x7f0c0035
 int layout m3_alert_dialog_title 0x7f0c0036
@@ -3721,6 +3726,7 @@ int layout mtrl_picker_header_title_text 0x7f0c005e
 int layout mtrl_picker_header_toggle 0x7f0c005f
 int layout mtrl_picker_text_input_date 0x7f0c0060
 int layout mtrl_picker_text_input_date_range 0x7f0c0061
+int layout navigation_view_header 0x7f0c008e
 int layout notification_action 0x7f0c0062
 int layout notification_action_tombstone 0x7f0c0063
 int layout notification_media_action 0x7f0c0064
@@ -3768,6 +3774,7 @@ int menu activity_main_drawer 0x7f0d0000
 int menu example_menu 0x7f0d0001
 int menu example_menu2 0x7f0d0002
 int menu main 0x7f0d0003
+int menu menu_navigation_view 0x7f0d0004
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
 int navigation mobile_navigation 0x7f0f0000
@@ -3792,6 +3799,7 @@ int raw amu_poly_style_boolean_numeric 0x7f110010
 int raw amu_unknwown_folder 0x7f110011
 int raw amu_unsupported 0x7f110012
 int raw amu_visibility_ground_overlay 0x7f110013
+int raw gmap_style 0x7f110015
 int raw places_keep 0x7f110014
 int string abc_action_bar_home_description 0x7f120000
 int string abc_action_bar_up_description 0x7f120001
@@ -3989,6 +3997,9 @@ int string title_activity_main_screen 0x7f1200c0
 int string title_activity_maps 0x7f1200c1
 int string title_location_permission 0x7f1200c2
 int string user_location_title 0x7f1200c3
+int string vector_path_close 0x7f1200c4
+int string vector_path_line 0x7f1200c5
+int string vector_path_menu 0x7f1200c6
 int style AlertDialog_AppCompat 0x7f130000
 int style AlertDialog_AppCompat_Light 0x7f130001
 int style AndroidThemeColorAccentYellow 0x7f130002
@@ -6028,6 +6039,8 @@ int styleable FloatingActionButton_showMotionSpec 15
 int styleable FloatingActionButton_useCompatPadding 16
 int[] styleable FloatingActionButton_Behavior_Layout { 0x7f030058 }
 int styleable FloatingActionButton_Behavior_Layout_behavior_autoHide 0
+int[] styleable FloatingNavigationView { 0x7f03047c }
+int styleable FloatingNavigationView_drawMenuBelowFab 0
 int[] styleable FlowLayout { 0x7f030226, 0x7f030288 }
 int styleable FlowLayout_itemSpacing 0
 int styleable FlowLayout_lineSpacing 1

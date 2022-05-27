@@ -6,12 +6,15 @@ INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:1
 INJECTED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:2:1-66:12
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\denis\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:2:1-23:12
+MERGED from [com.github.andremion:floatingnavigationview:1.3.0] C:\Users\denis\.gradle\caches\transforms-3\2fd75de6388d50ad20be5a740442f574\transformed\jetified-floatingnavigationview-1.3.0\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\e84b042f48f9f14485261c47d99dc9c6\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\denis\.gradle\caches\transforms-3\a33d520c58fa7860ced27355a344e679\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.codepath.libraries:asynchttpclient:2.1.1] C:\Users\denis\.gradle\caches\transforms-3\ecb8353a5959b7123544bc0bbc533c1d\transformed\jetified-asynchttpclient-2.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\denis\.gradle\caches\transforms-3\f8d734a7d44310d84014d6ed621ec293\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\c0d9c1ab0e87542ba382db148d96a3af\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\denis\.gradle\caches\transforms-3\3d2cec4e03989ffcc8bd3e6f1619c32b\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\b22f09835f27489a2aae9ff397dd29be\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\3cb859c1ac0dd29d128e917789be4254\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -26,9 +29,7 @@ MERGED from [androidx.activity:activity:1.2.4] C:\Users\denis\.gradle\caches\tra
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\denis\.gradle\caches\transforms-3\99af0266dd6e8c54eb33c1aa44a873f5\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\40129cdd0cc6fb43e1431d3a7f860d71\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\1ad7e64fbfa1ec575baaf2daa876363e\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\d5ce58f194e6eb15743ad13effdd09da\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\d2646664f8d9727246d320f24126df9c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\08a78bb58e82e932da1f82c2b8b82824\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\0a2c06990f10f8bf77c6b2eafaa2d2f7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -132,6 +133,8 @@ application
 ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:21:5-64:19
 MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.github.andremion:floatingnavigationview:1.3.0] C:\Users\denis\.gradle\caches\transforms-3\2fd75de6388d50ad20be5a740442f574\transformed\jetified-floatingnavigationview-1.3.0\AndroidManifest.xml:11:5-20
+MERGED from [com.github.andremion:floatingnavigationview:1.3.0] C:\Users\denis\.gradle\caches\transforms-3\2fd75de6388d50ad20be5a740442f574\transformed\jetified-floatingnavigationview-1.3.0\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\denis\.gradle\caches\transforms-3\a33d520c58fa7860ced27355a344e679\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -192,14 +195,14 @@ ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:38:9-40:55
 		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:40:13-52
 	android:name
 		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:39:13-58
-activity#step.android.taxi.MapsActivity
+activity#step.android.taxi.MapScreenActivity
 ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:42:9-45:59
 	android:label
 		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:45:13-56
 	android:exported
 		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:43:13-41
+		ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:43:13-46
 activity#step.android.taxi.LoginActivity
 ADDED from C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:46:9-48:40
 	android:exported
@@ -242,6 +245,8 @@ MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\denis\.gradle\cach
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\denis\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:7:5-44
 MERGED from [com.google.android.libraries.places:places:2.6.0] C:\Users\denis\.gradle\caches\transforms-3\ef289525b0ea62edf18a020056512b7a\transformed\jetified-places-2.6.0\AndroidManifest.xml:7:5-44
+MERGED from [com.github.andremion:floatingnavigationview:1.3.0] C:\Users\denis\.gradle\caches\transforms-3\2fd75de6388d50ad20be5a740442f574\transformed\jetified-floatingnavigationview-1.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.andremion:floatingnavigationview:1.3.0] C:\Users\denis\.gradle\caches\transforms-3\2fd75de6388d50ad20be5a740442f574\transformed\jetified-floatingnavigationview-1.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\e84b042f48f9f14485261c47d99dc9c6\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\e84b042f48f9f14485261c47d99dc9c6\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\denis\.gradle\caches\transforms-3\e28af2a57da205d1991628495b66e5fc\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
@@ -254,6 +259,10 @@ MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\denis\.gradle\caches\t
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\denis\.gradle\caches\transforms-3\f8d734a7d44310d84014d6ed621ec293\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\c0d9c1ab0e87542ba382db148d96a3af\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\c0d9c1ab0e87542ba382db148d96a3af\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\denis\.gradle\caches\transforms-3\3d2cec4e03989ffcc8bd3e6f1619c32b\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\denis\.gradle\caches\transforms-3\3d2cec4e03989ffcc8bd3e6f1619c32b\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\b22f09835f27489a2aae9ff397dd29be\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\denis\.gradle\caches\transforms-3\b22f09835f27489a2aae9ff397dd29be\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\denis\.gradle\caches\transforms-3\90013a2d70c7cdac5ee28478607b5678\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:20:5-44
@@ -282,12 +291,8 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\denis\.gradle\c
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\40129cdd0cc6fb43e1431d3a7f860d71\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\0896e3d0b45cdf89c133e98609f31280\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\1ad7e64fbfa1ec575baaf2daa876363e\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\denis\.gradle\caches\transforms-3\1ad7e64fbfa1ec575baaf2daa876363e\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\d5ce58f194e6eb15743ad13effdd09da\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\d5ce58f194e6eb15743ad13effdd09da\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\d2646664f8d9727246d320f24126df9c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\denis\.gradle\caches\transforms-3\d2646664f8d9727246d320f24126df9c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\denis\.gradle\caches\transforms-3\08a78bb58e82e932da1f82c2b8b82824\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41

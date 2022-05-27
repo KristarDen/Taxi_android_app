@@ -98,8 +98,8 @@
 63
 64        <activity
 64-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:42:9-45:59
-65            android:name="step.android.taxi.MapsActivity"
-65-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:43:13-41
+65            android:name="step.android.taxi.MapScreenActivity"
+65-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:43:13-46
 66            android:exported="false"
 66-->C:\GITs\Taxi_android_app\app\src\main\AndroidManifest.xml:44:13-37
 67            android:label="@string/title_activity_maps" />

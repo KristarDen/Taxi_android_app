@@ -1,44 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/map_screen"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    map:layout_constraintEnd_toStartOf="parent"
-    tools:context=".MapScreenActivity">
+    tools:context=".MapsActivity">
 
-
+    <!--Menu button-->
+    <com.andremion.floatingnavigationview.FloatingNavigationView
+        android:id="@+id/floating_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchorGravity="bottom|end"
+        app:drawMenuBelowFab="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:headerLayout="@layout/navigation_view_header"
+        app:menu="@menu/menu_navigation_view" />
     <Button
-        android:id="@+id/menu_btn"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/ic_menu_btn"
-        app:backgroundTint="@null"/>
+        android:id="@+id/testbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+>
+    </Button>
 
-    <androidx.fragment.app.FragmentContainerView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.fragment.app.FragmentContainerView
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:nextFocusUp="@id/order_panel"
-        tools:context=".MapsActivity"></androidx.fragment.app.FragmentContainerView>
-    <androidx.fragment.app.FragmentContainerView
+        android:focusedByDefault="false"
+        android:elevation="0dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        ></androidx.fragment.app.FragmentContainerView>
+    </LinearLayout>
 
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:id="@+id/order_panel"
-        android:name="step.android.taxi.OrderPanelFragment"
-        android:layout_gravity="bottom"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:elevation="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".OrderPanelFragment"
-        tools:layout="@layout/fragment_order_panel">
-    </androidx.fragment.app.FragmentContainerView>
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/search_panel"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="30dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
-</FrameLayout>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_is_swipeble_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/form_background"
+            android:orientation="horizontal"
+
+            android:padding="5dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/address_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="12"
+                android:hint="@string/address_from_hint"
+                android:paddingLeft="10dp"
+                android:paddingTop="0dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="0dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/labelHintColor"
+                android:textSize="22sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_curr_geo_pos"
+                app:backgroundTint="@null"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/form_background"
+            android:orientation="horizontal"
+
+            android:padding="5dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/address_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="12"
+                android:hint="@string/address_to_hint"
+                android:paddingLeft="10dp"
+                android:paddingTop="0dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="0dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/labelHintColor"
+                android:textSize="22sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_addres_icon_pos"
+                app:backgroundTint="@null"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
