@@ -368,6 +368,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return Btn;
     }
 
+    //Метод заполнения предложеня адресов для адреса отправления
     private void Fill_From_suggestion(){
         if( Suggested_From_Addreses.get() != null){
             Suggested_From_Addreses.get().clear();
@@ -387,12 +388,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             for (Address_item adr: Suggested_From_Addreses.get()
             ) {
                 Button newBtn = makeButton(adr);
+
+                // Добавление обработчика клика
                 newBtn.setOnClickListener(new View.OnClickListener() {
 
+                    /* Хранение переменной класса адреса с информацией о адресе привязаном
+                     к этой кнопке
+                     */
                     private Address_item addressItem = adr;
 
                     public void onClick(View v) {
+                        /*переменная точка А получает координаты из класса адреса хранящегося в
+                        addressItem
+                         */
                         PointA = addressItem.get_coord();
+
+                        /*
+                        Проверка. Если переменная с точкой В уже существует
+                        то вызывается метод построения и отрисовки маршрута
+                        куда передаются переменные Точка А и Точка В
+                         */
                         if(PointB != null){
                             drawWayOnMap(PointA,PointB);
                         }
@@ -404,6 +419,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             e.printStackTrace();
         }
     }
+    //Метод заполнения предложеня адресов для конечного адреса
     private void Fill_Where_suggestion(){
 
         if(Suggested_Where_Addreses.get() != null){
@@ -425,14 +441,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             for (Address_item adr: Suggested_Where_Addreses.get()
             ) {
                 Button newBtn = makeButton(adr);
+                // Добавление обработчика клика
                 newBtn.setOnClickListener(new View.OnClickListener() {
 
+                    /* Хранение переменной класса адреса с информацией о адресе привязаном
+                     к этой кнопке
+                     */
                     private Address_item addressItem = adr;
 
                     public void onClick(View v) {
 
+                        /*переменная точка В получает координаты из класса адреса хранящегося в
+                        addressItem
+                         */
                         PointB = addressItem.get_coord();
 
+                        /*
+                        Проверка. Если переменная с точкой А уже существует
+                        то вызывается метод построения и отрисовки маршрута
+                        куда передаются переменные Точка А и Точка В
+                         */
                         if(PointA != null){
                             drawWayOnMap(PointA,PointB);
                         }
