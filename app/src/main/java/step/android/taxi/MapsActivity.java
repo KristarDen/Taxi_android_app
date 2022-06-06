@@ -347,7 +347,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
+
     @SuppressLint("ResourceAsColor")
+    //Фабричный метод для создания с адресом кнопки
     private Button makeButton(Address_item address){
         Button Btn = new Button(this);
         Btn.setTextColor(R.color.white);
