@@ -42,6 +42,6 @@ public class LoginOrRegister extends AppCompatActivity {
         startActivity(
                 new Intent(
                         this,
-                        MapScreenActivity.class ) ) ;
+                        MapsActivity.class ) ) ;
     }
 }

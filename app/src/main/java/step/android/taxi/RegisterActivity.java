@@ -238,13 +238,13 @@ public class RegisterActivity extends AppCompatActivity {
                 this.startActivity(
                         new Intent(
                                 this,
-                                MapScreenActivity.class ) ) ;
+                                MapsActivity.class ) ) ;
             } catch (Exception e) {
                 //Toast.makeText(this, e.getMessage(),Toast.LENGTH_LONG).show();
                  this.startActivity(
                         new Intent(
                                 this,
-                                MapScreenActivity.class ) ) ;
+                                MapsActivity.class ) ) ;
             }
         });
         Send.start();

@@ -5,7 +5,15 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import android.Manifest;
@@ -30,18 +38,52 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-import java.security.Permission;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.atomic.AtomicReference;
 
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import step.android.taxi.databinding.ActivityMapsBinding;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+
+    private AtomicReference<ArrayList<Address_item>> Suggested_From_Addreses
+            = new AtomicReference<ArrayList<Address_item>>();
+    private EditText From_edit_text;
+    private LinearLayout From_Sugested_address_View;
+
+    private AtomicReference<ArrayList<Address_item>> Suggested_Where_Addreses
+            = new AtomicReference<ArrayList<Address_item>>();
+    private EditText Where_edit_text;
+    private LinearLayout Where_Sugested_address_View;
+
+    //From edit text onChange()
+    private TextWatcher From_edittext_watcher
+            = new TextWatcher()
+    {
+
+        public void afterTextChanged(Editable s) {
+
+            Thread getPlaceInfo = new Thread(()->{
+                Suggested_From_Addreses.set( GMapApi.FindPlaceByText( s.toString(),
+                        Locale.getDefault().getLanguage() ) );
+            });
+            getPlaceInfo.start();
+            try {
+                getPlaceInfo.join();
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+        public void onTextChanged(CharSequence s, int start, int before, int count) {}
+    };
+
+    private LatLng PointA;
+    private LatLng PointB;
+
 
     LocationManager locationManager;
 
@@ -53,35 +95,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         @Override
         public void onMapClick(LatLng arg0) {
 
-            AtomicReference<String> title = new AtomicReference<>("");
-            LatLng userPos = UserMarker.getPosition();
-
-            try {
-              Thread getPlaceInfo = new Thread(()->{
-                  //get info about clicked coordination
-                  title.set(GMapApi.FindPlaceByLatLan(arg0, Locale.getDefault().getLanguage()));
-
-                  //get direction to clicked coord
-                  DirectionDotsList.set( GMapApi.GetDirectionPolPoints(userPos, arg0));
-              });
-
-              getPlaceInfo.start();
-              getPlaceInfo.join();
-
-                if (DestinationMarker != null) {
-                    DestinationMarker.setPosition(arg0);
-                } else {
-                    DestinationMarker = mMap.addMarker(new MarkerOptions()
-                            .position(arg0));
-                }
-                drawDirection(DirectionDotsList.get());
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "" + title, Toast.LENGTH_SHORT);
-                toast.show();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
+            drawWayOnMap(arg0,UserMarker.getPosition());
         }
     };
 
@@ -110,6 +124,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(binding.getRoot());
 
 
+        //From Text listener
+        From_edit_text = (EditText) findViewById( R.id.address_from );
+        From_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_from);
+        From_edit_text.setOnFocusChangeListener(
+                new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                /* When focus is lost check that the text field
+                 * has valid values.
+                 */
+                if (!hasFocus) {
+                    Fill_From_suggestion();
+                }
+            }});
+
+        //Where Text listener
+        Where_edit_text = (EditText) findViewById( R.id.address_to );
+        Where_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_where);
+        Where_edit_text.setOnFocusChangeListener(
+                new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        /* When focus is lost check that the text field
+                         * has valid values.
+                         */
+                        if (!hasFocus) {
+                            Fill_Where_suggestion();
+                        }
+                    }});
+
+
+        //add onTexChanged listener
+        //From_edit_text.addTextChangedListener(From_edittext_watcher);
         locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
         isLocationEnabled();
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -126,39 +173,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 10,
                 10,
                 new LocationListener() {
-            @Override
-            public void onLocationChanged(@NonNull Location location) {
+                    @Override
+                    public void onLocationChanged(@NonNull Location location) {
 
-                UserPosition = new LatLng(location.getLatitude(), location.getLongitude());
+                        UserPosition = new LatLng(location.getLatitude(), location.getLongitude());
 
-                if (UserMarker != null) {
-                    UserMarker.setPosition(UserPosition);
-                } else {
-                    UserMarker = mMap.addMarker(new MarkerOptions()
-                            .position(UserPosition));
-                }
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
-                mMap.setMinZoomPreference(12);
+                        if (UserMarker != null) {
+                            UserMarker.setPosition(UserPosition);
+                        } else {
+                            UserMarker = mMap.addMarker(new MarkerOptions()
+                                    .position(UserPosition));
+                        }
+                        mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
+                        mMap.setMinZoomPreference(12);
 
-                Toast toast = Toast.makeText(mContext, "" + location.getLatitude() + " : " + location.getLongitude(), Toast.LENGTH_LONG);
-                toast.show();
-            }
+                        Toast toast = Toast.makeText(mContext, "" + location.getLatitude() + " : " + location.getLongitude(), Toast.LENGTH_LONG);
+                        toast.show();
+                    }
 
-            @Override
-            public void onProviderEnabled(@NonNull String provider) {
+                    @Override
+                    public void onProviderEnabled(@NonNull String provider) {
 
-            }
+                    }
 
-            @Override
-            public void onProviderDisabled(@NonNull String provider) {
+                    @Override
+                    public void onProviderDisabled(@NonNull String provider) {
 
-            }
+                    }
 
-            @Override
-            public void onStatusChanged(String provider, int status, Bundle extras) {
+                    @Override
+                    public void onStatusChanged(String provider, int status, Bundle extras) {
 
-            }
-        });
+                    }
+                });
 
 
 
@@ -185,9 +232,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this,R.raw.gmap_style));
         //mMap.setMyLocationEnabled(true);
         UserMarker = mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(
-                        locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER).getLatitude(),
-                        locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER).getLongitude() )
+                .position(
+                        new LatLng(
+                        locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER)
+                                .getLatitude(),
+                        locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER)
+                                .getLongitude()
+                        )
                 )
         );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
@@ -200,7 +251,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     //Draw direction on map
-    private void drawDirection( ArrayList<LatLng> Dots){
+    private void drawDirectionAsPolyline(ArrayList<LatLng> Dots){
         /*
             Direction making once, LatLan inside Direction object redefined
             on every new call of drawDirection and draw new route on map,
@@ -262,6 +313,136 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+    private void drawWayOnMap(LatLng A, LatLng B){
+        AtomicReference<String> title = new AtomicReference<>("");
 
+        try {
+            Thread getPlaceInfo = new Thread(()->{
+                //get info about clicked coordination
+                title.set(GMapApi.FindPlaceByLatLan(A, Locale.getDefault().getLanguage()));
+
+                //get direction to clicked coord
+                DirectionDotsList.set( GMapApi.GetDirectionPolPoints(B, A));
+            });
+
+            getPlaceInfo.start();
+            getPlaceInfo.join();
+
+            if (DestinationMarker != null) {
+                DestinationMarker.setPosition(A);
+            } else {
+                DestinationMarker = mMap.addMarker(new MarkerOptions()
+                        .position(A));
+            }
+
+            //drawing a polyline of direction
+            drawDirectionAsPolyline(DirectionDotsList.get());
+
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "" + title, Toast.LENGTH_SHORT);
+            toast.show();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @SuppressLint("ResourceAsColor")
+    private Button makeButton(Address_item address){
+        Button Btn = new Button(this);
+        Btn.setTextColor(R.color.white);
+        Btn.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+        Btn.setTextSize(14);
+        Btn.setText(address.get_name()+ "\n" + getString(R.string.Rating) + ": "
+                + address.get_rating());
+        Btn.setBackground( getDrawable(R.drawable.suggestion_address) );
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+        );
+        params.setMargins(15,15,15,15);
+        Btn.setPadding(15,15,15,15);
+
+        Btn.setLayoutParams(params);
+        return Btn;
+    }
+
+    private void Fill_From_suggestion(){
+        if( Suggested_From_Addreses.get() != null){
+            Suggested_From_Addreses.get().clear();
+        }
+        try {
+            Thread getPlaceInfo = new Thread(()->{
+                Suggested_From_Addreses.set(
+                        GMapApi.FindPlaceByText(
+                                From_edit_text.getText().toString(),
+                                Locale.getDefault().getLanguage()
+                        )
+                );
+            });
+            getPlaceInfo.start();
+            getPlaceInfo.join();
+
+            for (Address_item adr: Suggested_From_Addreses.get()
+            ) {
+                Button newBtn = makeButton(adr);
+                newBtn.setOnClickListener(new View.OnClickListener() {
+
+                    private Address_item addressItem = adr;
+
+                    public void onClick(View v) {
+                        PointA = addressItem.get_coord();
+                        if(PointB != null){
+                            drawWayOnMap(PointA,PointB);
+                        }
+                    }
+                });
+                From_Sugested_address_View.addView(makeButton(adr));
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    private void Fill_Where_suggestion(){
+
+        if(Suggested_Where_Addreses.get() != null){
+            Suggested_Where_Addreses.get().clear();
+        }
+
+        try {
+            Thread getPlaceInfo = new Thread(()->{
+                Suggested_Where_Addreses.set(
+                        GMapApi.FindPlaceByText(
+                                Where_edit_text.getText().toString(),
+                                Locale.getDefault().getLanguage()
+                        )
+                );
+            });
+            getPlaceInfo.start();
+            getPlaceInfo.join();
+
+            for (Address_item adr: Suggested_Where_Addreses.get()
+            ) {
+                Button newBtn = makeButton(adr);
+                newBtn.setOnClickListener(new View.OnClickListener() {
+
+                    private Address_item addressItem = adr;
+
+                    public void onClick(View v) {
+
+                        PointB = addressItem.get_coord();
+
+                        if(PointA != null){
+                            drawWayOnMap(PointA,PointB);
+                        }
+                    }
+                });
+                Where_Sugested_address_View.addView(makeButton(adr));
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

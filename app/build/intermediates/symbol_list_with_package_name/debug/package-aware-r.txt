@@ -3019,10 +3019,12 @@ drawable quantum_ic_cloud_off_vd_theme_24
 drawable quantum_ic_search_grey600_24
 drawable search_panel
 drawable side_nav_bar
+drawable suggestion_address
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable white
 font robotoregular
 font robotoregularobotoregular
 id ALT
@@ -3232,7 +3234,6 @@ id fitToContents
 id fixed
 id flip
 id floating
-id floating_navigation_view
 id forever
 id fragment_container_view_tag
 id frost
@@ -3492,6 +3493,8 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id suggestion_from
+id suggestion_where
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3512,7 +3515,6 @@ id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
-id testbtn
 id text
 id text2
 id textEnd
@@ -3727,7 +3729,6 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
-layout navigation_view_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -3802,6 +3803,7 @@ raw amu_unsupported
 raw amu_visibility_ground_overlay
 raw gmap_style
 raw places_keep
+string Rating
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3869,7 +3871,6 @@ string fab_transformation_sheet_behavior
 string first_name
 string first_name_Hint
 string google_maps_key
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -3968,7 +3969,6 @@ string nav_header_subtitle
 string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
-string ok
 string pass
 string pass_confirm
 string password_toggle_content_description
@@ -3992,11 +3992,9 @@ string registration_label
 string search_menu_title
 string second_name_Hint
 string status_bar_notification_info_overflow
-string text_location_permission
 string title_activity_main
 string title_activity_main_screen
 string title_activity_maps
-string title_location_permission
 string user_location_title
 string vector_path_close
 string vector_path_line

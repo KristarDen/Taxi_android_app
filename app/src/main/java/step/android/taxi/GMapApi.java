@@ -2,6 +2,7 @@ package step.android.taxi;
 
 import android.util.Log;
 
+import com.google.android.gms.common.util.Hex;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
@@ -16,9 +17,11 @@ import org.json.JSONObject;
 import com.google.maps.android.PolyUtil;
 
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.List;
+import java.util.Locale;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -28,7 +31,7 @@ public class GMapApi {
     private static String API_KEY = "AIzaSyBI-kBlkecJTeDRiXkW23wVRn6qFE6JO3Y";
     private static String FIND_PLACE_URL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=%s,%s&key=%s&language=%s";
     private static String DIRECTION_GET_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%s,%s&destination=%s,%s&key=%s";
-    private static String FIND_PLACE_BY_NAME = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%s&inputtype=textquery&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=YOUR_API_KEY";
+    private static String FIND_PLACE_BY_NAME = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=<address>&inputtype=textquery&language=<language>&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=<key>";
 
 
     public static String FindPlaceByLatLan(LatLng latlng, String language){
@@ -129,33 +132,54 @@ public class GMapApi {
         return coords;
     }
 
-    public static Dictionary<String,LatLng>FindPlaceByText(String searched_address ){
+    public static ArrayList<Address_item> FindPlaceByText(String searched_address, String language ){
 
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
 
+
         Request request = new Request.Builder()
                 .url(
-                        String.format( FIND_PLACE_BY_NAME,
-                                searched_address,
-                                API_KEY )
+
+                        FIND_PLACE_BY_NAME.replaceAll("<address>", searched_address)
+                                .replaceAll("<key>", API_KEY)
+                                .replaceAll("<language>", language)
+
                 )
                 .method("GET", null)
                 .build();
 
-        Dictionary<String,LatLng> suppositions = null;
+        ArrayList<Address_item> suppositions = new ArrayList<Address_item>();
 
         try {
-            Response response = client.newCall(request).execute();
+            Response response ;
+            response = client.newCall(request).execute();
 
             //parse results
             JSONObject json_resp = new JSONObject(response.body().string());
             JSONArray candidates = json_resp.getJSONArray("candidates");
 
+            for (int i = 0; i < candidates.length(); i++) {
+
+                JSONObject candidat = candidates.getJSONObject(i);
+                LatLng latLng = new LatLng(
+                        Double.parseDouble(candidat.getJSONObject("geometry")
+                                .getJSONObject("location")
+                                .getString("lat")),
+                        Double.parseDouble(candidat.getJSONObject("geometry")
+                                .getJSONObject("location")
+                                .getString("lng"))
+                );
+                suppositions.add(new Address_item(
+                        candidat.getString("name"),latLng));
+
+            }
+
+
 
 
         }catch (Exception ex){
-            Log.i("GMapApi Find place by text error",ex.getMessage().toString());
+            Log.i("GMapApi Find place by text error",ex.getMessage());
         }
 
         return suppositions;

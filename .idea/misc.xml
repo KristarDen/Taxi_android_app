@@ -54,6 +54,13 @@
         <entry key="..\:/Users/denis/Downloads/Taxi/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/denis/Downloads/Taxi/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/denis/Downloads/Taxi/app/src/main/res/layout/activity_start_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/suggestion_address.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_start_screen.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_bottom_panel.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/map_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/navigation_view_header.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/registration_activity.xml" value="0.37604166666666666" />
       </map>
     </option>
   </component>
