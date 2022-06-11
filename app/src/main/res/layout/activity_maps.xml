@@ -31,8 +31,8 @@
             android:src="@drawable/ic_is_swipeble_icon" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="314dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/form_background"
@@ -43,7 +43,7 @@
 
             <EditText
                 android:id="@+id/address_from"
-                android:layout_width="match_parent"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@android:color/transparent"
@@ -55,22 +55,22 @@
                 android:paddingBottom="0dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/labelHintColor"
-                android:textSize="22sp"
+                android:textSize="14sp"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
                 android:background="@drawable/ic_curr_geo_pos"
                 app:backgroundTint="@null"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Button>
         </LinearLayout>
         <!--Suggested "From" addresses-->
         <HorizontalScrollView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_width="314dp"
+            android:layout_gravity="center"
             android:scrollbarAlwaysDrawHorizontalTrack="true"
             android:scrollbars="horizontal">
 
@@ -84,8 +84,8 @@
         </HorizontalScrollView>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="314dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/form_background"
@@ -96,7 +96,7 @@
 
             <EditText
                 android:id="@+id/address_to"
-                android:layout_width="match_parent"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@android:color/transparent"
@@ -108,22 +108,22 @@
                 android:paddingBottom="0dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/labelHintColor"
-                android:textSize="22sp"
+                android:textSize="14sp"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
                 android:background="@drawable/ic_addres_icon_pos"
                 app:backgroundTint="@null"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></Button>
         </LinearLayout>
         <!--Suggested "Where" addresses-->
         <HorizontalScrollView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_width="314dp"
+            android:layout_gravity="center"
             android:scrollbarAlwaysDrawHorizontalTrack="true"
             android:scrollbars="horizontal">
 

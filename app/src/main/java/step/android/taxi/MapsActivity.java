@@ -6,9 +6,16 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.annotation.SuppressLint;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.VectorDrawable;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -31,20 +38,30 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.larvalabs.svgandroid.SVG;
+import com.larvalabs.svgandroid.SVGBuilder;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicReference;
 
 import step.android.taxi.databinding.ActivityMapsBinding;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+
+    private Timer timer = new Timer();
+    private final long DELAY = 1000;
 
     private AtomicReference<ArrayList<Address_item>> Suggested_From_Addreses
             = new AtomicReference<ArrayList<Address_item>>();
@@ -58,31 +75,96 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     //From edit text onChange()
     private TextWatcher From_edittext_watcher
-            = new TextWatcher()
-    {
+            = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count,
+                                      int after) {
+        }
+        @Override
+        public void onTextChanged(final CharSequence s, int start, int before,
+                                  int count) {
+            if(timer != null)
+                timer.cancel();
+        }
+        @Override
+        public void afterTextChanged(final Editable s) {
+            //avoid triggering event when text is too short
+            if (s.length() >= 3) {
 
-        public void afterTextChanged(Editable s) {
+                timer = new Timer();
+                timer.schedule(
+                        new TimerTask() {
+                    @Override
+                    public void run() {
+                        runOnUiThread(
+                                new Runnable() {
+                            @Override
+                            public void run() {
+                                Fill_From_suggestion();
+                            }
+                        }
+                        );
+                    }
 
-            Thread getPlaceInfo = new Thread(()->{
-                Suggested_From_Addreses.set( GMapApi.FindPlaceByText( s.toString(),
-                        Locale.getDefault().getLanguage() ) );
-            });
-            getPlaceInfo.start();
-            try {
-                getPlaceInfo.join();
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                },
+                        DELAY);
             }
         }
+    };
+    //From edit text onChange()
+    private TextWatcher Where_edittext_watcher
+            = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count,
+                                      int after) {
+        }
+        @Override
+        public void onTextChanged(final CharSequence s, int start, int before,
+                                  int count) {
+            if(timer != null)
+                timer.cancel();
+        }
+        @Override
+        public void afterTextChanged(final Editable s) {
+            //avoid triggering event when text is too short
+            if (s.length() >= 3) {
 
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+                timer = new Timer();
+                timer.schedule(
+                        new TimerTask() {
+                            @Override
+                            public void run() {
+                                runOnUiThread(
+                                        new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Fill_Where_suggestion();
+                                            }
+                                        }
+                                );
+                            }
 
-        public void onTextChanged(CharSequence s, int start, int before, int count) {}
+                        },
+                        DELAY);
+            }
+        }
     };
 
+    /*
+        Point A and Point B its a  coordination of
+        start and end point of
+        way on map that created by addresses that
+        user chose by address form
+     */
     private LatLng PointA;
     private LatLng PointB;
+
+    /*
+     Markers that be displayed on map
+     with PointA and PointB coords
+     */
+    private Marker Marker_PointA;
+    private Marker Marker_PointB;
 
 
     LocationManager locationManager;
@@ -104,11 +186,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     //Marker on user current location
     private Marker UserMarker;
 
-    //Marker on destination of user route
+    /*
+        Marker on destination of user route
+        that chosen by tap on map
+     */
     private Marker DestinationMarker;
 
     private LatLng UserPosition;
     private Context mContext;
+
+    /*
+        Polyline object that will be
+        displayed on map. It`s a route
+        of user way
+     */
     private Polyline Direction;
 
     // Direction dots coordination list for drawing route on the map
@@ -126,34 +217,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         //From Text listener
         From_edit_text = (EditText) findViewById( R.id.address_from );
+        //Listener of text input ended
+        From_edit_text.addTextChangedListener(From_edittext_watcher);
         From_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_from);
-        From_edit_text.setOnFocusChangeListener(
-                new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                /* When focus is lost check that the text field
-                 * has valid values.
-                 */
-                if (!hasFocus) {
-                    Fill_From_suggestion();
-                }
-            }});
-
         //Where Text listener
         Where_edit_text = (EditText) findViewById( R.id.address_to );
+        //Listener of text input ended
+        Where_edit_text.addTextChangedListener(Where_edittext_watcher);
         Where_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_where);
-        Where_edit_text.setOnFocusChangeListener(
-                new View.OnFocusChangeListener() {
-                    @Override
-                    public void onFocusChange(View v, boolean hasFocus) {
-                        /* When focus is lost check that the text field
-                         * has valid values.
-                         */
-                        if (!hasFocus) {
-                            Fill_Where_suggestion();
-                        }
-                    }});
-
 
         //add onTexChanged listener
         //From_edit_text.addTextChangedListener(From_edittext_watcher);
@@ -224,12 +295,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         if (ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
+                && ActivityCompat.checkSelfPermission(
+                        this,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
+                ) != PackageManager.PERMISSION_GRANTED) {
 
             return;
         }
+
         mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this,R.raw.gmap_style));
+
         //mMap.setMyLocationEnabled(true);
         UserMarker = mMap.addMarker(new MarkerOptions()
                 .position(
@@ -243,6 +318,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
         mMap.setMinZoomPreference(12);
+
 
 
         mMap.setOnMapClickListener(onMapClickListener);
@@ -318,21 +394,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         try {
             Thread getPlaceInfo = new Thread(()->{
-                //get info about clicked coordination
+                //get info about point A coordination
                 title.set(GMapApi.FindPlaceByLatLan(A, Locale.getDefault().getLanguage()));
 
-                //get direction to clicked coord
+                /*
+                    Get direction from A to B in dots array.
+                    From this array of dots will be created
+                    polyline object, for drawing line on map
+                 */
                 DirectionDotsList.set( GMapApi.GetDirectionPolPoints(B, A));
             });
 
+            //Start thread and wait for end of thread work
             getPlaceInfo.start();
             getPlaceInfo.join();
 
-            if (DestinationMarker != null) {
-                DestinationMarker.setPosition(A);
+            //Creation and drawing A and B markers on map by A,B points coords
+            if (Marker_PointB != null) {
+                Marker_PointB.setPosition(B);
             } else {
-                DestinationMarker = mMap.addMarker(new MarkerOptions()
-                        .position(A));
+                Marker_PointB = makeMarker(B,2);
+            }
+            if (Marker_PointA != null) {
+                Marker_PointA.setPosition(A);
+            } else {
+                Marker_PointA = makeMarker(A,1);
             }
 
             //drawing a polyline of direction
@@ -346,15 +432,66 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+    /*
+        type defines a type of markers
+        1 - marker from (Point A)
+        2 - marker to (Point B)
+     */
+    private Marker makeMarker(LatLng pos, int type){
+        Marker marker=null;
+        switch (type){
+            case 1 :
+                BitmapDescriptor icon_from = BitmapDescriptorFactory.fromBitmap(
+                       drawableToBitmap(getDrawable(R.drawable.ic_from_icon))
+                );
+                marker = mMap.addMarker(new MarkerOptions()
+                        .icon(icon_from)
+                        .position(pos)
+                );
+                break;
+            case 2 :
+                BitmapDescriptor icon_to = BitmapDescriptorFactory.fromBitmap(
+                        drawableToBitmap(getDrawable(R.drawable.ic_to_icon))
+                );
+                marker = mMap.addMarker(new MarkerOptions()
+                        .icon(icon_to)
+                        .position(pos)
+                );
+                break;
+        }
+        return marker;
+    }
+
+    //converter for drawable
+    public static Bitmap drawableToBitmap (Drawable drawable) {
+        Bitmap bitmap = null;
+
+        if (drawable instanceof BitmapDrawable) {
+            BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+            if(bitmapDrawable.getBitmap() != null) {
+                return bitmapDrawable.getBitmap();
+            }
+        }
+
+        if(drawable.getIntrinsicWidth() <= 0 || drawable.getIntrinsicHeight() <= 0) {
+            bitmap = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888); // Single color bitmap will be created of 1x1 pixel
+        } else {
+            bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        }
+
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+        drawable.draw(canvas);
+        return bitmap;
+    }
 
 
-    @SuppressLint("ResourceAsColor")
     //Фабричный метод для создания с адресом кнопки
     private Button makeButton(Address_item address){
         Button Btn = new Button(this);
-        Btn.setTextColor(R.color.white);
+        Btn.setTextColor(Color.WHITE);
         Btn.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
-        Btn.setTextSize(14);
+        Btn.setTextSize(12);
         Btn.setText(address.get_name()+ "\n" + getString(R.string.Rating) + ": "
                 + address.get_rating());
         Btn.setBackground( getDrawable(R.drawable.suggestion_address) );
@@ -372,9 +509,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     //Метод заполнения предложеня адресов для адреса отправления
     private void Fill_From_suggestion(){
+
+        //clear array and view with suggested elements
         if( Suggested_From_Addreses.get() != null){
+
             Suggested_From_Addreses.get().clear();
+
+            //clear view
+           From_Sugested_address_View.removeAllViews();
+
         }
+
         try {
             Thread getPlaceInfo = new Thread(()->{
                 Suggested_From_Addreses.set(
@@ -415,7 +560,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         }
                     }
                 });
-                From_Sugested_address_View.addView(makeButton(adr));
+                From_Sugested_address_View.addView(newBtn);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -424,8 +569,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     //Метод заполнения предложеня адресов для конечного адреса
     private void Fill_Where_suggestion(){
 
+        //clear array and view with suggested elements
         if(Suggested_Where_Addreses.get() != null){
+            //clear array
             Suggested_Where_Addreses.get().clear();
+            //clear view
+            Where_Sugested_address_View.removeAllViews();
         }
 
         try {
@@ -468,7 +617,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         }
                     }
                 });
-                Where_Sugested_address_View.addView(makeButton(adr));
+                Where_Sugested_address_View.addView(newBtn);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

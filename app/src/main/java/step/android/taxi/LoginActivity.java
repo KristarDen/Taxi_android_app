@@ -2,16 +2,27 @@ package step.android.taxi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.security.MessageDigest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -74,6 +85,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
 
         phone_form = (EditText) findViewById( R.id.phone_number);
         pass_form = (EditText) findViewById( R.id.password);
@@ -83,6 +95,11 @@ public class LoginActivity extends AppCompatActivity {
 
         LoginButton = findViewById( R.id.loginButton );
         LoginButton.setOnClickListener( this::Login_click ) ;
+
+        Glide.with(this)
+                .load(R.drawable.ic_background_img)
+                .transform(new BlurTransformation(this))
+                .into((ImageView) findViewById(R.id.screen));
     }
 
     private void Login_check(){
@@ -97,5 +114,45 @@ public class LoginActivity extends AppCompatActivity {
 
     private void Login_click(View v){
         Toast.makeText(this, "Login click", Toast.LENGTH_SHORT).show();
+    }
+
+    public class BlurTransformation extends BitmapTransformation {
+
+        private RenderScript rs;
+
+        public BlurTransformation(Context context) {
+            super();
+
+            rs = RenderScript.create(context);
+        }
+
+        @Override
+        protected Bitmap transform(BitmapPool pool, Bitmap toTransform, int outWidth, int outHeight) {
+            Bitmap blurredBitmap = toTransform.copy(Bitmap.Config.ARGB_8888, true);
+
+            // Allocate memory for Renderscript to work with
+            Allocation input = Allocation.createFromBitmap(rs, blurredBitmap, Allocation.MipmapControl.MIPMAP_FULL, Allocation.USAGE_SHARED);
+            Allocation output = Allocation.createTyped(rs, input.getType());
+
+            // Load up an instance of the specific script that we want to use.
+            ScriptIntrinsicBlur script = ScriptIntrinsicBlur.create(rs, Element.U8_4(rs));
+            script.setInput(input);
+
+            // Set the blur radius
+            script.setRadius(21.5f);
+
+            // Start the ScriptIntrinisicBlur
+            script.forEach(output);
+
+            // Copy the output to the blurred bitmap
+            output.copyTo(blurredBitmap);
+
+            return blurredBitmap;
+        }
+
+        @Override
+        public void updateDiskCacheKey(MessageDigest messageDigest) {
+            messageDigest.update("blur transformation".getBytes());
+        }
     }
 }

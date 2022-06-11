@@ -3,8 +3,16 @@ package step.android.taxi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
 import android.util.Log;
 
 import android.content.Intent;
@@ -16,6 +24,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import com.google.gson.Gson;
 
@@ -23,6 +32,9 @@ import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
 
 import org.json.JSONObject;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 
 public class RegisterActivity extends AppCompatActivity {
     Gson gson = new Gson();
@@ -212,6 +224,12 @@ public class RegisterActivity extends AppCompatActivity {
 
         RegisterButton = findViewById( R.id.registerButton );
         RegisterButton.setOnClickListener( this::Register_click ) ;
+
+        Glide.with(this)
+                .load(R.drawable.ic_background_img)
+                .transform(new BlurTransformation(this))
+                .into((ImageView) findViewById(R.id.screen));
+
     }
 
     void Register_click (View v){
@@ -264,6 +282,46 @@ public class RegisterActivity extends AppCompatActivity {
         }
         else {
             RegisterButton.setEnabled(false);
+        }
+    }
+
+    public class BlurTransformation extends BitmapTransformation {
+
+        private RenderScript rs;
+
+        public BlurTransformation(Context context) {
+            super();
+
+            rs = RenderScript.create(context);
+        }
+
+        @Override
+        protected Bitmap transform(BitmapPool pool, Bitmap toTransform, int outWidth, int outHeight) {
+            Bitmap blurredBitmap = toTransform.copy(Bitmap.Config.ARGB_8888, true);
+
+            // Allocate memory for Renderscript to work with
+            Allocation input = Allocation.createFromBitmap(rs, blurredBitmap, Allocation.MipmapControl.MIPMAP_FULL, Allocation.USAGE_SHARED);
+            Allocation output = Allocation.createTyped(rs, input.getType());
+
+            // Load up an instance of the specific script that we want to use.
+            ScriptIntrinsicBlur script = ScriptIntrinsicBlur.create(rs, Element.U8_4(rs));
+            script.setInput(input);
+
+            // Set the blur radius
+            script.setRadius(21.5f);
+
+            // Start the ScriptIntrinisicBlur
+            script.forEach(output);
+
+            // Copy the output to the blurred bitmap
+            output.copyTo(blurredBitmap);
+
+            return blurredBitmap;
+        }
+
+        @Override
+        public void updateDiskCacheKey(MessageDigest messageDigest) {
+            messageDigest.update("blur transformation".getBytes());
         }
     }
 

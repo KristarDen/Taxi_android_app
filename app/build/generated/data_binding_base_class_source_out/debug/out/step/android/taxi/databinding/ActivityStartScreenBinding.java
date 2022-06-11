@@ -5,10 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -18,24 +17,28 @@ import step.android.taxi.R;
 
 public final class ActivityStartScreenBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final ImageView loadIcon;
 
   @NonNull
-  public final TextView textView;
+  public final ImageView logo;
 
-  private ActivityStartScreenBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView loadIcon, @NonNull TextView textView) {
+  @NonNull
+  public final ImageView screen;
+
+  private ActivityStartScreenBinding(@NonNull RelativeLayout rootView, @NonNull ImageView loadIcon,
+      @NonNull ImageView logo, @NonNull ImageView screen) {
     this.rootView = rootView;
     this.loadIcon = loadIcon;
-    this.textView = textView;
+    this.logo = logo;
+    this.screen = screen;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -66,13 +69,19 @@ public final class ActivityStartScreenBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.logo;
+      ImageView logo = ViewBindings.findChildViewById(rootView, id);
+      if (logo == null) {
         break missingId;
       }
 
-      return new ActivityStartScreenBinding((ConstraintLayout) rootView, loadIcon, textView);
+      id = R.id.screen;
+      ImageView screen = ViewBindings.findChildViewById(rootView, id);
+      if (screen == null) {
+        break missingId;
+      }
+
+      return new ActivityStartScreenBinding((RelativeLayout) rootView, loadIcon, logo, screen);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1276,6 +1276,7 @@ color background_floating_material_light
 color background_gradient_color
 color background_material_dark
 color background_material_light
+color background_transparent
 color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -2906,6 +2907,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable amu_bubble_mask
 drawable amu_bubble_shadow
+drawable auth_backbround
 drawable avd_hide_password
 drawable avd_show_password
 drawable backgroud_gradient
@@ -2947,15 +2949,18 @@ drawable form_wrong
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_addres_icon_pos
+drawable ic_background_img
 drawable ic_clock_black_24dp
 drawable ic_close_animated
 drawable ic_close_vector
 drawable ic_curr_geo_pos
+drawable ic_from_icon
 drawable ic_is_swipeble_icon
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_load
+drawable ic_logo
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -2969,6 +2974,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_to_icon
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -3239,6 +3245,7 @@ id fragment_container_view_tag
 id frost
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id goMap
 id gone
 id graph
@@ -3292,6 +3299,7 @@ id load_icon
 id loginButton
 id loginLabel
 id login_or_regist_label
+id logo
 id map
 id masked
 id match_constraint
@@ -3522,7 +3530,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

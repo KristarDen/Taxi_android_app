@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud_gradient"
+    android:background="@color/background"
     android:fontFamily="@font/robotoregularobotoregular"
     tools:context=".StartScreen">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
+        android:soundEffectsEnabled="false"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_background_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_transparent"></RelativeLayout>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="182dp"
+        android:layout_height="80.66dp"
+        android:layout_marginTop="145dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo"></ImageView>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="100dp"
-            android:gravity="center|center_horizontal"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="96sp" />
-
-        <ImageView
-            android:id="@+id/load_icon"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/ic_load" />
-
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/load_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/ic_load" />
+</RelativeLayout>

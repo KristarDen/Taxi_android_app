@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -63,13 +64,16 @@ public final class RegistrationActivityBinding implements ViewBinding {
   @NonNull
   public final TextView registrationLabel;
 
+  @NonNull
+  public final ImageView screen;
+
   private RegistrationActivityBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText confirmPassword, @NonNull EditText email, @NonNull TextView emailLabel,
       @NonNull EditText firstName, @NonNull TextView firstNameLabel, @NonNull EditText lastName,
       @NonNull TextView lastNameLabel, @NonNull TextView passConfirmLabel,
       @NonNull TextView passLabel, @NonNull EditText password, @NonNull TextView phoneLabel,
       @NonNull EditText phoneNumber, @NonNull Button registerButton,
-      @NonNull TextView registrationLabel) {
+      @NonNull TextView registrationLabel, @NonNull ImageView screen) {
     this.rootView = rootView;
     this.confirmPassword = confirmPassword;
     this.email = email;
@@ -85,6 +89,7 @@ public final class RegistrationActivityBinding implements ViewBinding {
     this.phoneNumber = phoneNumber;
     this.registerButton = registerButton;
     this.registrationLabel = registrationLabel;
+    this.screen = screen;
   }
 
   @Override
@@ -198,9 +203,15 @@ public final class RegistrationActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.screen;
+      ImageView screen = ViewBindings.findChildViewById(rootView, id);
+      if (screen == null) {
+        break missingId;
+      }
+
       return new RegistrationActivityBinding((ConstraintLayout) rootView, confirmPassword, email,
           emailLabel, firstName, firstNameLabel, lastName, lastNameLabel, passConfirmLabel,
-          passLabel, password, phoneLabel, phoneNumber, registerButton, registrationLabel);
+          passLabel, password, phoneLabel, phoneNumber, registerButton, registrationLabel, screen);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
