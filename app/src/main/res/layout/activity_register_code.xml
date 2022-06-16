@@ -44,7 +44,7 @@
             android:id="@+id/user_mail_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="11dp"
             android:textSize="16sp"
             android:textColor="@color/yourmail_text_color">
         </TextView>
