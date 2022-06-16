@@ -1,39 +1,26 @@
-step/android/taxi/Network.java
- step.android.taxi.Network
+step/android/taxi/Address_item.java
+ step.android.taxi.Address_item
 step/android/taxi/BuildConfig.java
  step.android.taxi.BuildConfig
-step/android/taxi/User.java
- step.android.taxi.User
+step/android/taxi/RegisterFormData.java
+ step.android.taxi.RegisterFormData
 step/android/taxi/OnSwipeTouchListener.java
  step.android.taxi.OnSwipeTouchListener
  step.android.taxi.OnSwipeTouchListener$1
  step.android.taxi.OnSwipeTouchListener$GestureListener
-step/android/taxi/databinding/ActivityStartScreenBinding.java
- step.android.taxi.databinding.ActivityStartScreenBinding
-step/android/taxi/GMapApi.java
- step.android.taxi.GMapApi
 step/android/taxi/AES256.java
  step.android.taxi.AES256
-step/android/taxi/databinding/ActivityLoginOrRegisterBinding.java
- step.android.taxi.databinding.ActivityLoginOrRegisterBinding
-step/android/taxi/RegisterFormData.java
- step.android.taxi.RegisterFormData
-step/android/taxi/databinding/ActivityMapsBinding.java
- step.android.taxi.databinding.ActivityMapsBinding
-step/android/taxi/Address_item.java
- step.android.taxi.Address_item
-step/android/taxi/databinding/ActivityLoginBinding.java
- step.android.taxi.databinding.ActivityLoginBinding
+step/android/taxi/GMapApi.java
+ step.android.taxi.GMapApi
+step/android/taxi/Network.java
+ step.android.taxi.Network
+step/android/taxi/User.java
+ step.android.taxi.User
 step/android/taxi/StartScreen.java
  step.android.taxi.StartScreen
  step.android.taxi.StartScreen$BlurTransformation
-step/android/taxi/databinding/RegistrationActivityBinding.java
- step.android.taxi.databinding.RegistrationActivityBinding
-step/android/taxi/LoginActivity.java
- step.android.taxi.LoginActivity
- step.android.taxi.LoginActivity$1
- step.android.taxi.LoginActivity$2
- step.android.taxi.LoginActivity$BlurTransformation
+step/android/taxi/databinding/ActivityStartScreenBinding.java
+ step.android.taxi.databinding.ActivityStartScreenBinding
 step/android/taxi/RegisterActivity.java
  step.android.taxi.RegisterActivity
  step.android.taxi.RegisterActivity$1
@@ -43,8 +30,31 @@ step/android/taxi/RegisterActivity.java
  step.android.taxi.RegisterActivity$5
  step.android.taxi.RegisterActivity$6
  step.android.taxi.RegisterActivity$BlurTransformation
+step/android/taxi/RegisterCodeActivity.java
+ step.android.taxi.RegisterCodeActivity
+ step.android.taxi.RegisterCodeActivity$1
+ step.android.taxi.RegisterCodeActivity$2
+ step.android.taxi.RegisterCodeActivity$3
+ step.android.taxi.RegisterCodeActivity$4
+ step.android.taxi.RegisterCodeActivity$5
+ step.android.taxi.RegisterCodeActivity$6
+step/android/taxi/databinding/RegistrationActivityBinding.java
+ step.android.taxi.databinding.RegistrationActivityBinding
 step/android/taxi/LoginOrRegister.java
  step.android.taxi.LoginOrRegister
+step/android/taxi/databinding/ActivityLoginOrRegisterBinding.java
+ step.android.taxi.databinding.ActivityLoginOrRegisterBinding
+step/android/taxi/LoginActivity.java
+ step.android.taxi.LoginActivity
+ step.android.taxi.LoginActivity$1
+ step.android.taxi.LoginActivity$2
+ step.android.taxi.LoginActivity$BlurTransformation
+step/android/taxi/databinding/ActivityLoginBinding.java
+ step.android.taxi.databinding.ActivityLoginBinding
+step/android/taxi/databinding/ActivityRegisterCodeBinding.java
+ step.android.taxi.databinding.ActivityRegisterCodeBinding
+step/android/taxi/databinding/ActivityMapsBinding.java
+ step.android.taxi.databinding.ActivityMapsBinding
 step/android/taxi/MapsActivity.java
  step.android.taxi.MapsActivity
  step.android.taxi.MapsActivity$1

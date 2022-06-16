@@ -17,4 +17,6 @@
     <string name="address_to_hint">Куда едем ?</string>
     <string name="address_from_hint">Откуда едем ?</string>
     <string name="Rating">Рейтинг</string>
+    <string name="Enter_code">Введите код</string>
+    <string name="Code_was_sended">E-mail код был отправлен на</string>
 </resources>

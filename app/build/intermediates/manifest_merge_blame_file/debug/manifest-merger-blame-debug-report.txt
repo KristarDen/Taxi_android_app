@@ -58,7 +58,7 @@
 36    </queries>
 37
 38    <application
-38-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:21:5-64:19
+38-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:21:5-67:19
 39        android:allowBackup="true"
 39-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:22:9-35
 40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -80,152 +80,157 @@
 49-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:28:9-42
 50        android:usesCleartextTraffic="true" >
 50-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:29:9-44
-51
-52        <!--
-53             The API key for Google Maps-based APIs is defined as a string resource.
-54             (See the file "res/values/google_maps_api.xml").
-55             Note that the API key is linked to the encryption key used to sign the APK.
-56             You need a different API key for each encryption key, including the release key that is used to
-57             sign the APK for publishing.
-58             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-59        -->
-60        <meta-data
-60-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:38:9-40:55
-61            android:name="com.google.android.geo.API_KEY"
-61-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:39:13-58
-62            android:value="@string/google_maps_key" />
-62-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:40:13-52
-63
-64        <activity
-64-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:42:9-45:59
-65            android:name="step.android.taxi.MapsActivity"
-65-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:43:13-41
-66            android:exported="false"
-66-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:44:13-37
-67            android:label="@string/title_activity_maps" />
-67-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:45:13-56
-68        <activity
-68-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:46:9-48:40
-69            android:name="step.android.taxi.LoginActivity"
-69-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:47:13-42
-70            android:exported="false" />
-70-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:48:13-37
-71        <activity
-71-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:49:9-51:40
-72            android:name="step.android.taxi.LoginOrRegister"
-72-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:50:13-44
-73            android:exported="false" />
-73-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:51:13-37
-74        <activity
-74-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:52:9-60:20
-75            android:name="step.android.taxi.StartScreen"
-75-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:53:13-40
-76            android:exported="true" >
-76-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:54:13-36
-77            <intent-filter>
-77-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:55:13-59:29
-78                <action android:name="android.intent.action.MAIN" />
-78-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:56:17-69
-78-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:56:25-66
-79
-80                <category android:name="android.intent.category.LAUNCHER" />
-80-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:58:17-77
-80-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:58:27-74
-81            </intent-filter>
-82        </activity>
-83        <activity
-83-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:61:9-63:39
-84            android:name="step.android.taxi.RegisterActivity"
-84-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:62:13-45
-85            android:exported="true" />
-85-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:63:13-36
-86        <activity
-86-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:14:9-20:20
-87            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-87-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:15:13-91
-88            android:exported="false"
-88-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:16:13-37
-89            android:label="@string/places_autocomplete_label"
-89-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:17:13-62
-90            android:theme="@style/PlacesAutocompleteOverlay"
-90-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:18:13-61
-91            android:windowSoftInputMode="adjustResize" >
-91-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:19:13-55
-92        </activity> <!-- Needs to be explicitly declared on P+ -->
-93        <uses-library
-93-->[com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/90013a2d70c7cdac5ee28478607b5678/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
-94            android:name="org.apache.http.legacy"
-94-->[com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/90013a2d70c7cdac5ee28478607b5678/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
-95            android:required="false" />
-95-->[com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/90013a2d70c7cdac5ee28478607b5678/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
-96
-97        <activity
-97-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-98-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-99            android:exported="false"
-99-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-101
-102        <meta-data
-102-->[com.google.android.gms:play-services-basement:18.0.0] /home/denis/.gradle/caches/transforms-3/4065ffa9f933b654ef0b655a200e3015/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-103            android:name="com.google.android.gms.version"
-103-->[com.google.android.gms:play-services-basement:18.0.0] /home/denis/.gradle/caches/transforms-3/4065ffa9f933b654ef0b655a200e3015/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-104            android:value="@integer/google_play_services_version" />
-104-->[com.google.android.gms:play-services-basement:18.0.0] /home/denis/.gradle/caches/transforms-3/4065ffa9f933b654ef0b655a200e3015/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-105
-106        <provider
-106-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-107            android:name="androidx.startup.InitializationProvider"
-107-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-108            android:authorities="step.android.taxi.androidx-startup"
-108-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-109            android:exported="false" >
-109-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-110            <meta-data
-110-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-111-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-112                android:value="androidx.startup" />
-112-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-113            <meta-data
-113-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/denis/.gradle/caches/transforms-3/4d87c3e3b70abeed5e61faf08f3b9b5b/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-114-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/denis/.gradle/caches/transforms-3/4d87c3e3b70abeed5e61faf08f3b9b5b/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-115                android:value="androidx.startup" />
-115-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/denis/.gradle/caches/transforms-3/4d87c3e3b70abeed5e61faf08f3b9b5b/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-116        </provider>
-117
-118        <service
-118-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:29:9-35:19
-119            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-119-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:30:13-103
-120            android:exported="false" >
-120-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:31:13-37
-121            <meta-data
-121-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:32:13-34:39
-122                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-122-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:33:17-94
-123                android:value="cct" />
-123-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:34:17-36
-124        </service>
-125        <service
-125-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:26:9-30:19
-126            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-126-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:27:13-117
-127            android:exported="false"
-127-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:28:13-37
-128            android:permission="android.permission.BIND_JOB_SERVICE" >
-128-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:29:13-69
-129        </service>
-130
-131        <receiver
-131-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:32:9-34:40
-132            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-132-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:33:13-132
-133            android:exported="false" />
-133-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:34:13-37
-134    </application>
-135
-136</manifest>
+51        <activity
+51-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:30:9-32:40
+52            android:name="step.android.taxi.RegisterCodeActivity"
+52-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:31:13-49
+53            android:exported="false" />
+53-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:32:13-37
+54        <!--
+55             The API key for Google Maps-based APIs is defined as a string resource.
+56             (See the file "res/values/google_maps_api.xml").
+57             Note that the API key is linked to the encryption key used to sign the APK.
+58             You need a different API key for each encryption key, including the release key that is used to
+59             sign the APK for publishing.
+60             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+61        -->
+62        <meta-data
+62-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:41:9-43:55
+63            android:name="com.google.android.geo.API_KEY"
+63-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:42:13-58
+64            android:value="@string/google_maps_key" />
+64-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:43:13-52
+65
+66        <activity
+66-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:45:9-48:59
+67            android:name="step.android.taxi.MapsActivity"
+67-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:46:13-41
+68            android:exported="false"
+68-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:47:13-37
+69            android:label="@string/title_activity_maps" />
+69-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:48:13-56
+70        <activity
+70-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:49:9-51:40
+71            android:name="step.android.taxi.LoginActivity"
+71-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:50:13-42
+72            android:exported="false" />
+72-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:51:13-37
+73        <activity
+73-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:52:9-54:40
+74            android:name="step.android.taxi.LoginOrRegister"
+74-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:53:13-44
+75            android:exported="false" />
+75-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:54:13-37
+76        <activity
+76-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:55:9-63:20
+77            android:name="step.android.taxi.StartScreen"
+77-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:56:13-40
+78            android:exported="true" >
+78-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:57:13-36
+79            <intent-filter>
+79-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:58:13-62:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:59:17-69
+80-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:59:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:61:17-77
+82-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:61:27-74
+83            </intent-filter>
+84        </activity>
+85        <activity
+85-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:64:9-66:39
+86            android:name="step.android.taxi.RegisterActivity"
+86-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:65:13-45
+87            android:exported="true" />
+87-->/home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:66:13-36
+88        <activity
+88-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:14:9-20:20
+89            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+89-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:15:13-91
+90            android:exported="false"
+90-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:16:13-37
+91            android:label="@string/places_autocomplete_label"
+91-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:17:13-62
+92            android:theme="@style/PlacesAutocompleteOverlay"
+92-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:18:13-61
+93            android:windowSoftInputMode="adjustResize" >
+93-->[com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/ef289525b0ea62edf18a020056512b7a/transformed/jetified-places-2.6.0/AndroidManifest.xml:19:13-55
+94        </activity> <!-- Needs to be explicitly declared on P+ -->
+95        <uses-library
+95-->[com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/90013a2d70c7cdac5ee28478607b5678/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+96            android:name="org.apache.http.legacy"
+96-->[com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/90013a2d70c7cdac5ee28478607b5678/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+97            android:required="false" />
+97-->[com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/90013a2d70c7cdac5ee28478607b5678/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+98
+99        <activity
+99-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:18.0.1] /home/denis/.gradle/caches/transforms-3/7d19f89ad245d9f627f67ffc17dd7e15/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+103
+104        <meta-data
+104-->[com.google.android.gms:play-services-basement:18.0.0] /home/denis/.gradle/caches/transforms-3/4065ffa9f933b654ef0b655a200e3015/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+105            android:name="com.google.android.gms.version"
+105-->[com.google.android.gms:play-services-basement:18.0.0] /home/denis/.gradle/caches/transforms-3/4065ffa9f933b654ef0b655a200e3015/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+106            android:value="@integer/google_play_services_version" />
+106-->[com.google.android.gms:play-services-basement:18.0.0] /home/denis/.gradle/caches/transforms-3/4065ffa9f933b654ef0b655a200e3015/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+107
+108        <provider
+108-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+109            android:name="androidx.startup.InitializationProvider"
+109-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+110            android:authorities="step.android.taxi.androidx-startup"
+110-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+111            android:exported="false" >
+111-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+112            <meta-data
+112-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+113-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+114                android:value="androidx.startup" />
+114-->[androidx.emoji2:emoji2:1.0.0] /home/denis/.gradle/caches/transforms-3/beb1e8c1d1724370afa1be71eb324942/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+115            <meta-data
+115-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/denis/.gradle/caches/transforms-3/4d87c3e3b70abeed5e61faf08f3b9b5b/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+116                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+116-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/denis/.gradle/caches/transforms-3/4d87c3e3b70abeed5e61faf08f3b9b5b/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+117                android:value="androidx.startup" />
+117-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/denis/.gradle/caches/transforms-3/4d87c3e3b70abeed5e61faf08f3b9b5b/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+118        </provider>
+119
+120        <service
+120-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:29:9-35:19
+121            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+121-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:30:13-103
+122            android:exported="false" >
+122-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:31:13-37
+123            <meta-data
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:32:13-34:39
+124                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+124-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:33:17-94
+125                android:value="cct" />
+125-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /home/denis/.gradle/caches/transforms-3/13d36f8298bfd5c8597f23e62df9338a/transformed/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:34:17-36
+126        </service>
+127        <service
+127-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:26:9-30:19
+128            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+128-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:27:13-117
+129            android:exported="false"
+129-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:28:13-37
+130            android:permission="android.permission.BIND_JOB_SERVICE" >
+130-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:29:13-69
+131        </service>
+132
+133        <receiver
+133-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:32:9-34:40
+134            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+134-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:33:13-132
+135            android:exported="false" />
+135-->[com.google.android.datatransport:transport-runtime:2.2.3] /home/denis/.gradle/caches/transforms-3/1d860f90d598db7061fff38048b4a8c3/transformed/jetified-transport-runtime-2.2.3/AndroidManifest.xml:34:13-37
+136    </application>
+137
+138</manifest>

@@ -47,7 +47,6 @@ public class RegisterActivity extends AppCompatActivity {
     boolean isLastNameCheck = false;
     boolean isPasswordCheck = false;
 
-    String url = "http://localhost:5000/api/auth/register";
     AsyncHttpClient client = new AsyncHttpClient();
     RequestParams params = new RequestParams();
 
@@ -251,12 +250,13 @@ public class RegisterActivity extends AppCompatActivity {
 
                 JSONObject json = new JSONObject(res);
                 res = json.get("token").toString();
-
+                User.setAuthToken(res);
+                User.setEmail(newUser.email);
                 Log.i("response : ",res);
                 this.startActivity(
                         new Intent(
                                 this,
-                                MapsActivity.class ) ) ;
+                                RegisterCodeActivity.class ) ) ;
             } catch (Exception e) {
                 //Toast.makeText(this, e.getMessage(),Toast.LENGTH_LONG).show();
                  this.startActivity(

@@ -1,143 +1,63 @@
 [
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_menu_btn.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_btn.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/menu_activity_main_drawer.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/menu/activity_main_drawer.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_menu_slideshow.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_menu_slideshow.xml"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_background_img.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_background_img.png"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_from_icon.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_from_icon.png"
-    },
-    {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/font_robotoregular.ttf.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/font/robotoregular.ttf"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_addres_icon_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_addres_icon_pos.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_curr_geo_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_curr_geo_pos.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_curr_geo_pos.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_curr_geo_pos.png"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/layout_registration_activity.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/registration_activity.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_to_icon.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_to_icon.png"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_prev_screen_btn.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_addres_icon_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_addres_icon_pos.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_suggestion_address.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/suggestion_address.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_is_swipeble_icon.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_is_swipeble_icon.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/font_robotoregularobotoregular.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/font/robotoregularobotoregular.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_background_img.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_background_img.xml"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_curr_geo_pos.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_curr_geo_pos.png"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_background_img.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_background_img.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_search_panel.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/search_panel.xml"
     },
     {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_form_background.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/form_background.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_backgroud_gradient.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/backgroud_gradient.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_load.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_load.xml"
-    },
-    {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_to_icon.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_to_icon.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_menu_camera.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_menu_camera.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_addres_icon_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_addres_icon_pos.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_background_img.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_background_img.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_curr_geo_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_curr_geo_pos.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_menu_btn.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_btn.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_addres_icon_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_addres_icon_pos.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_curr_geo_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_curr_geo_pos.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/layout_activity_start_screen.xml.flat",
@@ -148,22 +68,6 @@
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_logo.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_from_icon.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_from_icon.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_form_wrong.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/form_wrong.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_from_icon.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_from_icon.png"
-    },
-    {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_to_icon.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_to_icon.png"
     },
@@ -172,44 +76,28 @@
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_from_icon.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_addres_icon_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_addres_icon_pos.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_menu_gallery.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_menu_gallery.xml"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_from_icon.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_from_icon.png"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_menu_btn.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_btn.png"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_prev_screen_btn.png"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/menu_main.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/menu/main.xml"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_btn.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/layout_activity_login_or_register.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_login_or_register.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_background_img.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_background_img.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_curr_geo_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_curr_geo_pos.png"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_code_form_back.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/code_form_back.xml"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_addres_icon_pos.xml.flat",
@@ -228,16 +116,8 @@
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_curr_geo_pos.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/menu_menu_navigation_view.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/menu/menu_navigation_view.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_menu_btn.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_btn.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_addres_icon_pos.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_addres_icon_pos.png"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_prev_screen_btn.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_prev_screen_btn.xml"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_to_icon.png.flat",
@@ -248,36 +128,28 @@
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/auth_backbround.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_from_icon.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_from_icon.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_prev_screen_btn.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/anim_load_anim.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/anim/load_anim.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_menu_btn.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_menu_btn.xml"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_background_img.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_background_img.png"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_prev_screen_btn.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/layout_activity_maps.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_maps.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_background_img.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_background_img.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_to_icon.png.flat",
@@ -288,24 +160,16 @@
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/white.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_prev_screen_btn.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_menu_btn.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_btn.png"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_side_nav_bar.xml.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/side_nav_bar.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_from_icon.png.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_from_icon.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_button_confirm.xml.flat",
@@ -316,12 +180,204 @@
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/navigation/mobile_navigation.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_menu_btn.png.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_btn.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/menu_activity_main_drawer.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_btn.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_menu_slideshow.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_from_icon.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/layout_registration_activity.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/registration_activity.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_to_icon.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_to_icon.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_is_swipeble_icon.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_is_swipeble_icon.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_background_img.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_background_img.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_background_img.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_background_img.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_backgroud_gradient.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/backgroud_gradient.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_load.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_load.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_menu_camera.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_background_img.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_background_img.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_btn.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_prev_screen_btn.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_from_icon.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_code_form_back_blank.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/code_form_back_blank.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_form_wrong.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/form_wrong.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_from_icon.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_menu_gallery.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/menu_main.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_background_img.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_background_img.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/menu_menu_navigation_view.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/menu/menu_navigation_view.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_btn.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-mdpi/ic_from_icon.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_menu_btn.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_menu_btn.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_background_img.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_background_img.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_background_img.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_background_img.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/layout_activity_register_code.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_register_code.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_side_nav_bar.xml.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_from_icon.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/build/generated/res/pngs/debug/drawable-ldpi/ic_from_icon.png"
+    },
+    {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/raw_gmap_style.json.flat",
@@ -330,9 +386,5 @@
     {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
     }
 ]

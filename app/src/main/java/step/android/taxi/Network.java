@@ -30,68 +30,6 @@ import okhttp3.Response;
 
 public class Network {
 
-    public static String Post(String path, String jsonData) throws IOException {
-
-        String mess = String.format("{ \"data\" : \"%s\"}",AES256.textToBase64(jsonData)) ;
-        mess = mess.replace("\n", "\\n");
-        //byte[] out =  mess.getBytes();
-        URL url;
-        HttpURLConnection httpURLConnection = null;
-        OutputStream os = null;
-
-        InputStreamReader isR = null;
-        BufferedReader bfR = null;
-        StringBuilder sb = new StringBuilder();
-
-
-        try {
-            url = new URL(path);
-            httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setRequestMethod("POST");
-            httpURLConnection.setDoOutput(true);
-            httpURLConnection.setDoInput(true);
-
-            httpURLConnection.addRequestProperty("Content-Type", "application/json");
-            httpURLConnection.setConnectTimeout(200);
-            httpURLConnection.setReadTimeout(200);
-
-            //os = httpURLConnection.getOutputStream();
-            OutputStreamWriter osw = new OutputStreamWriter(httpURLConnection.getOutputStream());
-            osw.write(mess);
-            osw.close();
-
-            //httpURLConnection.connect();
-
-            Log.d("HttpUrlConnection",httpURLConnection.getContent().toString());
-
-
-            if (HttpURLConnection.HTTP_OK == httpURLConnection.getResponseCode()) {
-                isR = new InputStreamReader((httpURLConnection.getInputStream()));
-                bfR = new BufferedReader(isR);
-                String line;
-                while ((line = bfR.readLine()) != null) {
-                    sb.append(line);
-                }
-                //return line;
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            if (isR != null) {
-                isR.close();
-            }
-
-        } finally {
-            if(isR != null)isR.close();
-            if(bfR != null)bfR.close();
-            os.close();
-        }
-
-
-        return sb.toString();
-
-    }
-
     public static String POST(String path, String jsonData) {
 
         OkHttpClient client = new OkHttpClient().newBuilder()

@@ -1354,6 +1354,7 @@ color foreground_material_light
 color form_background
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color labelHintColor
 color labelTextColor
 color m3_appbar_overlay_color
@@ -2220,6 +2221,7 @@ color tooltip_background_dark
 color tooltip_background_light
 color white
 color wrong_Form_color
+color yourmail_text_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -2920,6 +2922,8 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_confirm
+drawable code_form_back
+drawable code_form_back_blank
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2974,6 +2978,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_prev_screen_btn
 drawable ic_to_icon
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -3037,6 +3042,12 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id EmailCode_1_num
+id EmailCode_2_num
+id EmailCode_3_num
+id EmailCode_4_num
+id EmailCode_5_num
+id EmailCode_6_num
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3560,6 +3571,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_mail_text
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3670,6 +3682,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_login_or_register
 layout activity_maps
+layout activity_register_code
 layout activity_start_screen
 layout amu_info_window
 layout amu_text_bubble
@@ -3785,6 +3798,7 @@ menu example_menu2
 menu main
 menu menu_navigation_view
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description
@@ -3810,7 +3824,10 @@ raw amu_unsupported
 raw amu_visibility_ground_overlay
 raw gmap_style
 raw places_keep
+string Code_was_sended
+string Enter_code
 string Rating
+string Taxi_DB_Table_str
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3869,6 +3886,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string confirm_code_url
 string email
 string email_Hint
 string error_icon_content_description

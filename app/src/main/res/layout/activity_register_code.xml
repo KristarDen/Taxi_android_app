@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".RegisterCodeActivity"
+    >
+    <Button
+        android:layout_width="13.7dp"
+        android:layout_height="24.7dp"
+        android:background="@drawable/ic_prev_screen_btn"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="24dp"
+        app:backgroundTint="@null">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+
+        android:textColor="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="31dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/Enter_code"
+            android:textColor="@color/white"
+            android:textSize="23dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Code_was_sended"
+            android:textColor="@color/white"
+            android:textSize="14sp"></TextView>
+        <TextView
+            android:id="@+id/user_mail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/yourmail_text_color">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EmailCode_1_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/code_form_back_blank"
+                android:ems="1"
+                android:inputType="numberDecimal"
+                android:isScrollContainer="false"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <EditText
+                android:id="@+id/EmailCode_2_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/code_form_back_blank"
+                android:ems="1"
+                android:inputType="numberDecimal"
+                android:isScrollContainer="false"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <EditText
+                android:id="@+id/EmailCode_3_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/code_form_back_blank"
+                android:ems="1"
+                android:inputType="numberDecimal"
+                android:isScrollContainer="false"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <EditText
+                android:id="@+id/EmailCode_4_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/code_form_back_blank"
+                android:ems="1"
+                android:inputType="numberDecimal"
+                android:isScrollContainer="false"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <EditText
+                android:id="@+id/EmailCode_5_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/code_form_back_blank"
+                android:ems="1"
+                android:inputType="numberDecimal"
+                android:isScrollContainer="false"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <EditText
+                android:id="@+id/EmailCode_6_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/code_form_back_blank"
+                android:ems="1"
+                android:inputType="numberDecimal"
+                android:isScrollContainer="false"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1353,6 +1353,7 @@ int color foreground_material_light 0x7f05006c
 int color form_background 0x7f05006d
 int color highlighted_text_material_dark 0x7f05006e
 int color highlighted_text_material_light 0x7f05006f
+int color ic_launcher_background 0x7f0503d4
 int color labelHintColor 0x7f050070
 int color labelTextColor 0x7f050071
 int color m3_appbar_overlay_color 0x7f050072
@@ -2219,6 +2220,7 @@ int color tooltip_background_dark 0x7f0503ce
 int color tooltip_background_light 0x7f0503cf
 int color white 0x7f0503d0
 int color wrong_Form_color 0x7f0503d1
+int color yourmail_text_color 0x7f0503d3
 int dimen abc_action_bar_content_inset_material 0x7f060000
 int dimen abc_action_bar_content_inset_with_nav 0x7f060001
 int dimen abc_action_bar_default_height_material 0x7f060002
@@ -2919,6 +2921,8 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f07006b
 int drawable btn_radio_on_mtrl 0x7f07006c
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f07006d
 int drawable button_confirm 0x7f07006e
+int drawable code_form_back 0x7f0700e4
+int drawable code_form_back_blank 0x7f0700e5
 int drawable common_full_open_on_phone 0x7f07006f
 int drawable common_google_signin_btn_icon_dark 0x7f070070
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070071
@@ -2973,6 +2977,7 @@ int drawable ic_mtrl_checked_circle 0x7f0700a0
 int drawable ic_mtrl_chip_checked_black 0x7f0700a1
 int drawable ic_mtrl_chip_checked_circle 0x7f0700a2
 int drawable ic_mtrl_chip_close_circle 0x7f0700a3
+int drawable ic_prev_screen_btn 0x7f0700e6
 int drawable ic_to_icon 0x7f0700e2
 int drawable m3_appbar_background 0x7f0700a4
 int drawable m3_popupmenu_background_overlay 0x7f0700a5
@@ -3036,6 +3041,12 @@ int id ALT 0x7f090000
 int id BOTTOM_END 0x7f090001
 int id BOTTOM_START 0x7f090002
 int id CTRL 0x7f090003
+int id EmailCode_1_num 0x7f090223
+int id EmailCode_2_num 0x7f090224
+int id EmailCode_3_num 0x7f090225
+int id EmailCode_4_num 0x7f090226
+int id EmailCode_5_num 0x7f090227
+int id EmailCode_6_num 0x7f090228
 int id FUNCTION 0x7f090004
 int id META 0x7f090005
 int id NO_DEBUG 0x7f090006
@@ -3559,6 +3570,7 @@ int id uniform 0x7f09020b
 int id unlabeled 0x7f09020c
 int id up 0x7f09020d
 int id useLogo 0x7f09020e
+int id user_mail_text 0x7f090229
 int id vertical_only 0x7f09020f
 int id view_offset_helper 0x7f090210
 int id view_transition 0x7f090211
@@ -3669,6 +3681,7 @@ int layout abc_tooltip 0x7f0c001b
 int layout activity_login 0x7f0c001c
 int layout activity_login_or_register 0x7f0c001d
 int layout activity_maps 0x7f0c001e
+int layout activity_register_code 0x7f0c008c
 int layout activity_start_screen 0x7f0c001f
 int layout amu_info_window 0x7f0c0020
 int layout amu_text_bubble 0x7f0c0021
@@ -3784,6 +3797,7 @@ int menu example_menu2 0x7f0d0002
 int menu main 0x7f0d0003
 int menu menu_navigation_view 0x7f0d0004
 int mipmap ic_launcher 0x7f0e0000
+int mipmap ic_launcher_foreground 0x7f0e0002
 int mipmap ic_launcher_round 0x7f0e0001
 int navigation mobile_navigation 0x7f0f0000
 int plurals mtrl_badge_content_description 0x7f100000
@@ -3809,7 +3823,10 @@ int raw amu_unsupported 0x7f110012
 int raw amu_visibility_ground_overlay 0x7f110013
 int raw gmap_style 0x7f110014
 int raw places_keep 0x7f110015
+int string Code_was_sended 0x7f1200c4
+int string Enter_code 0x7f1200c5
 int string Rating 0x7f120000
+int string Taxi_DB_Table_str 0x7f1200c6
 int string abc_action_bar_home_description 0x7f120001
 int string abc_action_bar_up_description 0x7f120002
 int string abc_action_menu_overflow_description 0x7f120003
@@ -3868,6 +3885,7 @@ int string common_google_play_services_wear_update_text 0x7f120037
 int string common_open_on_phone 0x7f120038
 int string common_signin_button_text 0x7f120039
 int string common_signin_button_text_long 0x7f12003a
+int string confirm_code_url 0x7f1200c7
 int string email 0x7f12003b
 int string email_Hint 0x7f12003c
 int string error_icon_content_description 0x7f12003d

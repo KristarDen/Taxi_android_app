@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Taxi_DB_Table_str" translatable="false">
+        User_info (Token TEXT);
+    </string>
+    <string name="confirm_code_url" translatable="false">http://94.158.152.83:5000/api/auth/confirm/</string>
+</resources>

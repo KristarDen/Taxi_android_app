@@ -12,6 +12,10 @@
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_login_or_register.xml"
     },
     {
+        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register_code.xml",
+        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_register_code.xml"
+    },
+    {
         "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_maps.xml",
         "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_maps.xml"
     },

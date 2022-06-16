@@ -41,4 +41,6 @@
     <string name="address_to_hint">Where you go ?</string>
     <string name="address_from_hint">Where are you going from ?</string>
     <string name="Rating">Rating</string>
+    <string name="Enter_code">Enter the code</string>
+    <string name="Code_was_sended">E-mail code was sended on</string>
 </resources>
