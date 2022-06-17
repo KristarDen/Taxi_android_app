@@ -80,7 +80,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Загрузки/Telegram Desktop/Иконаприлежиния_Монтажная_область_1.png" />
+                                                <entry key="imagePath" value="$USER_HOME$/Загрузки/Telegram Desktop/ICONPNGZORGO_Монтажная область 1.png" />
                                                 <entry key="scalingPercent" value="80" />
                                               </map>
                                             </option>
@@ -114,8 +114,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="4b3c8c" />
-                                      <entry key="showSafeZone" value="false" />
+                                      <entry key="backgroundColor" value="514d90" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -279,11 +278,6 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
-                                    </map>
-                                  </option>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="showSafeZone" value="false" />
                                     </map>
                                   </option>
                                 </PersistentState>

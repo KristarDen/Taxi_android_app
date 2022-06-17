@@ -29,7 +29,12 @@ public class RegisterCodeActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             cell1 = form_1.getText().toString();
-            form_1.setBackground( getDrawable(R.drawable.code_form_back) );
+            if(cell1.length()<1){
+                form_1.setBackground( getDrawable(R.drawable.code_form_back_blank) );
+            }else{
+                form_1.setBackground( getDrawable(R.drawable.code_form_back) );
+                form_2.requestFocus();
+            }
             CheckCodeForm();
         }
     };
@@ -46,8 +51,14 @@ public class RegisterCodeActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             cell2 = form_2.getText().toString();
-            form_2.setBackground( getDrawable(R.drawable.code_form_back) );
+            if(cell2.length()<1){
+                form_2.setBackground( getDrawable(R.drawable.code_form_back_blank) );
+            }else {
+                form_2.setBackground( getDrawable(R.drawable.code_form_back) );
+                form_3.requestFocus();
+            }
             CheckCodeForm();
+
         }
     };
     private TextWatcher watcher_3 = new TextWatcher() {
@@ -63,8 +74,14 @@ public class RegisterCodeActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             cell3 = form_3.getText().toString();
-            form_3.setBackground( getDrawable(R.drawable.code_form_back) );
+            if(cell3.length()<1){
+                form_3.setBackground( getDrawable(R.drawable.code_form_back_blank) );
+            }else {
+                form_3.setBackground( getDrawable(R.drawable.code_form_back) );
+                form_4.requestFocus();
+            }
             CheckCodeForm();
+
         }
     };
     private TextWatcher watcher_4 = new TextWatcher() {
@@ -80,8 +97,14 @@ public class RegisterCodeActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             cell4 = form_4.getText().toString();
-            form_4.setBackground( getDrawable(R.drawable.code_form_back) );
+            if(cell4.length()<1){
+                form_4.setBackground( getDrawable(R.drawable.code_form_back_blank) );
+            }else {
+                form_4.setBackground( getDrawable(R.drawable.code_form_back) );
+                form_5.requestFocus();
+            }
             CheckCodeForm();
+
         }
     };
     private TextWatcher watcher_5 = new TextWatcher() {
@@ -97,8 +120,14 @@ public class RegisterCodeActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             cell5 = form_5.getText().toString();
-            form_5.setBackground( getDrawable(R.drawable.code_form_back) );
+            if(cell5.length()<1){
+                form_5.setBackground( getDrawable(R.drawable.code_form_back_blank) );
+            }else {
+                form_5.setBackground( getDrawable(R.drawable.code_form_back) );
+                form_6.requestFocus();
+            }
             CheckCodeForm();
+
         }
     };
     private TextWatcher watcher_6 = new TextWatcher() {
@@ -114,8 +143,13 @@ public class RegisterCodeActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             cell6 = form_6.getText().toString();
-            form_6.setBackground( getDrawable(R.drawable.code_form_back) );
-            CheckCodeForm();
+            if(cell6.length()<1){
+                form_6.setBackground( getDrawable(R.drawable.code_form_back_blank) );
+            }else {
+                form_6.setBackground( getDrawable(R.drawable.code_form_back) );
+                CheckCodeForm();
+            }
+
         }
     };
 
