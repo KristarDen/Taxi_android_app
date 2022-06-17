@@ -80,12 +80,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         public void beforeTextChanged(CharSequence s, int start, int count,
                                       int after) {
         }
+
         @Override
         public void onTextChanged(final CharSequence s, int start, int before,
                                   int count) {
-            if(timer != null)
+            if (timer != null)
                 timer.cancel();
         }
+
         @Override
         public void afterTextChanged(final Editable s) {
             //avoid triggering event when text is too short
@@ -94,19 +96,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 timer = new Timer();
                 timer.schedule(
                         new TimerTask() {
-                    @Override
-                    public void run() {
-                        runOnUiThread(
-                                new Runnable() {
                             @Override
                             public void run() {
-                                Fill_From_suggestion();
+                                runOnUiThread(
+                                        new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Fill_From_suggestion();
+                                            }
+                                        }
+                                );
                             }
-                        }
-                        );
-                    }
 
-                },
+                        },
                         DELAY);
             }
         }
@@ -118,12 +120,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         public void beforeTextChanged(CharSequence s, int start, int count,
                                       int after) {
         }
+
         @Override
         public void onTextChanged(final CharSequence s, int start, int before,
                                   int count) {
-            if(timer != null)
+            if (timer != null)
                 timer.cancel();
         }
+
         @Override
         public void afterTextChanged(final Editable s) {
             //avoid triggering event when text is too short
@@ -174,12 +178,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     // Map on click listener
     final GoogleMap.OnMapClickListener onMapClickListener =
             new GoogleMap.OnMapClickListener() {
-        @Override
-        public void onMapClick(LatLng arg0) {
+                @Override
+                public void onMapClick(LatLng arg0) {
 
-            drawWayOnMap(arg0,UserMarker.getPosition());
-        }
-    };
+                    drawWayOnMap(arg0, UserMarker.getPosition());
+                }
+            };
 
     private ActivityMapsBinding binding;
 
@@ -211,34 +215,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
 
         mContext = this;
+
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
         //From Text listener
-        From_edit_text = (EditText) findViewById( R.id.address_from );
+        From_edit_text = (EditText) findViewById(R.id.address_from);
         //Listener of text input ended
         From_edit_text.addTextChangedListener(From_edittext_watcher);
         From_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_from);
         //Where Text listener
-        Where_edit_text = (EditText) findViewById( R.id.address_to );
+        Where_edit_text = (EditText) findViewById(R.id.address_to);
         //Listener of text input ended
         Where_edit_text.addTextChangedListener(Where_edittext_watcher);
         Where_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_where);
 
         //add onTexChanged listener
         //From_edit_text.addTextChangedListener(From_edittext_watcher);
-        locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
-        isLocationEnabled();
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
-                Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
 
+        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        boolean statusOfGPS = manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+
+        locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
+
+        //Check that GPS is ON, if it's OFF start function and open GPS setting
+        if (statusOfGPS !=  true) {
+            isLocationEnabled();
         }
 
-
         //User GPS location listener
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
         locationManager.requestLocationUpdates(
                 LocationManager.GPS_PROVIDER,
                 10,
@@ -354,8 +363,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void isLocationEnabled() {
-
-        if(!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+        Intent intent = new Intent( Settings.ACTION_LOCATION_SOURCE_SETTINGS );
+        startActivity(intent);
+        /*
             AlertDialog.Builder alertDialog=new AlertDialog.Builder(mContext);
             alertDialog.setTitle("Enable Location");
             alertDialog.setMessage("Your locations setting is not enabled. Please enabled it in settings menu.");
@@ -372,21 +382,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
             AlertDialog alert=alertDialog.create();
             alert.show();
-        }
-        else{
-            /*
-            AlertDialog.Builder alertDialog=new AlertDialog.Builder(mContext);
-            alertDialog.setTitle("Confirm Location");
-            alertDialog.setMessage("Your Location is enabled, please enjoy");
-            alertDialog.setNegativeButton("Back to interface",new DialogInterface.OnClickListener(){
-                public void onClick(DialogInterface dialog, int which){
-                    dialog.cancel();
-                }
-            });
-            AlertDialog alert=alertDialog.create();
-            alert.show();
-             */
-        }
+
+         */
     }
 
     private void drawWayOnMap(LatLng A, LatLng B){
