@@ -27,6 +27,7 @@
             android:layout_height="93dp">
             <ImageView
                 android:id="@+id/UserPhoto"
+                android:background="@drawable/code_form_back"
                 android:layout_gravity="center"
                 android:layout_width="91dp"
                 android:layout_height="91dp">
