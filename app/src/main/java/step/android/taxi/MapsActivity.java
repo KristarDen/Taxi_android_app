@@ -1,21 +1,22 @@
 package step.android.taxi;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
-import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.VectorDrawable;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -25,7 +26,6 @@ import android.widget.Toast;
 
 import android.Manifest;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -46,10 +46,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.larvalabs.svgandroid.SVG;
-import com.larvalabs.svgandroid.SVGBuilder;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Timer;
@@ -154,6 +151,37 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     };
 
+    public void OpenGPS_settings() {
+        //Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+        //someActivityResultLauncher.launch(intent);
+    }
+
+    // You can do the assignment inside onAttach or onCreate, i.e, before the activity is displayed
+    ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        // There are no request codes
+                        Intent data = result.getData();
+                        //doSomeOperations();
+
+                    }
+                }
+            }
+    );
+
+    ActivityResultLauncher<Intent> StartMenuForResult = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    // обработка result
+                }
+            }
+    );
+
     /*
         Point A and Point B its a  coordination of
         start and end point of
@@ -196,6 +224,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     private Marker DestinationMarker;
 
+    private Button MenuBtn;
+    private View.OnClickListener MenuBtnListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent menuActivity = new Intent(mContext, MenuActivity.class);
+            StartMenuForResult.launch(menuActivity);
+        }
+    };
+
     private LatLng UserPosition;
     private Context mContext;
 
@@ -219,6 +256,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        //Get menu button and add onclick listener
+        MenuBtn = (Button) findViewById(R.id.menu_btn);
+        MenuBtn.setOnClickListener(MenuBtnListener);
 
         //From Text listener
         From_edit_text = (EditText) findViewById(R.id.address_from);
@@ -234,18 +274,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //add onTexChanged listener
         //From_edit_text.addTextChangedListener(From_edittext_watcher);
 
-        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        boolean statusOfGPS = manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+        //LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        //boolean statusOfGPS = manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
         locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
 
         //Check that GPS is ON, if it's OFF start function and open GPS setting
-        if (statusOfGPS !=  true) {
-            isLocationEnabled();
-        }
+        /*if (statusOfGPS !=  true) {
+            //isLocationEnabled();
+            //OpenGPS_settings();
+        }*/
 
         //User GPS location listener
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED)
+        {
             return;
         }
         locationManager.requestLocationUpdates(
@@ -334,6 +379,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == 1) {
+            switch (requestCode) {
+                case 1:
+                    break;
+            }
+        }
+    }
+
 
     //Draw direction on map
     private void drawDirectionAsPolyline(ArrayList<LatLng> Dots){
@@ -359,12 +415,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     protected void onResume(){
         super.onResume();
-        isLocationEnabled();
+        //isLocationEnabled();
     }
 
     private void isLocationEnabled() {
         Intent intent = new Intent( Settings.ACTION_LOCATION_SOURCE_SETTINGS );
-        startActivity(intent);
+        //startActivity(intent);
+        startActivityForResult(intent,1);
         /*
             AlertDialog.Builder alertDialog=new AlertDialog.Builder(mContext);
             alertDialog.setTitle("Enable Location");

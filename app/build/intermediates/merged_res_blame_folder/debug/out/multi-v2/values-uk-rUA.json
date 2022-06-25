@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk-rUA/values-uk-rUA.xml",
+            "outputFile": "step.android.taxi.app-mergeDebugResources-37:/values-uk-rUA/values-uk-rUA.xml",
             "map": [
                 {
                     "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/values-uk-rUA/strings.xml",
                     "from": {
-                        "startLines": "20,19,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "4,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "984,933,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endColumns": "75,50,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endOffsets": "1055,979,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "20,19,18,17,16,3,10,4,12,11,14,5,6,9,2,8,7,13,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "984,933,890,829,772,104,471,149,564,521,657,196,236,414,55,355,297,603,702",
+                        "endColumns": "75,50,42,60,56,44,49,46,38,42,44,39,60,56,48,58,57,53,69",
+                        "endOffsets": "1055,979,928,885,824,144,516,191,598,559,697,231,292,466,99,409,350,652,767"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",

@@ -1,9 +1,5 @@
 package step.android.taxi;
 
-import static com.bumptech.glide.request.RequestOptions.bitmapTransform;
-
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -15,9 +11,6 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
-import android.graphics.BlurMaskFilter;
-import android.graphics.Color;
-import android.os.Handler;
 import android.renderscript.Allocation;
 import android.renderscript.Element;
 import android.renderscript.RenderScript;
@@ -26,20 +19,17 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
-
-import step.android.taxi.User;
 
 import java.security.MessageDigest;
 
 
 public class StartScreen extends AppCompatActivity {
     private Animation rotate_load;
-    public User user;
+    public UserInfo userInfo;
     ImageView loadIcon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +88,11 @@ public class StartScreen extends AppCompatActivity {
             Bitmap blurredBitmap = toTransform.copy(Bitmap.Config.ARGB_8888, true);
 
             // Allocate memory for Renderscript to work with
-            Allocation input = Allocation.createFromBitmap(rs, blurredBitmap, Allocation.MipmapControl.MIPMAP_FULL, Allocation.USAGE_SHARED);
+            Allocation input = Allocation.createFromBitmap(
+                    rs,
+                    blurredBitmap,
+                    Allocation.MipmapControl.MIPMAP_FULL,
+                    Allocation.USAGE_SHARED);
             Allocation output = Allocation.createTyped(rs, input.getType());
 
             // Load up an instance of the specific script that we want to use.
@@ -141,7 +135,7 @@ public class StartScreen extends AppCompatActivity {
             token = query.getString(0);
             //check token
             if( token.length() != 0 ){
-                User.setAuthToken(token);
+                UserInfo.setAuthToken(token);
                 return true;
             } else {
                 return false;

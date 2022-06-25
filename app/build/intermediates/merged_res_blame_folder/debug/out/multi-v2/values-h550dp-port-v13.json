@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "step.android.taxi.app-mergeDebugResources-37:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/home/denis/.gradle/caches/transforms-3/e28af2a57da205d1991628495b66e5fc/transformed/material-1.5.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "/home/denis/.gradle/caches/transforms-3/0b61725ab4c930b151c4488a893666fd/transformed/material-1.5.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

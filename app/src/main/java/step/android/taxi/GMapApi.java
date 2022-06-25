@@ -31,7 +31,7 @@ public class GMapApi {
     private static String API_KEY = "AIzaSyBI-kBlkecJTeDRiXkW23wVRn6qFE6JO3Y";
     private static String FIND_PLACE_URL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=%s,%s&key=%s&language=%s";
     private static String DIRECTION_GET_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%s,%s&destination=%s,%s&key=%s";
-    private static String FIND_PLACE_BY_NAME = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=<address>&inputtype=textquery&language=<language>&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=<key>";
+    private static String FIND_PLACE_BY_NAME = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=<address>&inputtype=textquery&language=<language>&radius=50000m&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=<key>";
 
 
     public static String FindPlaceByLatLan(LatLng latlng, String language){
@@ -61,7 +61,6 @@ public class GMapApi {
             } catch (IOException | JSONException ex){
                 return ex.getMessage();
             }
-        //return "";
 
     }
 
@@ -93,15 +92,6 @@ public class GMapApi {
             JSONArray legs = routes_0.getJSONArray("legs");
             JSONObject legs_0 = legs.getJSONObject(0);
             JSONArray steps = legs_0.getJSONArray("steps");
-            /*
-            JSONArray steps = new JSONObject(response.body().string())
-                    .getJSONArray("routes")
-                    .getJSONObject(0)
-                    .getJSONArray("legs")
-                    .getJSONObject(0)
-                    .getJSONArray("steps");
-
-             */
 
             for(int i = 0; i < steps.length(); i++){
                 coords.addAll( PolyUtil.decode(
@@ -113,17 +103,6 @@ public class GMapApi {
             }
 
             return coords;
-
-            /*
-
-             JSONObject json_resp = new JSONObject(response.body().string());
-            JSONArray routes = json_resp.getJSONArray("routes");
-            JSONObject routes_0 = routes.getJSONObject(0);
-            JSONArray legs = routes_0.getJSONArray("legs");
-            JSONObject legs_0 = legs.getJSONObject(0);
-            JSONArray steps = legs_0.getJSONArray("steps");
-             */
-
 
         } catch (IOException | JSONException ex){
 

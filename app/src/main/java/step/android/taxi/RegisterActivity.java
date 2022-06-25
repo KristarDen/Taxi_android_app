@@ -2,7 +2,6 @@ package step.android.taxi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.IOException;
 import java.security.MessageDigest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,10 +16,8 @@ import android.util.Log;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Debug;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -250,8 +247,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                 JSONObject json = new JSONObject(res);
                 res = json.get("token").toString();
-                User.setAuthToken(res);
-                User.setEmail(newUser.email);
+                UserInfo.setAuthToken(res);
+                UserInfo.setEmail(newUser.email);
                 Log.i("response : ",res);
                 this.startActivity(
                         new Intent(

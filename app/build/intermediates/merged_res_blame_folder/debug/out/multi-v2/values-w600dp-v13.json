@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "step.android.taxi.app-mergeDebugResources-37:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/values-w600dp/dimens.xml",
                     "from": {
                         "startLines": "1,2",
-                        "startColumns": "1,4",
-                        "startOffsets": "13,71",
-                        "endColumns": "54,41",
-                        "endOffsets": "66,108"
+                        "startColumns": "4,4",
+                        "startOffsets": "16,74",
+                        "endColumns": "57,41",
+                        "endOffsets": "69,111"
                     },
                     "to": {
                         "startLines": "2,3",

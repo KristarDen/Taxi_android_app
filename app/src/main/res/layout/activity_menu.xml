@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@color/background">
+    <Button
+        android:layout_width="13.7dp"
+        android:layout_height="24.7dp"
+        android:background="@drawable/ic_prev_screen_btn"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="24dp"
+        app:backgroundTint="@null">
+    </Button>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="top">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="93dp"
+            android:layout_height="93dp">
+            <ImageView
+                android:id="@+id/UserPhoto"
+                android:layout_gravity="center"
+                android:layout_width="91dp"
+                android:layout_height="91dp">
+            </ImageView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -9,6 +9,8 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.json.JSONObject;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 public class RegisterCodeActivity extends AppCompatActivity {
@@ -175,7 +177,7 @@ public class RegisterCodeActivity extends AppCompatActivity {
         form_6.addTextChangedListener(watcher_6);
 
         TextView email_label = (TextView) findViewById(R.id.user_mail_text);
-        email_label.setText(User.getEmail());
+        email_label.setText(UserInfo.getEmail());
 
     }
 
@@ -194,17 +196,19 @@ public class RegisterCodeActivity extends AppCompatActivity {
                 //send code with token to server and write response
                 Thread SendCode = new Thread(
                         ()->{
+                            JSONObject data = new JSONObject();
                             Responce.set(Network.POST(
                                     getString(R.string.confirm_code_url),
                                     "{"
                                             +"\"code\": " + code + ","
-                                            +"\"token\": " + User.getAuthToken()
+                                            +"\"token\": \"" + UserInfo.getAuthToken()+"\""
                                             +"}"
                             ));
                         });
-                SendCode.start();
                 try {
+                    SendCode.start();
                     SendCode.join();
+
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

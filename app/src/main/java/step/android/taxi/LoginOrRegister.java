@@ -21,10 +21,6 @@ public class LoginOrRegister extends AppCompatActivity {
         findViewById( R.id.chooseRegister ).setOnClickListener( this::Register_click ) ;
         findViewById( R.id.chooseLogin ).setOnClickListener( this::Login_click ) ;
         findViewById( R.id.goMap ).setOnClickListener( this::Map_click ) ;
-
-        //String enc = AES256.textToBase64("Hello, World!") ;
-        //String dec = AES256.base64ToText( enc ) ;
-        //Toast.makeText(this, enc + "\n" + dec, Toast.LENGTH_SHORT).show();
     }
     void Register_click (View v){
             startActivity(

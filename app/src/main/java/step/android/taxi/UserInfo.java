@@ -1,10 +1,10 @@
 package step.android.taxi;
 
-public class User {
+public class UserInfo  {
 
-    public static final User INSTANCE = new User();
+    public static final UserInfo INSTANCE = new UserInfo();
 
-    private User(){}
+    private UserInfo(){}
 
     private static String AuthToken = "";
     private static String Email = "";

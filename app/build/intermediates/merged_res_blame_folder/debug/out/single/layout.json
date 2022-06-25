@@ -1,26 +1,38 @@
 [
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_start_screen.xml",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_start_screen.xml"
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_login.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_login.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_login.xml"
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_maps.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_maps.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login_or_register.xml",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_login_or_register.xml"
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_crop.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_crop.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register_code.xml",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_register_code.xml"
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_menu.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_menu.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_maps.xml",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/activity_maps.xml"
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_register_code.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_register_code.xml"
     },
     {
-        "merged": "/home/denis/StudioProjects/Taxi_android_app/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registration_activity.xml",
-        "source": "/home/denis/StudioProjects/Taxi_android_app/app/src/main/res/layout/registration_activity.xml"
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_cropper.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_cropper.xml"
+    },
+    {
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_start_screen.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_start_screen.xml"
+    },
+    {
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/activity_login_or_register.xml",
+        "source": "step.android.taxi.app-main-41:/layout/activity_login_or_register.xml"
+    },
+    {
+        "merged": "step.android.taxi.app-mergeDebugResources-38:/layout/registration_activity.xml",
+        "source": "step.android.taxi.app-main-41:/layout/registration_activity.xml"
     }
 ]

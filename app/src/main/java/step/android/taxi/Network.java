@@ -5,6 +5,9 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -48,10 +51,14 @@ public class Network {
         try {
 
             Response response = client.newCall(request).execute();
-            return response.body().string();
+            String resp = response.body().string();
+            JSONObject responce_data = new JSONObject(resp);
+            String decryptedData = AES256.base64ToText( responce_data.getString("data") );
 
-        } catch (IOException ex){
+            return decryptedData;
+
+        } catch (IOException | JSONException ex){
+            return  ex.getMessage();
         }
-        return "";
     }
 }
