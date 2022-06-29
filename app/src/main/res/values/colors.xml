@@ -25,4 +25,6 @@
     <color name="order_panel_background_color">#21225A</color>
     
     <color name="yourmail_text_color">#9F9FCD</color>
+
+    <color name="menu_text_color">#9F9FCD</color>
 </resources>

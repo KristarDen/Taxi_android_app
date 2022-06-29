@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
 MERGED from [androidx.databinding:viewbinding:7.2.0] /home/denis/.gradle/caches/transforms-3/c867927e8b1d46fb1d892ee2be030345/transformed/jetified-viewbinding-7.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/4be333df0ad568a98ff2dd4f20901c08/transformed/jetified-places-2.6.0/AndroidManifest.xml:2:1-23:12
 MERGED from [com.github.krokyze:ucropnedit:2.2.6-2] /home/denis/.gradle/caches/transforms-3/afacae10f6fb34855cd5d5e190d8c28b/transformed/jetified-ucropnedit-2.2.6-2/AndroidManifest.xml:2:1-9:12
@@ -15,6 +15,7 @@ MERGED from [com.codepath.libraries:asynchttpclient:2.1.1] /home/denis/.gradle/c
 MERGED from [androidx.appcompat:appcompat:1.4.1] /home/denis/.gradle/caches/transforms-3/3b1bc201b3bca652ca8cba6f27421397/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/denis/.gradle/caches/transforms-3/9fbdc974b003fb381a9fcd023316e29d/transformed/jetified-glide-4.9.0/AndroidManifest.xml:2:1-12:12
 MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /home/denis/.gradle/caches/transforms-3/d691a695d64bb680684e8997f152ffef/transformed/jetified-gpuimage-library-1.4.1/AndroidManifest.xml:2:1-12:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/denis/.gradle/caches/transforms-3/1bbeb3a145917b6b79d3aa8a37839ecb/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/denis/.gradle/caches/transforms-3/fad0631b695ac311211deded6099821f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/denis/.gradle/caches/transforms-3/ba7cefdb273346127bf361e693a2077a/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] /home/denis/.gradle/caches/transforms-3/21de86d916dc5408fd94c3e1aefeb965/transformed/coordinatorlayout-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -79,20 +80,20 @@ MERGED from [com.google.maps.android:android-maps-utils:0.4.4] /home/denis/.grad
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/denis/.gradle/caches/transforms-3/528f96469cb86a51f5b29376625b5ce1/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.volley:volley:1.2.1] /home/denis/.gradle/caches/transforms-3/0fe883085414fa61ed98b5370dd53e92/transformed/jetified-volley-1.2.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /home/denis/.gradle/caches/transforms-3/05b469ad9133060f4f3ba641d4bd0371/transformed/jetified-transport-api-2.2.0/AndroidManifest.xml:15:1-22:12
-INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
+INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
 	package
 		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml
 		INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
 		INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-85:12
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:1-83:12
 		INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:2:11-69
@@ -139,7 +140,7 @@ ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManif
 	android:name
 		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:20:22-95
 application
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:22:5-83:19
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:22:5-81:19
 MERGED from [com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/4be333df0ad568a98ff2dd4f20901c08/transformed/jetified-places-2.6.0/AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.android.libraries.places:places:2.6.0] /home/denis/.gradle/caches/transforms-3/4be333df0ad568a98ff2dd4f20901c08/transformed/jetified-places-2.6.0/AndroidManifest.xml:13:5-21:19
 MERGED from [com.github.andremion:floatingnavigationview:1.3.0] /home/denis/.gradle/caches/transforms-3/a7ba3a401f5e2b95ff98514f9f4d2a7b/transformed/jetified-floatingnavigationview-1.3.0/AndroidManifest.xml:11:5-20
@@ -150,6 +151,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/denis/.grad
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/denis/.gradle/caches/transforms-3/d3afed95d73ad065506e7f132d41fe44/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/denis/.gradle/caches/transforms-3/9fbdc974b003fb381a9fcd023316e29d/transformed/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/denis/.gradle/caches/transforms-3/9fbdc974b003fb381a9fcd023316e29d/transformed/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/denis/.gradle/caches/transforms-3/1bbeb3a145917b6b79d3aa8a37839ecb/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/denis/.gradle/caches/transforms-3/1bbeb3a145917b6b79d3aa8a37839ecb/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/f858c9e56ddc0a8b3b953da6a053a27e/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /home/denis/.gradle/caches/transforms-3/f858c9e56ddc0a8b3b953da6a053a27e/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-location:17.1.0] /home/denis/.gradle/caches/transforms-3/fd61a4def64c628f290e6861e9a64b44/transformed/jetified-play-services-location-17.1.0/AndroidManifest.xml:7:5-20
@@ -216,72 +219,68 @@ ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManif
 		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:39:13-37
 	android:name
 		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:38:13-44
-activity#step.android.taxi.CropActivity
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:40:9-42:40
+activity#step.android.taxi.MenuActivity
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:40:9-43:60
 	android:exported
 		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:42:13-37
+	android:theme
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:43:13-58
 	android:name
 		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:41:13-41
-activity#step.android.taxi.MenuActivity
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:43:9-45:40
-	android:exported
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:45:13-37
-	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:44:13-41
 activity#step.android.taxi.RegisterCodeActivity
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:46:9-48:40
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:48:13-37
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:47:13-49
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:45:13-49
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:57:9-59:55
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:55:9-57:55
 	android:value
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:59:13-52
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:57:13-52
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:58:13-58
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:56:13-58
 activity#step.android.taxi.MapsActivity
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:61:9-64:59
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:59:9-62:59
 	android:label
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:64:13-56
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:62:13-56
 	android:exported
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:63:13-37
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:62:13-41
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:60:13-41
 activity#step.android.taxi.LoginActivity
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:65:9-67:40
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:63:9-65:40
 	android:exported
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:67:13-37
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:66:13-42
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:64:13-42
 activity#step.android.taxi.LoginOrRegister
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:68:9-70:40
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:66:9-68:40
 	android:exported
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:70:13-37
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:68:13-37
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:69:13-44
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:67:13-44
 activity#step.android.taxi.StartScreen
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:71:9-79:20
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:69:9-77:20
 	android:exported
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:73:13-36
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:71:13-36
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:72:13-40
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:70:13-40
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:74:13-78:29
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:72:13-76:29
 action#android.intent.action.MAIN
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:75:17-69
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:73:17-69
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:75:25-66
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:73:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:77:17-77
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:75:17-77
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:77:27-74
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:75:27-74
 activity#step.android.taxi.RegisterActivity
-ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:80:9-82:39
+ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:78:9-80:39
 	android:exported
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:82:13-36
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:80:13-36
 	android:name
-		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:81:13-45
+		ADDED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml:79:13-45
 uses-sdk
 INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/denis/StudioProjects/Taxi_android_app/app/src/main/AndroidManifest.xml
@@ -308,6 +307,8 @@ MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/denis/.gradle/caches/t
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/denis/.gradle/caches/transforms-3/9fbdc974b003fb381a9fcd023316e29d/transformed/jetified-glide-4.9.0/AndroidManifest.xml:6:5-8:41
 MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /home/denis/.gradle/caches/transforms-3/d691a695d64bb680684e8997f152ffef/transformed/jetified-gpuimage-library-1.4.1/AndroidManifest.xml:8:5-10:41
 MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /home/denis/.gradle/caches/transforms-3/d691a695d64bb680684e8997f152ffef/transformed/jetified-gpuimage-library-1.4.1/AndroidManifest.xml:8:5-10:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/denis/.gradle/caches/transforms-3/1bbeb3a145917b6b79d3aa8a37839ecb/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/denis/.gradle/caches/transforms-3/1bbeb3a145917b6b79d3aa8a37839ecb/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/denis/.gradle/caches/transforms-3/fad0631b695ac311211deded6099821f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/denis/.gradle/caches/transforms-3/fad0631b695ac311211deded6099821f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/denis/.gradle/caches/transforms-3/ba7cefdb273346127bf361e693a2077a/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44

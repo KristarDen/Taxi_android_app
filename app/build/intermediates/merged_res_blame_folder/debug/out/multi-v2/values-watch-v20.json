@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "step.android.taxi.app-mergeDebugResources-37:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "step.android.taxi.app-mergeDebugResources-38:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/home/denis/.gradle/caches/transforms-3/3b1bc201b3bca652ca8cba6f27421397/transformed/appcompat-1.4.1/res/values-watch-v20/values-watch-v20.xml",

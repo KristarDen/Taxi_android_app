@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "step.android.taxi.app-mergeDebugResources-37:/values-nl/values-nl.xml",
+            "outputFile": "step.android.taxi.app-mergeDebugResources-38:/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "/home/denis/.gradle/caches/transforms-3/afacae10f6fb34855cd5d5e190d8c28b/transformed/jetified-ucropnedit-2.2.6-2/res/values-nl/values-nl.xml",

@@ -1,354 +1,606 @@
 [
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-ldpi_ic_menu_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-ldpi/ic_menu_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_image_background.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/image_background.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "step.android.taxi.app-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_payment_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_payment_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_form_background.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/form_background.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_addres_icon_pos.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_addres_icon_pos.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_addres_icon_pos.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_background_img.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_background_img.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-mdpi_ic_from_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-mdpi/ic_from_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_prev_screen_btn.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_prev_screen_btn.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_from_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/font_robotoregularobotoregular.xml.flat",
-        "source": "step.android.taxi.app-main-41:/font/robotoregularobotoregular.xml"
+        "merged": "step.android.taxi.app-merged_res-40:/layout_activity_menu.xml.flat",
+        "source": "step.android.taxi.app-main-42:/layout/activity_menu.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxxhdpi_ic_prev_screen_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxxhdpi/ic_prev_screen_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_background_img.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_background_img.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_menu.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_menu.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_message_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_message_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xhdpi_ic_prev_screen_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xhdpi/ic_prev_screen_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_code_form_back_blank.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/code_form_back_blank.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_history_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_history_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-mdpi_ic_prev_screen_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-mdpi/ic_prev_screen_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_message_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_message_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_curr_geo_pos.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_curr_geo_pos.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/anim_load_anim.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/anim/load_anim.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-hdpi_ic_background_img.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-hdpi/ic_background_img.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_saved_ivon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_saved_ivon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-ldpi_ic_curr_geo_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-ldpi/ic_curr_geo_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_addres_icon_pos.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-ldpi_ic_from_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-ldpi/ic_from_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_open_menu.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_open_menu.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_start_screen.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_start_screen.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_background_img.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_background_img.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-mdpi_ic_background_img.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-mdpi/ic_background_img.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_prev_screen_btn.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "step.android.taxi.app-main-41:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_background_img.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_background_img.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xhdpi_ic_curr_geo_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xhdpi/ic_curr_geo_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_saved_ivon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_saved_ivon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_login.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_login.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_activity_menu.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_menu.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_user_photo_border.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/user_photo_border.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_menu_btn.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_code_form_back.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/code_form_back.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_ic_menu_slideshow.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/ic_menu_slideshow.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-mdpi_ic_curr_geo_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-mdpi/ic_curr_geo_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_ic_menu_gallery.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/ic_menu_gallery.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-mdpi_ic_to_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-mdpi/ic_to_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_form_background.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/form_background.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxxhdpi_ic_menu_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxxhdpi/ic_menu_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_search_panel.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/search_panel.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_registration_activity.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/registration_activity.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-hdpi_ic_addres_icon_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-hdpi/ic_addres_icon_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_user_default.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_user_default.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxxhdpi_ic_background_img.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxxhdpi/ic_background_img.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_setting_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_setting_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xhdpi_ic_to_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xhdpi/ic_to_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_ic_load.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/ic_load.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_from_icon.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_from_icon.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_activity_register_code.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_register_code.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_side_nav_bar.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/side_nav_bar.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_history_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_history_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-hdpi_ic_menu_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-hdpi/ic_menu_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_prev_screen_btn.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_prev_screen_btn.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "step.android.taxi.app-main-41:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_message_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_message_icon.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_ic_menu_gallery.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/ic_menu_gallery.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_addres_icon_pos.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxxhdpi_ic_to_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxxhdpi/ic_to_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_backgroud_gradient.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/backgroud_gradient.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "step.android.taxi.app-main-41:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_maps.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_maps.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_from_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_from_icon.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-hdpi_ic_to_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-hdpi/ic_to_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_menu_btn.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_cropper.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_cropper.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_addres_icon_pos.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_button_confirm.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/button_confirm.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_background_img.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_background_img.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxhdpi_ic_addres_icon_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxhdpi/ic_addres_icon_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_message_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_message_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_background_img.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_background_img.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_history_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_history_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxxhdpi_ic_curr_geo_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxxhdpi/ic_curr_geo_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_open_menu.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_open_menu.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_form_wrong.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/form_wrong.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_white.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/white.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxhdpi_ic_menu_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxhdpi/ic_menu_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_help_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_help_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_crop.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_crop.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_prev_screen_btn.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-ldpi_ic_addres_icon_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-ldpi/ic_addres_icon_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_help_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_help_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxhdpi_ic_prev_screen_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxhdpi/ic_prev_screen_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_to_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_to_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xhdpi_ic_background_img.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xhdpi/ic_background_img.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_setting_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_setting_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_suggestion_address.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/suggestion_address.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_curr_geo_pos.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-ldpi_ic_background_img.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-ldpi/ic_background_img.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_ic_menu_camera.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/ic_menu_camera.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxhdpi_ic_to_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxhdpi/ic_to_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_open_menu.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_open_menu.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_to_icon.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_to_icon.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_history_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_history_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "step.android.taxi.app-main-41:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_from_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxxhdpi_ic_from_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxxhdpi/ic_from_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_registration_activity.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/registration_activity.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/font_robotoregular.ttf.flat",
-        "source": "step.android.taxi.app-main-41:/font/robotoregular.ttf"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_from_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "step.android.taxi.app-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_activity_start_screen.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_start_screen.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_activity_maps.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_maps.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_login_or_register.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_login_or_register.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_saved_ivon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_saved_ivon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-hdpi_ic_curr_geo_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-hdpi/ic_curr_geo_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_info_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_info_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_search_panel.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/search_panel.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_activity_login.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_login.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-mdpi_ic_menu_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-mdpi/ic_menu_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_message_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_message_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/raw_gmap_style.json.flat",
-        "source": "step.android.taxi.app-main-41:/raw/gmap_style.json"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_to_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_to_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-hdpi_ic_from_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-hdpi/ic_from_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_payment_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_payment_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-hdpi_ic_prev_screen_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-hdpi/ic_prev_screen_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_from_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_from_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xhdpi_ic_menu_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xhdpi/ic_menu_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_setting_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_setting_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_ic_is_swipeble_icon.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/ic_is_swipeble_icon.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_ic_logo.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/ic_logo.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_ic_menu_slideshow.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/ic_menu_slideshow.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_menu_btn.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxhdpi_ic_background_img.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxhdpi/ic_background_img.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_info_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_info_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_ic_logo.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/ic_logo.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_info_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_info_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-mdpi_ic_addres_icon_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-mdpi/ic_addres_icon_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_button_confirm.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/button_confirm.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxhdpi_ic_from_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxhdpi/ic_from_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_history_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_history_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_ic_menu_camera.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/ic_menu_camera.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_user_default.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_user_default.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_ic_launcher_background.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/ic_launcher_background.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_info_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_info_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxxhdpi_ic_addres_icon_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxxhdpi/ic_addres_icon_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_to_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_to_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "step.android.taxi.app-main-41:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_prev_screen_btn.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xhdpi_ic_addres_icon_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xhdpi/ic_addres_icon_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_code_form_back_blank.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/code_form_back_blank.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_white.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/white.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_backgroud_gradient.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/backgroud_gradient.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_help_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_help_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable_ic_load.xml.flat",
-        "source": "step.android.taxi.app-main-41:/drawable/ic_load.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_form_wrong.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/form_wrong.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-ldpi_ic_to_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-ldpi/ic_to_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_history_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_history_icon.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-ldpi_ic_prev_screen_btn.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-ldpi/ic_prev_screen_btn.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_ic_is_swipeble_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/ic_is_swipeble_icon.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/layout_activity_register_code.xml.flat",
-        "source": "step.android.taxi.app-main-41:/layout/activity_register_code.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_curr_geo_pos.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xxhdpi_ic_curr_geo_pos.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xxhdpi/ic_curr_geo_pos.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_setting_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_setting_icon.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-xhdpi_ic_from_icon.png.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-xhdpi/ic_from_icon.png"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_background_img.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_background_img.png"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/anim_load_anim.xml.flat",
-        "source": "step.android.taxi.app-main-41:/anim/load_anim.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "step.android.taxi.app-merged_res-39:/drawable-anydpi-v24_ic_menu_btn.xml.flat",
-        "source": "step.android.taxi.app-pngs-34:/drawable-anydpi-v24/ic_menu_btn.xml"
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_help_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_help_icon.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_help_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_help_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_saved_ivon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_saved_ivon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_info_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_info_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/font_robotoregular.ttf.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/font/robotoregular.ttf"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/font_robotoregularobotoregular.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/font/robotoregularobotoregular.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_menu_btn.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_message_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_message_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_to_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_to_icon.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_user_default.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_user_default.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_setting_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_setting_icon.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_open_menu.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_open_menu.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_to_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_to_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_history_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_history_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_saved_ivon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_saved_ivon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_open_menu.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_open_menu.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_setting_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_setting_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_payment_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_payment_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_from_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_info_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_info_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_addres_icon_pos.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_addres_icon_pos.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_payment_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_payment_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_menu_btn.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_menu_btn.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_user_default.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_user_default.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_prev_screen_btn.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_suggestion_address.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/suggestion_address.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_background_img.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_background_img.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_activity_cropper.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_cropper.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_curr_geo_pos.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_curr_geo_pos.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_message_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_message_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_help_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_help_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/layout_activity_login_or_register.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_login_or_register.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_user_default.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_user_default.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_payment_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_payment_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_payment_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_payment_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_saved_ivon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_saved_ivon.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_saved_ivon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_saved_ivon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_setting_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_setting_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_side_nav_bar.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_user_default.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_user_default.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_open_menu.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_open_menu.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-mdpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-mdpi/ic_menu_btn.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_from_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_from_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_payment_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_payment_icon.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable_code_form_back.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/drawable/code_form_back.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_prev_screen_btn.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/raw_gmap_style.json.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/raw/gmap_style.json"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_menu_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_menu_btn.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_info_icon.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_info_icon.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_open_menu.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_open_menu.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxhdpi_ic_curr_geo_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxhdpi/ic_curr_geo_pos.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_prev_screen_btn.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_prev_screen_btn.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-anydpi-v24_ic_user_default.xml.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-anydpi-v24/ic_user_default.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xxxhdpi_ic_addres_icon_pos.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xxxhdpi/ic_addres_icon_pos.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-xhdpi_ic_to_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-xhdpi/ic_to_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-hdpi_ic_help_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-hdpi/ic_help_icon.png"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-merged_res-40:/drawable-ldpi_ic_to_icon.png.flat",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-pngs-35:/drawable-ldpi/ic_to_icon.png"
     }
 ]

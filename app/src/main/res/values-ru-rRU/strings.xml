@@ -19,4 +19,11 @@
     <string name="Rating">Рейтинг</string>
     <string name="Enter_code">Введите код</string>
     <string name="Code_was_sended">E-mail код был отправлен на</string>
+    <string name="settings_messages_label">Сообщения</string>
+    <string name="settings_history_label">История</string>
+    <string name="settings_payment_label">Оплата</string>
+    <string name="settings_saved_label">Избранное</string>
+    <string name="settings_setting_label">Настройки</string>
+    <string name="settings_help_label">Помощь</string>
+    <string name="settings_info_label">О нас</string>
 </resources>

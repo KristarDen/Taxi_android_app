@@ -1,7 +1,7 @@
 <resources>
     <string name="register_url" translatable="false">http://94.158.152.83:5000/register</string>
 
-    <string name="app_name" translatable="false">Uber</string>
+    <string name="app_name" translatable="false">Zorgo</string>
     <string name="phone_number">Phone</string>
     <string name="email" translatable="false">Email</string>
     <string name="first_name">First name</string>
@@ -43,5 +43,12 @@
     <string name="Rating">Rating</string>
     <string name="Enter_code">Enter the code</string>
     <string name="Code_was_sended">E-mail code was sended on</string>
-    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_menu" translatable="false">MenuActivity</string>
+    <string name="settings_messages_label">Messages</string>
+    <string name="settings_history_label">History</string>
+    <string name="settings_payment_label">Payment</string>
+    <string name="settings_saved_label">Saved</string>
+    <string name="settings_setting_label">Settings</string>
+    <string name="settings_help_label">Help</string>
+    <string name="settings_info_label">About us</string>
 </resources>

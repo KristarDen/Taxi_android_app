@@ -278,6 +278,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -1790,6 +1794,7 @@ color material_timepicker_button_stroke
 color material_timepicker_clock_text_color
 color material_timepicker_clockface
 color material_timepicker_modebutton_tint
+color menu_text_color
 color mtrl_btn_bg_color_selector
 color mtrl_btn_ripple_color
 color mtrl_btn_stroke_color_selector
@@ -3024,6 +3029,9 @@ drawable ic_close_animated
 drawable ic_close_vector
 drawable ic_curr_geo_pos
 drawable ic_from_icon
+drawable ic_help_icon
+drawable ic_history_icon
+drawable ic_info_icon
 drawable ic_is_swipeble_icon
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3039,12 +3047,19 @@ drawable ic_menu_camera
 drawable ic_menu_gallery
 drawable ic_menu_slideshow
 drawable ic_menu_vector
+drawable ic_message_icon
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_open_menu
+drawable ic_payment_icon
 drawable ic_prev_screen_btn
+drawable ic_saved_ivon
+drawable ic_setting_icon
 drawable ic_to_icon
+drawable ic_user_default
+drawable image_background
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -3132,7 +3147,6 @@ drawable ucrop_vector_ic_crop
 drawable ucrop_vector_loader
 drawable ucrop_vector_loader_animated
 drawable ucrop_wrapper_controls_shape
-drawable user_photo_border
 drawable white
 font robotoregular
 font robotoregularobotoregular
@@ -3368,7 +3382,9 @@ id grouping
 id groups
 id guideline
 id header_title
+id helpLayout
 id hideable
+id historyLayout
 id home
 id homeAsUp
 id honorRequest
@@ -3394,6 +3410,7 @@ id image_view_state_sharpness
 id immediateStop
 id included
 id info
+id infoLayout
 id invisible
 id inward
 id italic
@@ -3402,7 +3419,6 @@ id item2
 id item3
 id item4
 id item_touch_helper_previous_elevation
-id iv_pick_image
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3423,6 +3439,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id load_icon
@@ -3458,6 +3475,7 @@ id menu_btn
 id menu_crop
 id menu_loader
 id message
+id messageLayout
 id middle
 id mini
 id month_grid
@@ -3529,6 +3547,7 @@ id password
 id password_toggle
 id path
 id pathRelative
+id paymentLayout
 id peekHeight
 id percent
 id phoneLabel
@@ -3573,6 +3592,7 @@ id satellite
 id saturation_scroll_wheel
 id save_non_transition_alpha
 id save_overlay_view
+id savedLayout
 id sawtooth
 id scale
 id scale_scroll_wheel
@@ -3595,6 +3615,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingLayout
 id sharedValueSet
 id sharedValueUnset
 id sharpness_scroll_wheel
@@ -3713,6 +3734,7 @@ id unlabeled
 id up
 id useLogo
 id user_mail_text
+id user_name_text_view
 id vertical_only
 id view_offset_helper
 id view_overlay
@@ -3826,7 +3848,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_crop
 layout activity_cropper
 layout activity_login
 layout activity_login_or_register
@@ -4174,6 +4195,13 @@ string register_url
 string registration_label
 string search_menu_title
 string second_name_Hint
+string settings_help_label
+string settings_history_label
+string settings_info_label
+string settings_messages_label
+string settings_payment_label
+string settings_saved_label
+string settings_setting_label
 string status_bar_notification_info_overflow
 string title_activity_main
 string title_activity_main_screen
@@ -5268,6 +5296,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

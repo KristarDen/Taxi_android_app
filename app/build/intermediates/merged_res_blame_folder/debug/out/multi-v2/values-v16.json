@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "step.android.taxi.app-mergeDebugResources-37:/values-v16/values-v16.xml",
+            "outputFile": "step.android.taxi.app-mergeDebugResources-38:/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/home/denis/.gradle/caches/transforms-3/d8338c189490aee58604e111af57865f/transformed/core-1.7.0/res/values-v16/values-v16.xml",

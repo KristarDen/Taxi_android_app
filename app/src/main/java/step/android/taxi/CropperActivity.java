@@ -23,14 +23,14 @@ public class CropperActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cropper);
         readIntent();
 
-        String dest_uri = "" + UUID.randomUUID().toString() + ".jpg";
+        Uri to =  Uri.fromFile(new File(getFilesDir(),
+                        UUID.randomUUID().toString() + ".jpg"));
 
         UCrop.Options options = new UCrop.Options();
-        UCrop.of(fileUri, Uri.fromFile(new File("file://storage/emulated/0/")))
+        UCrop.of(fileUri, to)
                 .withOptions(options)
                 .withAspectRatio(1,1)
-                .useSourceImageAspectRatio()
-                .withMaxResultSize(2000,2000)
+                .withMaxResultSize(200,200)
                 .start(CropperActivity.this);
 
     }

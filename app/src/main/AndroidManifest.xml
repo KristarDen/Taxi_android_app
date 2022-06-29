@@ -39,7 +39,8 @@
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Taxi.NoActionBar"/>
         <activity
             android:name=".RegisterCodeActivity"
             android:exported="false" />

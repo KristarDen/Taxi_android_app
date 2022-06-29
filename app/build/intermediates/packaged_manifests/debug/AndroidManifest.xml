@@ -57,11 +57,9 @@
             android:name="step.android.taxi.CropperActivity"
             android:exported="false" />
         <activity
-            android:name="step.android.taxi.CropActivity"
-            android:exported="false" />
-        <activity
             android:name="step.android.taxi.MenuActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Taxi.NoActionBar" />
         <activity
             android:name="step.android.taxi.RegisterCodeActivity"
             android:exported="false" />
