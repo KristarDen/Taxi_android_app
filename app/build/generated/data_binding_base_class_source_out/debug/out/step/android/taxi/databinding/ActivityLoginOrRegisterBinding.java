@@ -27,18 +27,14 @@ public final class ActivityLoginOrRegisterBinding implements ViewBinding {
   public final Button chooseRegister;
 
   @NonNull
-  public final Button goMap;
-
-  @NonNull
   public final TextView loginOrRegistLabel;
 
   private ActivityLoginOrRegisterBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button chooseLogin, @NonNull Button chooseRegister, @NonNull Button goMap,
+      @NonNull Button chooseLogin, @NonNull Button chooseRegister,
       @NonNull TextView loginOrRegistLabel) {
     this.rootView = rootView;
     this.chooseLogin = chooseLogin;
     this.chooseRegister = chooseRegister;
-    this.goMap = goMap;
     this.loginOrRegistLabel = loginOrRegistLabel;
   }
 
@@ -81,12 +77,6 @@ public final class ActivityLoginOrRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.goMap;
-      Button goMap = ViewBindings.findChildViewById(rootView, id);
-      if (goMap == null) {
-        break missingId;
-      }
-
       id = R.id.login_or_regist_label;
       TextView loginOrRegistLabel = ViewBindings.findChildViewById(rootView, id);
       if (loginOrRegistLabel == null) {
@@ -94,7 +84,7 @@ public final class ActivityLoginOrRegisterBinding implements ViewBinding {
       }
 
       return new ActivityLoginOrRegisterBinding((ConstraintLayout) rootView, chooseLogin,
-          chooseRegister, goMap, loginOrRegistLabel);
+          chooseRegister, loginOrRegistLabel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

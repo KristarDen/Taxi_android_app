@@ -11,6 +11,7 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
+import android.os.Handler;
 import android.renderscript.Allocation;
 import android.renderscript.Element;
 import android.renderscript.RenderScript;
@@ -52,21 +53,25 @@ public class StartScreen extends AppCompatActivity {
 
         loadIcon.startAnimation(rotate_load);
 
+
         /*
         Check DB and auth token
         if token don't exist - go to LoginOrRegister screen
          */
-        if(CheckDB()){
-            startActivity(
-                    new Intent(
-                            StartScreen.this,
-                            MapsActivity.class ) ) ;
+        if(!CheckDB()){
+            (new Handler()).postDelayed(()->{
+                startActivity(
+                        new Intent(
+                                StartScreen.this,
+                                LoginOrRegister.class ) ) ;
+            }, 2000);
         } else {
 
             startActivity(
                     new Intent(
                             StartScreen.this,
-                            LoginOrRegister.class ) ) ;
+                            MapsActivity.class ) ) ;
+
         }
 
         RequestPermissions();

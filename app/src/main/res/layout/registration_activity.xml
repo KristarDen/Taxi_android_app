@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/registerView"
+    android:orientation="vertical"
     android:background="@color/background"
-    android:fontFamily="@font/robotoregularobotoregular"
+    android:fontFamily="@font/robotoregular"
     tools:context=".RegisterActivity">
 
     <RelativeLayout
@@ -40,15 +42,14 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="top"
                 android:layout_marginBottom="70dp"
-                >
+                android:gravity="top">
 
                 <TableRow
                     android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_height="match_parent">
+                    android:gravity="center">
 
                     <TextView
                         android:id="@+id/registrationLabel"
@@ -67,15 +68,14 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                >
+                android:layout_marginBottom="10dp">
 
                 <!--Label -->
                 <TableRow
                     android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_height="match_parent">
+                    android:gravity="center">
 
                     <TextView
                         android:id="@+id/phoneLabel"
@@ -130,7 +130,7 @@
                         android:layout_marginLeft="10dp"
                         android:gravity="left"
                         android:text="@string/first_name"
-                        android:textColor="@color/labelTextColor"/>
+                        android:textColor="@color/labelTextColor" />
 
                     <TextView
                         android:id="@+id/lastNameLabel"
@@ -139,8 +139,7 @@
                         android:layout_marginLeft="10dp"
                         android:gravity="left"
                         android:text="@string/last_name"
-                        android:textColor="@color/labelTextColor"
-                        />
+                        android:textColor="@color/labelTextColor" />
 
                 </TableRow>
 
@@ -160,8 +159,8 @@
                         android:inputType="textPersonName"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
-                        android:textColor="@color/white"
                         android:textAlignment="center"
+                        android:textColor="@color/white"
                         android:textColorHint="@color/labelHintColor"
                         android:textSize="24sp" />
 
@@ -190,9 +189,9 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_height="match_parent">
+                    android:gravity="center">
 
                     <TextView
                         android:id="@+id/emailLabel"
@@ -200,8 +199,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:text="@string/email"
-                        android:textColor="@color/labelTextColor"
-                        />
+                        android:textColor="@color/labelTextColor" />
 
                 </TableRow>
 
@@ -245,8 +243,7 @@
                         android:layout_marginLeft="10dp"
                         android:gravity="left"
                         android:text="@string/pass"
-                        android:textColor="@color/labelTextColor"
-                        />
+                        android:textColor="@color/labelTextColor" />
 
                     <TextView
                         android:id="@+id/passConfirmLabel"
@@ -255,8 +252,7 @@
                         android:layout_marginLeft="10dp"
                         android:gravity="left"
                         android:text="@string/pass_confirm"
-                        android:textColor="@color/labelTextColor"
-                        />
+                        android:textColor="@color/labelTextColor" />
 
                 </TableRow>
 
@@ -298,8 +294,8 @@
             <!-- register button -->
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -307,18 +303,18 @@
                     android:gravity="center_horizontal">
 
                     <Button
+                        android:id="@+id/registerButton"
                         android:layout_width="314dp"
                         android:layout_height="48dp"
-                        android:minEms="20"
-                        android:id="@+id/registerButton"
-                        app:backgroundTint="@null"
                         android:layout_marginTop="30dp"
                         android:background="@drawable/button_confirm"
+                        android:minEms="20"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
                         android:text="@string/register_label"
                         android:textAlignment="center"
-                        android:textSize="14dp">
+                        android:textSize="14dp"
+                        app:backgroundTint="@null">
 
                     </Button>
                 </TableRow>
@@ -328,4 +324,4 @@
     </RelativeLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

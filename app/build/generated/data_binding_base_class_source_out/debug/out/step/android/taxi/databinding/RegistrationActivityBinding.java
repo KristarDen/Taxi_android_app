@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -20,7 +20,7 @@ import step.android.taxi.R;
 
 public final class RegistrationActivityBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final EditText confirmPassword;
@@ -62,18 +62,22 @@ public final class RegistrationActivityBinding implements ViewBinding {
   public final Button registerButton;
 
   @NonNull
+  public final LinearLayout registerView;
+
+  @NonNull
   public final TextView registrationLabel;
 
   @NonNull
   public final ImageView screen;
 
-  private RegistrationActivityBinding(@NonNull ConstraintLayout rootView,
+  private RegistrationActivityBinding(@NonNull LinearLayout rootView,
       @NonNull EditText confirmPassword, @NonNull EditText email, @NonNull TextView emailLabel,
       @NonNull EditText firstName, @NonNull TextView firstNameLabel, @NonNull EditText lastName,
       @NonNull TextView lastNameLabel, @NonNull TextView passConfirmLabel,
       @NonNull TextView passLabel, @NonNull EditText password, @NonNull TextView phoneLabel,
       @NonNull EditText phoneNumber, @NonNull Button registerButton,
-      @NonNull TextView registrationLabel, @NonNull ImageView screen) {
+      @NonNull LinearLayout registerView, @NonNull TextView registrationLabel,
+      @NonNull ImageView screen) {
     this.rootView = rootView;
     this.confirmPassword = confirmPassword;
     this.email = email;
@@ -88,13 +92,14 @@ public final class RegistrationActivityBinding implements ViewBinding {
     this.phoneLabel = phoneLabel;
     this.phoneNumber = phoneNumber;
     this.registerButton = registerButton;
+    this.registerView = registerView;
     this.registrationLabel = registrationLabel;
     this.screen = screen;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -197,6 +202,8 @@ public final class RegistrationActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      LinearLayout registerView = (LinearLayout) rootView;
+
       id = R.id.registrationLabel;
       TextView registrationLabel = ViewBindings.findChildViewById(rootView, id);
       if (registrationLabel == null) {
@@ -209,9 +216,10 @@ public final class RegistrationActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RegistrationActivityBinding((ConstraintLayout) rootView, confirmPassword, email,
+      return new RegistrationActivityBinding((LinearLayout) rootView, confirmPassword, email,
           emailLabel, firstName, firstNameLabel, lastName, lastNameLabel, passConfirmLabel,
-          passLabel, password, phoneLabel, phoneNumber, registerButton, registrationLabel, screen);
+          passLabel, password, phoneLabel, phoneNumber, registerButton, registerView,
+          registrationLabel, screen);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

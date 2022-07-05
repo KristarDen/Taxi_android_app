@@ -51,4 +51,9 @@
     <string name="settings_setting_label">Settings</string>
     <string name="settings_help_label">Help</string>
     <string name="settings_info_label">About us</string>
+    <string name="email_err_toast_text">Email must look like : example@mail.com</string>
+    <string name="pass_err_toast_text">"Password must :\nbe no shorter than 6 characters\nhave 1 character, 1  big letter, 1 little letter, 1 number\nuse only latina letters, numbers and characters "</string>
+    <string name="phone_err_toast_text">Phone number must be writen like : +380 501 234 5678 , 3805012345678, +(380)-501-234-5678</string>
+    <string name="name_err_toast_text">The name should be at least 2 letters</string>
+    <string name="pass_identical_err_text">Passwords is not equal</string>
 </resources>

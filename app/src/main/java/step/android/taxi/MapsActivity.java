@@ -151,10 +151,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     };
 
-    public void OpenGPS_settings() {
-        //Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-        //someActivityResultLauncher.launch(intent);
-    }
 
     // You can do the assignment inside onAttach or onCreate, i.e, before the activity is displayed
     ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
@@ -222,7 +218,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Marker on destination of user route
         that chosen by tap on map
      */
-    private Marker DestinationMarker;
 
     private Button MenuBtn;
     private View.OnClickListener MenuBtnListener = new View.OnClickListener() {
@@ -271,19 +266,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Where_edit_text.addTextChangedListener(Where_edittext_watcher);
         Where_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_where);
 
-        //add onTexChanged listener
-        //From_edit_text.addTextChangedListener(From_edittext_watcher);
 
-        //LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        //boolean statusOfGPS = manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
         locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
 
-        //Check that GPS is ON, if it's OFF start function and open GPS setting
-        /*if (statusOfGPS !=  true) {
-            //isLocationEnabled();
-            //OpenGPS_settings();
-        }*/
 
         //User GPS location listener
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -312,7 +298,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
                         mMap.setMinZoomPreference(12);
 
-                        Toast toast = Toast.makeText(mContext, "" + location.getLatitude() + " : " + location.getLongitude(), Toast.LENGTH_LONG);
+                        Toast toast = Toast.makeText(mContext, "" + location.getLatitude() +
+                                " : " + location.getLongitude(), Toast.LENGTH_LONG);
                         toast.show();
                     }
 

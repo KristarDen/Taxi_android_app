@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Taxi_DB_Table_str" translatable="false">
-        User_info (Token TEXT);
+        User_info (
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        Token TEXT
+        );
     </string>
     <string name="confirm_code_url" translatable="false">http://94.158.152.83:5000/api/auth/confirm/</string>
+    <string name="send_photo_url" translatable="false">http://94.158.152.83:5000/api/user/settings/profile/photo/</string>
+    <string name="login_url" translatable="false">http://94.158.152.83:5000/api/auth/login/</string>
+    <string name="getPhoto_url" translatable="false">http://94.158.152.83:5000/api/user/settings/profile/</string>
 </resources>

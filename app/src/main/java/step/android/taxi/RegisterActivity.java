@@ -6,6 +6,7 @@ import java.security.MessageDigest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.renderscript.Allocation;
@@ -18,10 +19,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.gson.Gson;
 
@@ -46,6 +50,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     AsyncHttpClient client = new AsyncHttpClient();
     RequestParams params = new RequestParams();
+
+    LayoutInflater inflater;
 
 
     private EditText email_form;
@@ -73,6 +79,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
             else {
                 email_form.setBackground(getDrawable(R.drawable.form_wrong));
+                ShowErrToast(getString(R.string.email_err_toast_text));
                 isEmailCheck = false;
             }
             Register_check();
@@ -96,6 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
             else {
                 phone_form.setBackground(getDrawable(R.drawable.form_wrong));
+                ShowErrToast(getString(R.string.phone_err_toast_text));
                 isPhoneCheck = false;
             }
             Register_check();
@@ -118,6 +126,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
         else {
             pass_form.setBackground(getDrawable(R.drawable.form_wrong));
+            ShowErrToast(getString(R.string.pass_err_toast_text));
         }
             Register_check();
     }
@@ -140,8 +149,14 @@ public class RegisterActivity extends AppCompatActivity {
             }
             else {
                 pass_confirm_form.setBackground(getDrawable(R.drawable.form_wrong));
+                ShowErrToast(getString(R.string.pass_err_toast_text));
                 isPasswordCheck = false;
             }
+            if( !pass_confirm_form.getText().toString()
+                    .equals( pass_form.getText().toString()) ){
+                ShowErrToast(getString(R.string.pass_identical_err_text));
+            }
+
             Register_check();
         }
 
@@ -162,6 +177,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
             else {
                 first_name.setBackground(getDrawable(R.drawable.form_wrong));
+                ShowErrToast(getString(R.string.name_err_toast_text));
                 isFirstNameCheck = false;
             }
             Register_check();
@@ -184,6 +200,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
             else {
                 last_name.setBackground(getDrawable(R.drawable.form_wrong));
+                ShowErrToast(getString(R.string.name_err_toast_text));
                 isLastNameCheck = false;
             }
             Register_check();
@@ -202,6 +219,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration_activity);
         getSupportActionBar().hide();
+
+
 
         email_form = (EditText) findViewById( R.id.email );
         phone_form = (EditText) findViewById( R.id.phone_number);
@@ -246,7 +265,7 @@ public class RegisterActivity extends AppCompatActivity {
                 res = Network.POST( register_url ,gson.toJson( newUser ));
 
                 JSONObject json = new JSONObject(res);
-                res = json.get("token").toString();
+                res = json.getString("token");
                 UserInfo.setAuthToken(res);
                 UserInfo.setEmail(newUser.email);
                 Log.i("response : ",res);
@@ -282,7 +301,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
-    public class BlurTransformation extends BitmapTransformation {
+    private class BlurTransformation extends BitmapTransformation {
 
         private RenderScript rs;
 
@@ -322,5 +341,22 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
+    private void ShowErrToast(String text){
+        try{
+            inflater = getLayoutInflater();
+            View layout = inflater.inflate(
+                    R.layout.err_toast,
+                    (ViewGroup)findViewById(R.id.err_toast)
+            );
+            TextView tv = (TextView) layout.findViewById(R.id.err_toast_textView);
+            tv.setText(text);
+            Toast toast = new Toast(getApplicationContext());
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setView(layout);
+            toast.show();
+        }catch (Exception ex){
+            Log.e("TOAST_ERROR : ", ex.getMessage());
+        }
 
+    }
 }

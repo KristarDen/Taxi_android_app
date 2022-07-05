@@ -2,6 +2,7 @@ package step.android.taxi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -196,7 +197,6 @@ public class RegisterCodeActivity extends AppCompatActivity {
                 //send code with token to server and write response
                 Thread SendCode = new Thread(
                         ()->{
-                            JSONObject data = new JSONObject();
                             Responce.set(Network.POST(
                                     getString(R.string.confirm_code_url),
                                     "{"
@@ -204,11 +204,17 @@ public class RegisterCodeActivity extends AppCompatActivity {
                                             +"\"token\": \"" + UserInfo.getAuthToken()+"\""
                                             +"}"
                             ));
+
                         });
                 try {
                     SendCode.start();
                     SendCode.join();
 
+                    JSONObject data = new JSONObject(Responce.get());
+                    //SQLiteController.setToken(getBaseContext(),data.getString("token"));
+                    UserInfo.setAuthToken(data.getString("token"));
+
+                    startActivity( new Intent( this,MapsActivity.class));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

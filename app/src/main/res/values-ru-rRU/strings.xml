@@ -26,4 +26,9 @@
     <string name="settings_setting_label">Настройки</string>
     <string name="settings_help_label">Помощь</string>
     <string name="settings_info_label">О нас</string>
+    <string name="email_err_toast_text">Email должени выглядеть как : example@mail.com</string>
+    <string name="pass_err_toast_text">Пароль должен : \nбыть не короче 6 символов\nиметь в составе один символ, одну большую и маленькую буквы, одну цифру\nсостоять только из символов латиницы, цифр и знаков</string>
+    <string name="name_err_toast_text">Имя должно быть не меньше 2 букв</string>
+    <string name="pass_identical_err_text">Пароли не совпадают</string>
+    <string name="phone_err_toast_text">Номер должен быть записан как +380 501 234 5678 , 3805012345678, +(380)-501-234-5678</string>
 </resources>

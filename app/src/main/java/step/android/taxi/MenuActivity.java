@@ -8,10 +8,18 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.TextView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.IOException;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -41,6 +49,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_menu);
         UserPhoto = (CircleImageView) findViewById(R.id.UserPhoto);
         UserPhoto.setOnClickListener(this);
+
+        TextView Name_textview = (TextView) findViewById(R.id.user_name_text_view);
+        Name_textview.setText(UserInfo.getName()+" "+UserInfo.getSurname());
+
+        Bitmap photo = UserInfo.getPhoto();
+        UserPhoto.setImageBitmap(photo);
     }
 
     @Override
@@ -56,7 +70,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("DATA", image_path_uri.toString());
         startActivityForResult(intent, 101);
     }
-    @Override
+
+
+    @Override //getting cropped photo uri
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -64,9 +80,32 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 String result = data.getStringExtra("RESULT");
                 Uri resultUri = null;
                 if(result != null){
+
                     resultUri = Uri.parse(result);
                     UserPhoto.setImageURI(resultUri);
                     UserPhoto.setTag(resultUri);
+
+                    Uri finalResultUri = resultUri;
+                    String token = UserInfo.getAuthToken();
+                    Thread sendPhoto = new Thread(
+                            ()->{
+                                try {
+                                    String networkResult;
+                                    networkResult = Network.SendPhoto(
+                                            getString(R.string.send_photo_url),
+                                            new File(finalResultUri.getPath()),
+                                            token
+                                            );
+                                    JSONObject jsonResult = new JSONObject(networkResult);
+                                    String message;
+                                    message = jsonResult.getString("message");
+                                    Log.e("!!Server photo message :", message);
+                                } catch (IOException | JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                    );
+                    sendPhoto.start();
                 }
 
             }

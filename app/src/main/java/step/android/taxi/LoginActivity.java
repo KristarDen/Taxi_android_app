@@ -3,7 +3,9 @@ package step.android.taxi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.renderscript.Allocation;
 import android.renderscript.Element;
@@ -11,18 +13,24 @@ import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.security.MessageDigest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+
+import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -114,6 +122,71 @@ public class LoginActivity extends AppCompatActivity {
 
     private void Login_click(View v){
         Toast.makeText(this, "Login click", Toast.LENGTH_SHORT).show();
+        String loginUrl = getString(R.string.login_url);
+        Thread Send = new Thread (()->{
+            try {
+                String res;// response from post request
+                res = Network.POST( loginUrl ,"{" +
+                        "\"phone\" : "+ "\"" + phone_form.getText() + "\"" + ","+
+                        "\"password\" : " + "\"" + pass_form.getText() + "\"" +
+                        "}");
+
+                JSONObject json = new JSONObject(res);
+                res = json.getString("token");
+                UserInfo.setAuthToken(res);
+                JSONObject info_json;
+
+
+                //get user info from server by token
+                info_json = Network.GetPhoto(getString(R.string.getPhoto_url),res);
+                JSONObject user_json = info_json.getJSONObject("user");
+                UserInfo.setName(user_json.getString("name"));
+                UserInfo.setSurname(user_json.getString("surname"));
+                UserInfo.setPhone(user_json.getString("phone"));
+                UserInfo.setEmail(user_json.getString("email"));
+
+
+                //decode utf string with photo to bitmap and save to UserInfo
+                try {
+                    String photo = info_json.getString("photo");
+                    UserInfo.setPhoto( StringToBitMap(photo) );
+                } catch (Exception ex){
+
+                }
+
+                Log.i("response : ",res);
+                this.startActivity(
+                        new Intent(
+                                this,
+                                MapsActivity.class ) ) ;
+            } catch (Exception e) {
+                Toast.makeText(this, e.getMessage(),Toast.LENGTH_LONG).show();
+                this.startActivity(
+                        new Intent(
+                                this,
+                                MapsActivity.class ) ) ;
+            }
+        });
+        Send.start();
+    }
+    public Bitmap StringToBitMap(String imageString) {
+        /*try {
+            byte[] encodeByte = imageString.getBytes("UTF-8");
+            Bitmap bitmap = BitmapFactory.decodeByteArray(encodeByte, 0,encodeByte.length);
+            return bitmap;
+        }*/
+        try{
+            byte [] encodeByte= Base64.decode(imageString,Base64.DEFAULT);
+            //byte[] encodeByte = imageString.getBytes("UTF-8");
+            InputStream inputStream  = new ByteArrayInputStream(encodeByte);
+            Bitmap bitmap  = BitmapFactory.decodeStream(inputStream);
+            return bitmap;
+        }
+        catch (Exception e)
+        {
+            e.getMessage();
+            return null;
+        }
     }
 
     public class BlurTransformation extends BitmapTransformation {
