@@ -20,7 +20,7 @@ public class LoginOrRegister extends AppCompatActivity {
         getSupportActionBar().hide();
         findViewById( R.id.chooseRegister ).setOnClickListener( this::Register_click ) ;
         findViewById( R.id.chooseLogin ).setOnClickListener( this::Login_click ) ;
-        //findViewById( R.id.goMap ).setOnClickListener( this::Map_click ) ;
+        // findViewById( R.id.goMap ).setOnClickListener( this::Map_click ) ;
     }
     void Register_click (View v){
             startActivity(

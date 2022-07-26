@@ -31,6 +31,7 @@
         app:behavior_peekHeight="20dp"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -39,111 +40,171 @@
             android:src="@drawable/ic_is_swipeble_icon" />
 
         <LinearLayout
-            android:layout_width="314dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/form_background"
-            android:orientation="horizontal"
+            android:id="@+id/findAddressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="314dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/form_background"
+                android:orientation="horizontal"
 
-            android:padding="5dp"
-            android:paddingRight="20dp">
+                android:padding="5dp"
+                android:paddingRight="20dp">
 
-            <EditText
-                android:id="@+id/address_from"
-                android:layout_width="260dp"
+                <EditText
+                    android:id="@+id/address_from"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="12"
+                    android:hint="@string/address_from_hint"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="0dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/labelHintColor"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_curr_geo_pos"
+                    app:backgroundTint="@null"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Button>
+            </LinearLayout>
+            <!--Suggested "From" addresses-->
+            <HorizontalScrollView
                 android:layout_height="wrap_content"
+                android:layout_width="314dp"
                 android:layout_gravity="center"
-                android:backgroundTint="@android:color/transparent"
-                android:ems="12"
-                android:hint="@string/address_from_hint"
-                android:paddingLeft="10dp"
-                android:paddingTop="0dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="0dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/labelHintColor"
-                android:textSize="14sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="horizontal">
 
-            <Button
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                <LinearLayout
+                    android:id="@+id/suggestion_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="314dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_curr_geo_pos"
-                app:backgroundTint="@null"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Button>
+                android:layout_margin="10dp"
+                android:background="@drawable/form_background"
+                android:orientation="horizontal"
+
+                android:padding="5dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:id="@+id/address_to"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="12"
+                    android:hint="@string/address_to_hint"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="0dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/labelHintColor"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_addres_icon_pos"
+                    app:backgroundTint="@null"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></Button>
+            </LinearLayout>
+            <!--Suggested "Where" addresses-->
+            <HorizontalScrollView
+                android:layout_height="wrap_content"
+                android:layout_width="314dp"
+                android:layout_gravity="center"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/suggestion_where"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <Button
+                android:id="@+id/makeOrder_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/button_confirm"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="@string/make_order_button_text"
+                />
         </LinearLayout>
-        <!--Suggested "From" addresses-->
+
         <HorizontalScrollView
             android:layout_height="wrap_content"
             android:layout_width="314dp"
+
             android:layout_gravity="center"
             android:scrollbarAlwaysDrawHorizontalTrack="true"
             android:scrollbars="horizontal">
-
-            <LinearLayout
-                android:id="@+id/suggestion_from"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
         <LinearLayout
-            android:layout_width="314dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/form_background"
-            android:orientation="horizontal"
-
-            android:padding="5dp"
-            android:paddingRight="20dp">
-
-            <EditText
-                android:id="@+id/address_to"
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@android:color/transparent"
-                android:ems="12"
-                android:hint="@string/address_to_hint"
-                android:paddingLeft="10dp"
-                android:paddingTop="0dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="0dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/labelHintColor"
-                android:textSize="14sp"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_addres_icon_pos"
-                app:backgroundTint="@null"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></Button>
-        </LinearLayout>
-        <!--Suggested "Where" addresses-->
-        <HorizontalScrollView
+            android:id="@+id/DriversView"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="314dp"
-            android:layout_gravity="center"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="horizontal">
-
-            <LinearLayout
-                android:id="@+id/suggestion_where"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-            </LinearLayout>
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/back_to_address_bnt"
+                android:layout_width="15.7dp"
+                android:layout_height="29.7dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_prev_screen_btn"
+                ></Button>
+        </LinearLayout>
         </HorizontalScrollView>
+
+
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/distance_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

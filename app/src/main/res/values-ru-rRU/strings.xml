@@ -31,4 +31,10 @@
     <string name="name_err_toast_text">Имя должно быть не меньше 2 букв</string>
     <string name="pass_identical_err_text">Пароли не совпадают</string>
     <string name="phone_err_toast_text">Номер должен быть записан как +380 501 234 5678 , 3805012345678, +(380)-501-234-5678</string>
+    <string name="distance_between">"Расстояние "</string>
+    <string name="user_marker_title">Ваше местоположение</string>
+    <string name="make_order_button_text">Заказать</string>
+    <string name="driver_on_the_way_toast_text">Ваш водитель уже в пути \nЖдите уведомления о прибытии\n</string>
+    <string name="driver_arrived_note_text">Ваш водитель уже прибыл</string>
+    <string name="Start_trip_btn_text">Начать поездку</string>
 </resources>

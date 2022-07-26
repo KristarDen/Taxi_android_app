@@ -2,10 +2,7 @@ package step.android.taxi;
 
 import android.util.Log;
 
-import com.google.android.gms.common.util.Hex;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.gson.Gson;
-import com.google.gson.JsonParser;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -17,11 +14,7 @@ import org.json.JSONObject;
 import com.google.maps.android.PolyUtil;
 
 import java.io.IOException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.List;
-import java.util.Locale;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -31,8 +24,8 @@ public class GMapApi {
     private static String API_KEY = "AIzaSyBI-kBlkecJTeDRiXkW23wVRn6qFE6JO3Y";
     private static String FIND_PLACE_URL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=%s,%s&key=%s&language=%s";
     private static String DIRECTION_GET_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%s,%s&destination=%s,%s&key=%s";
-    private static String FIND_PLACE_BY_NAME = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=<address>&inputtype=textquery&language=<language>&radius=50000m&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=<key>";
-
+    private static String FIND_PLACE_BY_NAME_URL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=<address>&inputtype=textquery&language=<language>&radius=50000m&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=<key>";
+    private static String DISTANCE_BETWEEN_URL = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=%s&destinations=%s&key=%s";
 
     public static String FindPlaceByLatLan(LatLng latlng, String language){
             OkHttpClient client = new OkHttpClient().newBuilder()
@@ -120,7 +113,7 @@ public class GMapApi {
         Request request = new Request.Builder()
                 .url(
 
-                        FIND_PLACE_BY_NAME.replaceAll("<address>", searched_address)
+                        FIND_PLACE_BY_NAME_URL.replaceAll("<address>", searched_address)
                                 .replaceAll("<key>", API_KEY)
                                 .replaceAll("<language>", language)
 
@@ -162,5 +155,37 @@ public class GMapApi {
         }
 
         return suppositions;
+    }
+
+    public static int DistanceBetween (LatLng from, LatLng to){
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        Request request = new Request.Builder()
+                .url(
+                        String.format(DISTANCE_BETWEEN_URL,
+                                ""+from.latitude+","+from.longitude,
+                                ""+to.latitude+","+to.longitude,
+                                API_KEY )
+                )
+                .method("GET", null)
+                .build();
+
+        int result = 0;
+        try {
+
+            Response response = client.newCall(request).execute();
+
+            JSONObject json_resp = new JSONObject(response.body().string());
+            JSONArray rows = json_resp.getJSONArray("rows");
+            JSONObject zero_element = rows.getJSONObject(0);
+            JSONArray elements = zero_element.getJSONArray("elements");
+            JSONObject info = elements.getJSONObject(0);
+            result = info.getJSONObject("distance").getInt("value");
+
+        } catch (IOException | JSONException ex){
+
+            ex.getMessage();
+        }
+        return result;
     }
 }

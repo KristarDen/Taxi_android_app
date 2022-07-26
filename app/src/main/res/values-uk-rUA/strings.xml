@@ -31,4 +31,10 @@
     <string name="phone_err_toast_text">Повинен бути записаний як : \n+380 501 234 5678 , 3805012345678, +(380)-501-234-5678</string>
     <string name="name_err_toast_text">Імя повинно бути не коротше 2 літер</string>
     <string name="pass_identical_err_text">Паролі не співпадають</string>
+    <string name="distance_between">Відстань</string>
+    <string name="user_marker_title">Ваше місце положення</string>
+    <string name="make_order_button_text">Замовити</string>
+    <string name="driver_on_the_way_toast_text">Ваш водій уже в дорозі\nЧекайте на повідомлення про прибуття</string>
+    <string name="driver_arrived_note_text">Ваш водій вже прибув</string>
+    <string name="Start_trip_btn_text">Почати поїздку</string>
 </resources>

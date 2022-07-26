@@ -108,7 +108,9 @@ public class AES256 {
             throws GeneralSecurityException {
         try {
             IvParameterSpec Iv = new IvParameterSpec(SALT.getBytes("UTF-8"));
-            SecretKeySpec skeySpec = new SecretKeySpec(SECRET_KEY.getBytes("UTF-8"), "AES");
+            SecretKeySpec skeySpec = new SecretKeySpec(
+                    SECRET_KEY.getBytes("UTF-8"),
+                    "AES");
 
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
             cipher.init(Cipher.ENCRYPT_MODE, skeySpec, Iv);

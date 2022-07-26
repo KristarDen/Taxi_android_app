@@ -3,25 +3,38 @@ package step.android.taxi;
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContract;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.FragmentActivity;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.CountDownTimer;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import android.Manifest;
@@ -53,6 +66,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicReference;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import step.android.taxi.databinding.ActivityMapsBinding;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -63,12 +77,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private AtomicReference<ArrayList<Address_item>> Suggested_From_Addreses
             = new AtomicReference<ArrayList<Address_item>>();
     private EditText From_edit_text;
-    private LinearLayout From_Sugested_address_View;
+    private LinearLayout From_Suggested_address_View;
 
     private AtomicReference<ArrayList<Address_item>> Suggested_Where_Addreses
             = new AtomicReference<ArrayList<Address_item>>();
+
+    private AtomicReference<String> Distance = new AtomicReference<String>();
     private EditText Where_edit_text;
-    private LinearLayout Where_Sugested_address_View;
+    private LinearLayout Where_Suggested_address_View;
+
 
     //From edit text onChange()
     private TextWatcher From_edittext_watcher
@@ -150,23 +167,83 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
     };
+    LayoutInflater inflater;
 
+    //Demo data
+        ArrayList<Driver> Drivers = new ArrayList<Driver>();
+        int SelectedDriverId;
+        Marker SelectedDriver;
+        boolean userPosBlocked = false;
+        boolean mapClickBlocked = false;
 
-    // You can do the assignment inside onAttach or onCreate, i.e, before the activity is displayed
-    ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    if (result.getResultCode() == Activity.RESULT_OK) {
-                        // There are no request codes
-                        Intent data = result.getData();
-                        //doSomeOperations();
+        int currCoordDot = 0;
+        CountDownTimer driverComeTimer =
+                new CountDownTimer(10000, 1000){
 
-                    }
-                }
+            @Override
+            public void onTick(long millisUntilFinished) {
+
             }
-    );
+
+            @Override
+            public void onFinish() {
+                for (int i = 0; i < Drivers_markers.size(); i++){
+                   Drivers_markers.get(i).remove();
+                }
+                Drivers_markers.clear();
+                SelectedDriver = makeMarker(UserMarker.getPosition(),MarkerType.DRIVER);
+
+                NotificationCompat.Builder builder =
+                        new NotificationCompat.Builder(MapsActivity.this)
+                                .setSmallIcon(R.mipmap.ic_launcher)
+                                .setContentTitle(getString(R.string.app_name))
+                                .setContentText(getText(R.string.driver_arrived_note_text));
+
+                Notification notification = builder.build();
+
+                NotificationManager notificationManager =
+                        (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                notificationManager.notify(1, notification);
+
+                AlertDialog.Builder DialogBuilder=new AlertDialog.Builder(MapsActivity.this);
+                DialogBuilder.setTitle ( getString(R.string.app_name))
+                        .setMessage ( getText(R.string.driver_arrived_note_text))
+                        .setPositiveButton (getString(R.string.Start_trip_btn_text),
+                                new DialogInterface.OnClickListener () {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        Toast.makeText (MapsActivity.this,"Trip Started", Toast.LENGTH_SHORT) .show ();
+                        currCoordDot = DirectionDotsList.get().size();
+                        currCoordDot--;
+                        driverMoveTimer.start();
+                    }
+                });
+                DialogBuilder.show();
+            }
+        };
+
+        CountDownTimer driverMoveTimer =
+                new CountDownTimer(100000, 1000){
+
+                @Override
+                public void onTick(long millisUntilFinished) {
+                    if(currCoordDot > 0 ){
+                        UserMarker.setPosition(DirectionDotsList.get().get(currCoordDot));
+                        SelectedDriver.setPosition(DirectionDotsList.get().get(currCoordDot));
+                        currCoordDot--;
+                    } else {
+                        onFinish();
+                    }
+
+                }
+
+                @Override
+                public void onFinish() {
+
+                }
+            };
+    //Demo
 
     ActivityResultLauncher<Intent> StartMenuForResult = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -187,6 +264,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LatLng PointA;
     private LatLng PointB;
 
+
     /*
      Markers that be displayed on map
      with PointA and PointB coords
@@ -194,6 +272,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker Marker_PointA;
     private Marker Marker_PointB;
 
+    private ArrayList<Marker>Drivers_markers = new ArrayList<Marker>();
 
     LocationManager locationManager;
 
@@ -204,8 +283,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             new GoogleMap.OnMapClickListener() {
                 @Override
                 public void onMapClick(LatLng arg0) {
-
-                    drawWayOnMap(arg0, UserMarker.getPosition());
+                    if(!mapClickBlocked){
+                        drawWayOnMap(UserMarker.getPosition(), arg0 );
+                    }
                 }
             };
 
@@ -220,6 +300,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
 
     private Button MenuBtn;
+    private Button MakeOrderBtn;
+    private Button BackToAddressesBtn;
+
+    private LinearLayout FindAddressesView;
+    private LinearLayout DriversView;
+
     private View.OnClickListener MenuBtnListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -227,6 +313,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             StartMenuForResult.launch(menuActivity);
         }
     };
+    private TextView Distance_text;
+    private AtomicReference <Integer> Distance_meters = new AtomicReference<Integer>();
 
     private LatLng UserPosition;
     private Context mContext;
@@ -240,6 +328,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     // Direction dots coordination list for drawing route on the map
     private AtomicReference<ArrayList<LatLng>> DirectionDotsList = new AtomicReference<ArrayList<LatLng>>();
+
+
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -255,16 +349,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         MenuBtn = (Button) findViewById(R.id.menu_btn);
         MenuBtn.setOnClickListener(MenuBtnListener);
 
+        MakeOrderBtn = (Button) findViewById(R.id.makeOrder_button);
+        MakeOrderBtn.setOnClickListener(this::MakeOrder);
+
+        BackToAddressesBtn = (Button)findViewById(R.id.back_to_address_bnt);
+        BackToAddressesBtn.setOnClickListener(this::BackToAddressClick);
+
+        FindAddressesView = (LinearLayout) findViewById(R.id.findAddressView);
+        DriversView = (LinearLayout) findViewById(R.id.DriversView);
+
+        Distance_text = (TextView) findViewById(R.id.distance_text);
+
         //From Text listener
         From_edit_text = (EditText) findViewById(R.id.address_from);
         //Listener of text input ended
         From_edit_text.addTextChangedListener(From_edittext_watcher);
-        From_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_from);
+        From_Suggested_address_View = (LinearLayout) findViewById(R.id.suggestion_from);
         //Where Text listener
         Where_edit_text = (EditText) findViewById(R.id.address_to);
         //Listener of text input ended
         Where_edit_text.addTextChangedListener(Where_edittext_watcher);
-        Where_Sugested_address_View = (LinearLayout) findViewById(R.id.suggestion_where);
+        Where_Suggested_address_View = (LinearLayout) findViewById(R.id.suggestion_where);
 
 
 
@@ -289,12 +394,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                         UserPosition = new LatLng(location.getLatitude(), location.getLongitude());
 
-                        if (UserMarker != null) {
-                            UserMarker.setPosition(UserPosition);
-                        } else {
-                            UserMarker = mMap.addMarker(new MarkerOptions()
-                                    .position(UserPosition));
+                        //demo part
+                        if (!userPosBlocked){
+                            if (UserMarker != null) {
+                                UserMarker.setPosition(UserPosition);
+                            } else {
+                                UserMarker = mMap.addMarker(new MarkerOptions()
+                                        .position(UserPosition));
+                            }
                         }
+
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
                         mMap.setMinZoomPreference(12);
 
@@ -356,13 +465,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 .getLongitude()
                         )
                 )
+                .title(getString(R.string.user_location_title))
         );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(UserMarker.getPosition()));
         mMap.setMinZoomPreference(12);
 
+        mMap.setInfoWindowAdapter(new CustomGMapInfoWindow(MapsActivity.this));
+
 
 
         mMap.setOnMapClickListener(onMapClickListener);
+
+        //demo part
+        fillDrivers();
+        drawAllDrivers();
 
     }
 
@@ -431,19 +547,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void drawWayOnMap(LatLng A, LatLng B){
-        AtomicReference<String> title = new AtomicReference<>("");
-
+        AtomicReference<String> titleA = new AtomicReference<>("");
+        AtomicReference<String> titleB = new AtomicReference<>("");
         try {
             Thread getPlaceInfo = new Thread(()->{
                 //get info about point A coordination
-                title.set(GMapApi.FindPlaceByLatLan(A, Locale.getDefault().getLanguage()));
-
+                titleA.set(GMapApi.FindPlaceByLatLan(A, Locale.getDefault().getLanguage()));
+                titleB.set(GMapApi.FindPlaceByLatLan(B, Locale.getDefault().getLanguage()));
                 /*
                     Get direction from A to B in dots array.
                     From this array of dots will be created
                     polyline object, for drawing line on map
                  */
                 DirectionDotsList.set( GMapApi.GetDirectionPolPoints(B, A));
+
+                //get info about distance between point A and B
+                int distance = GMapApi.DistanceBetween(A,B);
+                Distance_meters.set(distance);
+
+                String n = Integer.toString(distance);
+                char[] charArray = n.toCharArray();
+
+                if(distance < 1000){
+                    Distance.set(getString(R.string.distance_between)+" "+distance+"m");
+                } else {
+                    if (distance % 1000 == 0){
+                        Distance.set( getString(R.string.distance_between) +" "+ distance / 1000);
+                    } else {
+
+                        Distance.set( getString(R.string.distance_between) +" "
+                                + charArray[0]+ ","
+                                + charArray[1] + "km");
+                    }
+                }
             });
 
             //Start thread and wait for end of thread work
@@ -453,20 +589,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //Creation and drawing A and B markers on map by A,B points coords
             if (Marker_PointB != null) {
                 Marker_PointB.setPosition(B);
+
             } else {
-                Marker_PointB = makeMarker(B,2);
+                Marker_PointB = makeMarker(B,MarkerType.TO);
             }
+            Marker_PointB.setTitle(titleB.get());
+
             if (Marker_PointA != null) {
                 Marker_PointA.setPosition(A);
             } else {
-                Marker_PointA = makeMarker(A,1);
+                Marker_PointA = makeMarker(A,MarkerType.FROM);
             }
+            Marker_PointA.setTitle(titleA.get());
 
+            Distance_text.setText(Distance.get());
+            Distance_text.setVisibility(View.VISIBLE);
             //drawing a polyline of direction
             drawDirectionAsPolyline(DirectionDotsList.get());
 
+
             Toast toast = Toast.makeText(getApplicationContext(),
-                    "" + title, Toast.LENGTH_SHORT);
+                    "" + titleA, Toast.LENGTH_SHORT);
             toast.show();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -478,10 +621,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         1 - marker from (Point A)
         2 - marker to (Point B)
      */
-    private Marker makeMarker(LatLng pos, int type){
+    private Marker makeMarker(LatLng pos,MarkerType type){
         Marker marker=null;
         switch (type){
-            case 1 :
+            case FROM:
                 BitmapDescriptor icon_from = BitmapDescriptorFactory.fromBitmap(
                        drawableToBitmap(getDrawable(R.drawable.ic_from_icon))
                 );
@@ -490,12 +633,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         .position(pos)
                 );
                 break;
-            case 2 :
+            case TO :
                 BitmapDescriptor icon_to = BitmapDescriptorFactory.fromBitmap(
                         drawableToBitmap(getDrawable(R.drawable.ic_to_icon))
                 );
                 marker = mMap.addMarker(new MarkerOptions()
                         .icon(icon_to)
+                        .position(pos)
+                );
+                break;
+            case DRIVER:
+                BitmapDescriptor icon_driver = BitmapDescriptorFactory.fromBitmap(
+                        drawableToBitmap(getDrawable(R.drawable.car_icon))
+                );
+                marker = mMap.addMarker(new MarkerOptions()
+                        .icon(icon_driver)
                         .position(pos)
                 );
                 break;
@@ -557,7 +709,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Suggested_From_Addreses.get().clear();
 
             //clear view
-           From_Sugested_address_View.removeAllViews();
+           From_Suggested_address_View.removeAllViews();
 
         }
 
@@ -590,7 +742,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         addressItem
                          */
                         PointA = addressItem.get_coord();
-
                         /*
                         Проверка. Если переменная с точкой В уже существует
                         то вызывается метод построения и отрисовки маршрута
@@ -601,7 +752,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         }
                     }
                 });
-                From_Sugested_address_View.addView(newBtn);
+                From_Suggested_address_View.addView(newBtn);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -615,7 +766,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //clear array
             Suggested_Where_Addreses.get().clear();
             //clear view
-            Where_Sugested_address_View.removeAllViews();
+            Where_Suggested_address_View.removeAllViews();
         }
 
         try {
@@ -647,7 +798,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         addressItem
                          */
                         PointB = addressItem.get_coord();
-
                         /*
                         Проверка. Если переменная с точкой А уже существует
                         то вызывается метод построения и отрисовки маршрута
@@ -658,11 +808,166 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         }
                     }
                 });
-                Where_Sugested_address_View.addView(newBtn);
+                Where_Suggested_address_View.addView(newBtn);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
+
+    //Demo functions
+    private void moveDriverTo (LatLng coords){
+        SelectedDriver.setPosition(coords);
+    }
+    private void setSelectedDriver(int id){
+        SelectedDriver = makeMarker(Drivers.get(id).Coords,MarkerType.DRIVER);
+    }
+    private void drawAllDrivers(){
+        for (int i = 0; i < Drivers.size(); i++) {
+            Drivers_markers.add( makeMarker(Drivers.get(i).Coords,MarkerType.DRIVER) );
+        }
+    }
+    private void fillDrivers(){
+        Drivers.add(
+                new Driver(
+                        "Макс","Білополєв","+380502333719",4.0f, "BH2304AK",
+                        "Reno Logan","standard",new LatLng(46.486555,30.724158),0.011f
+                )
+        );
+        Drivers.add(
+                new Driver(
+                        "Георг","Акопян","+380504132829",2.0f, "BH5511AK",
+                        "Lada Kalina","standard",new LatLng(46.493735,30.707283),0.01f
+                )
+        );
+        Drivers.add(
+                new Driver(
+                        "Василь","Боровченко","+380505513073",4.9f, "BH3345AK",
+                        "Toyota Camry","comfort",new LatLng(46.491770,30.729518),0.015f
+                )
+        );
+    }
+    //Demo
+
+    private void MakeOrder(View view){
+        if(PointA != null && PointB != null){
+            FindAddressesView.setVisibility(View.GONE);
+            DriversView.setVisibility(View.VISIBLE);
+            for (int i = 0; i < Drivers.size(); i++) {
+                DriversView.addView( MakeDriverCard(Drivers.get(i), i, true) );
+            }
+        }
+    }
+    private void BackToAddressClick(View view){
+        FindAddressesView.setVisibility(View.VISIBLE);
+        DriversView.setVisibility(View.GONE);
+        DriversView.removeAllViews();
+    }
+    LinearLayout MakeDriverCard(Driver driver, int index, boolean withButton){
+        LinearLayout allContainer = new LinearLayout(mContext);
+        allContainer.setTag(index);
+        allContainer.setOrientation(LinearLayout.VERTICAL);
+        allContainer.setGravity(Gravity.CENTER_HORIZONTAL);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+        );
+        params.setMargins(100, 10, 100, 10);
+        allContainer.setLayoutParams(params);
+        allContainer.setPadding(40,10,40,10);
+        allContainer.setMinimumWidth(150);
+        allContainer.setBackground(getDrawable(R.drawable.distance_background));
+
+        CircleImageView DriverPhoto = new CircleImageView(mContext);
+        DriverPhoto.setImageDrawable(getDrawable(R.drawable.ic_user_default));
+        DriverPhoto.setMaxWidth(110);
+        DriverPhoto.setMaxHeight(110);
+
+        TextView Name = new TextView(mContext);
+        Name.setText(""+driver.name+" "+driver.surname);
+        Name.setTextColor(getColor(R.color.white));
+        Name.setTextSize(20f);
+
+        RatingBar Rate = new RatingBar(mContext);
+        Rate.setNumStars(5);
+        Rate.setRating(driver.rate);
+        FrameLayout.LayoutParams paramRate = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT,
+                FrameLayout.LayoutParams.WRAP_CONTENT
+        );
+        params.setMargins(0,5,0,0);
+        Rate.setLayoutParams(paramRate);
+
+        TextView CarModel = new TextView(mContext);
+        CarModel.setText(driver.model);
+        CarModel.setTextColor(getColor(R.color.white));
+        CarModel.setTextSize(14f);
+
+        TextView Class = new TextView(mContext);
+        Class.setText(driver.Class);
+        Class.setTextColor(getColor(R.color.white));
+        Class.setTextSize(14f);
+
+        TextView CoastText = new TextView(mContext);
+        CoastText.setText( ""+ Math.round( (driver.price * ( Distance_meters.get() ) )  ) + "\u20B4" );
+        CoastText.setTextColor(getColor(R.color.white));
+        CoastText.setTextSize(20f);
+
+        allContainer.addView(DriverPhoto);
+        allContainer.addView(Name);
+        allContainer.addView(Rate);
+        allContainer.addView(CarModel);
+        allContainer.addView(Class);
+        allContainer.addView(CoastText);
+
+        if(withButton){
+            Button order = new Button(mContext);
+            order.setText(getText(R.string.make_order_button_text));
+            order.setBackground(getDrawable(R.drawable.button_confirm));
+            order.setPadding(10,10,10,10);
+            order.setOnClickListener(this::OrderDriver);
+            allContainer.addView(order);
+        }
+        return allContainer;
+    }
+
+    private void OrderDriver(View view){
+        LinearLayout ParentLayout = (LinearLayout) view.getParent();
+        int driver_index = (int) ParentLayout.getTag();
+        SelectedDriverId = driver_index;
+        DriversView.removeAllViews();
+        LinearLayout current_driver =
+                MakeDriverCard(Drivers.get(driver_index),driver_index, false);
+        DriversView.addView(current_driver);
+
+        ShowInformToast(getString(R.string.driver_on_the_way_toast_text));
+        mapClickBlocked = true;
+        driverComeTimer.start();
+    }
+
+    private void ShowInformToast(String text){
+        try{
+            inflater = getLayoutInflater();
+            View layout = inflater.inflate(
+                    R.layout.map_info_toast,
+                    (ViewGroup)findViewById(R.id.mapInfo_toast)
+            );
+            TextView tv = (TextView) layout.findViewById(R.id.mapInfo_toast_textView);
+            tv.setText(text);
+            Toast toast = new Toast(getApplicationContext());
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setView(layout);
+            toast.show();
+        }catch (Exception ex){
+            Log.e("TOAST_ERROR : ", ex.getMessage());
+        }
+
+    }
+
+}
+enum MarkerType{
+    FROM ,
+    TO,
+    DRIVER
 }

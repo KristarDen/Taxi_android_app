@@ -55,7 +55,7 @@
         </Button>
 
 
-        <!--
+<!--
         <Button
             android:id="@+id/goMap"
             android:layout_width="314dp"
@@ -68,6 +68,6 @@
             android:textAlignment="center"
             android:textSize="24sp"
             app:backgroundTint="@null" />
-            -->
+-->
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -138,7 +138,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 //get user info from server by token
-                info_json = Network.GetPhoto(getString(R.string.getPhoto_url),res);
+                info_json = Network.GetUserInfo(getString(R.string.getPhoto_url),res);
                 JSONObject user_json = info_json.getJSONObject("user");
                 UserInfo.setName(user_json.getString("name"));
                 UserInfo.setSurname(user_json.getString("surname"));
@@ -160,7 +160,7 @@ public class LoginActivity extends AppCompatActivity {
                                 this,
                                 MapsActivity.class ) ) ;
             } catch (Exception e) {
-                Toast.makeText(this, e.getMessage(),Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, e.getMessage(),Toast.LENGTH_LONG).show();
                 this.startActivity(
                         new Intent(
                                 this,

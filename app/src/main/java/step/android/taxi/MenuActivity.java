@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -24,7 +25,9 @@ import java.io.IOException;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
+
     private CircleImageView UserPhoto;
+    private Button BackToMap;
     ActivityResultLauncher<String> PickImageActivity = registerForActivityResult(
             new ActivityResultContracts.GetContent(),
             new ActivityResultCallback<Uri>() {
@@ -49,6 +52,14 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_menu);
         UserPhoto = (CircleImageView) findViewById(R.id.UserPhoto);
         UserPhoto.setOnClickListener(this);
+
+        BackToMap = (Button) findViewById(R.id.button_backTo_map);
+        BackToMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         TextView Name_textview = (TextView) findViewById(R.id.user_name_text_view);
         Name_textview.setText(UserInfo.getName()+" "+UserInfo.getSurname());

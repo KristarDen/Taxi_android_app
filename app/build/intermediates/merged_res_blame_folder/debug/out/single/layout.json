@@ -1,15 +1,11 @@
 [
     {
-        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/activity_maps.xml",
-        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_maps.xml"
-    },
-    {
-        "merged": "step.android.taxi.app-mergeDebugResources-39:/layout/err_toast.xml",
-        "source": "step.android.taxi.app-main-42:/layout/err_toast.xml"
-    },
-    {
         "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/registration_activity.xml",
         "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/registration_activity.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/map_adress_info_window.xml",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/map_adress_info_window.xml"
     },
     {
         "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/activity_start_screen.xml",
@@ -24,6 +20,18 @@
         "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/err_toast.xml"
     },
     {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/activity_login.xml",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/activity_maps.xml",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_maps.xml"
+    },
+    {
+        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/map_info_toast.xml",
+        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/map_info_toast.xml"
+    },
+    {
         "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/activity_register_code.xml",
         "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_register_code.xml"
     },
@@ -32,8 +40,8 @@
         "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_login_or_register.xml"
     },
     {
-        "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/activity_login.xml",
-        "source": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-main-42:/layout/activity_login.xml"
+        "merged": "step.android.taxi.app-mergeDebugResources-39:/layout/activity_login_or_register.xml",
+        "source": "step.android.taxi.app-main-42:/layout/activity_login_or_register.xml"
     },
     {
         "merged": "/home/denis/.gradle/daemon/7.3.3/step.android.taxi.app-mergeDebugResources-39:/layout/activity_cropper.xml",

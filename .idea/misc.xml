@@ -55,14 +55,22 @@
         <entry key="..\:/Users/denis/Downloads/Taxi/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/denis/Downloads/Taxi/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/denis/Downloads/Taxi/app/src/main/res/layout/activity_start_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/adress_back.xml" value="0.127" />
         <entry key="app/src/main/res/drawable/auth_backbround.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/backgroud_gradient.xml" value="0.183" />
+        <entry key="app/src/main/res/drawable/car_icon.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable/code_form_back.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/code_form_back_blank.xml" value="0.2805" />
+        <entry key="app/src/main/res/drawable/distance_background.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/form_background.xml" value="0.127" />
         <entry key="app/src/main/res/drawable/form_wrong.xml" value="0.107" />
         <entry key="app/src/main/res/drawable/gradient_border.xml" value="0.2805" />
-        <entry key="app/src/main/res/drawable/ic_background_img.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/ic_addres_icon_pos.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/ic_background_img.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/ic_car_icon.xml" value="0.5" />
+        <entry key="app/src/main/res/drawable/ic_curr_geo_pos.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/ic_from_icon.xml" value="0.1295" />
         <entry key="app/src/main/res/drawable/ic_is_swipeble_icon.xml" value="0.2755" />
         <entry key="app/src/main/res/drawable/image_background.xml" value="0.1925" />
         <entry key="app/src/main/res/drawable/suggestion_address.xml" value="0.2" />
@@ -72,8 +80,8 @@
         <entry key="app/src/main/res/layout/activity_cropper.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login_or_register.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_register_code.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_start_screen.xml" value="0.33" />
         <entry key="app/src/main/res/layout/app_bar_menu.xml" value="0.22314814814814815" />
@@ -83,6 +91,8 @@
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.3765625" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22314814814814815" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.3765625" />
+        <entry key="app/src/main/res/layout/map_adress_info_window.xml" value="0.37552083333333336" />
+        <entry key="app/src/main/res/layout/map_info_toast.xml" value="0.3125" />
         <entry key="app/src/main/res/layout/map_screen.xml" value="0.33" />
         <entry key="app/src/main/res/layout/nav_header_menu.xml" value="0.22314814814814815" />
         <entry key="app/src/main/res/layout/navigation_view_header.xml" value="0.37604166666666666" />

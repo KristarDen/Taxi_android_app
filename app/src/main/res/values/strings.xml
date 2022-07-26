@@ -56,4 +56,10 @@
     <string name="phone_err_toast_text">Phone number must be writen like : +380 501 234 5678 , 3805012345678, +(380)-501-234-5678</string>
     <string name="name_err_toast_text">The name should be at least 2 letters</string>
     <string name="pass_identical_err_text">Passwords is not equal</string>
+    <string name="distance_between">Distance</string>
+    <string name="user_marker_title">Your location</string>
+    <string name="make_order_button_text">Order</string>
+    <string name="driver_on_the_way_toast_text">"Your driver on the way\nWait for arrival notification "</string>
+    <string name="driver_arrived_note_text">Your driver arrived</string>
+    <string name="Start_trip_btn_text">Start trip ?</string>
 </resources>

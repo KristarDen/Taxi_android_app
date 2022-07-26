@@ -44,9 +44,9 @@ public class Network {
 
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
-
+        String crypted = AES256.textToBase64(jsonData);
         RequestBody formBody = new FormBody.Builder()
-                .add("data", AES256.textToBase64(jsonData))
+                .add("data", crypted)
                 .build();
 
         Request request = new Request.Builder()
@@ -98,7 +98,7 @@ public class Network {
         }
     }
 
-    public static JSONObject GetPhoto(String url, String token){
+    public static JSONObject GetUserInfo(String url, String token){
 
         //create okhttp client
         OkHttpClient client = new OkHttpClient();

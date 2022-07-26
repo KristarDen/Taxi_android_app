@@ -2978,6 +2978,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable address_back
 drawable amu_bubble_mask
 drawable amu_bubble_shadow
 drawable avd_hide_password
@@ -2992,6 +2993,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_confirm
+drawable car_icon
 drawable code_form_back
 drawable code_form_back_blank
 drawable common_full_open_on_phone
@@ -3018,6 +3020,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable distance_background
 drawable form_background
 drawable form_wrong
 drawable googleg_disabled_color_18
@@ -3154,6 +3157,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id DriversView
 id EmailCode_1_num
 id EmailCode_2_num
 id EmailCode_3_num
@@ -3230,6 +3234,7 @@ id actions
 id activity_chooser_view_content
 id add
 id address_from
+id address_textView
 id address_to
 id adjust_height
 id adjust_width
@@ -3250,6 +3255,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_to_address_bnt
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3332,6 +3338,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id distance_text
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3364,6 +3371,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id findAddressView
 id firstNameLabel
 id first_name
 id fitToContents
@@ -3441,7 +3449,7 @@ id light
 id line1
 id line3
 id linear
-id linearLayou
+id linearLayout
 id listMode
 id list_item
 id load_icon
@@ -3449,7 +3457,10 @@ id loginButton
 id loginLabel
 id login_or_regist_label
 id logo
+id makeOrder_button
 id map
+id mapInfo_toast
+id mapInfo_toast_textView
 id masked
 id match_constraint
 id match_parent
@@ -3881,6 +3892,8 @@ layout err_toast
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
+layout map_adress_info_window
+layout map_info_toast
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -4010,6 +4023,7 @@ raw places_keep
 string Code_was_sended
 string Enter_code
 string Rating
+string Start_trip_btn_text
 string Taxi_DB_Table_str
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -4070,6 +4084,9 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string confirm_code_url
+string distance_between
+string driver_arrived_note_text
+string driver_on_the_way_toast_text
 string email
 string email_Hint
 string email_err_toast_text
@@ -4114,6 +4131,7 @@ string m3_sys_typescale_label_small_font
 string m3_sys_typescale_title_large_font
 string m3_sys_typescale_title_medium_font
 string m3_sys_typescale_title_small_font
+string make_order_button_text
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -4232,6 +4250,7 @@ string ucrop_saturation
 string ucrop_scale
 string ucrop_sharpness
 string user_location_title
+string user_marker_title
 string vector_path_close
 string vector_path_line
 string vector_path_menu
